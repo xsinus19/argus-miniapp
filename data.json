@@ -54,122 +54,50 @@
     {
       "s": "BTC/USDT",
       "t": "strong_bearish",
-      "rsi": 18.398387527461793,
-      "fp": 97.0
-    },
-    {
-      "s": "ETH/USDT",
-      "t": "strong_bearish",
-      "rsi": 21.79720049145621,
-      "fp": 30.0
-    },
-    {
-      "s": "DOGE/USDT",
-      "t": "strong_bearish",
-      "rsi": 24.949885759710114,
-      "fp": 7.000000000000001
-    },
-    {
-      "s": "TON/USDT",
-      "t": "ranging",
-      "rsi": 31.03803270799105,
-      "fp": 10.0
-    },
-    {
-      "s": "SOL/USDT",
-      "t": "strong_bearish",
-      "rsi": 24.82687788962744,
-      "fp": 5.0
-    },
-    {
-      "s": "LTC/USDT",
-      "t": "strong_bearish",
-      "rsi": 24.58067331757043,
-      "fp": 0.0
-    },
-    {
-      "s": "LINK/USDT",
-      "t": "strong_bearish",
-      "rsi": 18.002813084663856,
-      "fp": 1.0
-    },
-    {
-      "s": "POL/USDT",
-      "t": "strong_bearish",
-      "rsi": 13.218591725077417,
-      "fp": 23.0
-    },
-    {
-      "s": "RENDER/USDT",
-      "t": "bullish",
-      "rsi": 25.946181614124328,
+      "rsi": 18.10324082895812,
       "fp": 100.0
     },
     {
-      "s": "FET/USDT",
-      "t": "bullish",
-      "rsi": 26.183293684614355,
-      "fp": 69.0
-    },
-    {
-      "s": "BCH/USDT",
-      "t": "strong_bearish",
-      "rsi": 11.034318637359235,
-      "fp": 22.0
-    },
-    {
-      "s": "WIF/USDT",
-      "t": "strong_bearish",
-      "rsi": 19.97847329869515,
-      "fp": 2.0
-    },
-    {
-      "s": "BTC/USDT",
-      "t": "strong_bearish",
-      "rsi": 19.270968336318987,
-      "fp": 98.0
-    },
-    {
       "s": "ETH/USDT",
       "t": "strong_bearish",
-      "rsi": 22.568083652500675,
-      "fp": 30.0
+      "rsi": 21.96323336556469,
+      "fp": 31.0
     },
     {
       "s": "DOGE/USDT",
       "t": "strong_bearish",
-      "rsi": 25.65202962313822,
-      "fp": 9.0
+      "rsi": 26.347154017584614,
+      "fp": 18.0
     },
     {
       "s": "TON/USDT",
       "t": "ranging",
-      "rsi": 31.77691355102627,
-      "fp": 12.0
+      "rsi": 29.769012445104863,
+      "fp": 20.0
     },
     {
       "s": "SOL/USDT",
       "t": "strong_bearish",
-      "rsi": 26.597381102957513,
-      "fp": 7.000000000000001
+      "rsi": 27.403499351273922,
+      "fp": 12.0
     },
     {
       "s": "LTC/USDT",
       "t": "strong_bearish",
-      "rsi": 24.58067331757043,
+      "rsi": 30.74652957484433,
       "fp": 1.0
     },
     {
       "s": "LINK/USDT",
       "t": "strong_bearish",
-      "rsi": 18.126494372086853,
-      "fp": 1.0
+      "rsi": 21.476245661144574,
+      "fp": 6.0
     },
     {
       "s": "POL/USDT",
       "t": "strong_bearish",
-      "rsi": 17.061311108667496,
-      "fp": 26.0
+      "rsi": 21.88216672003047,
+      "fp": 32.0
     },
     {
       "s": "RENDER/USDT",
@@ -180,164 +108,20 @@
     {
       "s": "FET/USDT",
       "t": "bullish",
-      "rsi": 29.746531827811907,
+      "rsi": 33.38258705545023,
       "fp": 70.0
     },
     {
       "s": "BCH/USDT",
       "t": "strong_bearish",
-      "rsi": 9.789364483271228,
-      "fp": 23.0
-    },
-    {
-      "s": "WIF/USDT",
-      "t": "strong_bearish",
-      "rsi": 19.97847329869515,
-      "fp": 2.0
-    },
-    {
-      "s": "BTC/USDT",
-      "t": "strong_bearish",
-      "rsi": 20.722967396577033,
-      "fp": 100.0
-    },
-    {
-      "s": "ETH/USDT",
-      "t": "strong_bearish",
-      "rsi": 24.967592860735422,
-      "fp": 31.0
-    },
-    {
-      "s": "DOGE/USDT",
-      "t": "strong_bearish",
-      "rsi": 26.158130331235853,
-      "fp": 12.0
-    },
-    {
-      "s": "TON/USDT",
-      "t": "ranging",
-      "rsi": 32.15970504752406,
-      "fp": 14.000000000000002
-    },
-    {
-      "s": "SOL/USDT",
-      "t": "strong_bearish",
-      "rsi": 31.32531535810179,
-      "fp": 10.0
-    },
-    {
-      "s": "LTC/USDT",
-      "t": "strong_bearish",
-      "rsi": 28.911219456631684,
-      "fp": 1.0
-    },
-    {
-      "s": "LINK/USDT",
-      "t": "strong_bearish",
-      "rsi": 21.612516642887,
-      "fp": 3.0
-    },
-    {
-      "s": "POL/USDT",
-      "t": "strong_bearish",
-      "rsi": 22.91613764851938,
-      "fp": 32.0
-    },
-    {
-      "s": "RENDER/USDT",
-      "t": "bullish",
-      "rsi": 28.091948720355177,
-      "fp": 100.0
-    },
-    {
-      "s": "FET/USDT",
-      "t": "strong_bullish",
-      "rsi": 36.660786473222416,
-      "fp": 70.0
-    },
-    {
-      "s": "BCH/USDT",
-      "t": "strong_bearish",
-      "rsi": 9.132280199923926,
-      "fp": 23.0
+      "rsi": 8.684585549919177,
+      "fp": 22.0
     },
     {
       "s": "WIF/USDT",
       "t": "strong_bearish",
       "rsi": 21.086898349965992,
       "fp": 8.0
-    },
-    {
-      "s": "BTC/USDT",
-      "t": "strong_bearish",
-      "rsi": 19.4217158068533,
-      "fp": 100.0
-    },
-    {
-      "s": "ETH/USDT",
-      "t": "strong_bearish",
-      "rsi": 24.344999088157195,
-      "fp": 31.0
-    },
-    {
-      "s": "DOGE/USDT",
-      "t": "strong_bearish",
-      "rsi": 29.102831848782174,
-      "fp": 16.0
-    },
-    {
-      "s": "TON/USDT",
-      "t": "ranging",
-      "rsi": 30.448047801901936,
-      "fp": 18.0
-    },
-    {
-      "s": "SOL/USDT",
-      "t": "strong_bearish",
-      "rsi": 31.038743631386055,
-      "fp": 12.0
-    },
-    {
-      "s": "LTC/USDT",
-      "t": "strong_bearish",
-      "rsi": 31.918313247843486,
-      "fp": 1.0
-    },
-    {
-      "s": "LINK/USDT",
-      "t": "strong_bearish",
-      "rsi": 23.341948510945528,
-      "fp": 5.0
-    },
-    {
-      "s": "POL/USDT",
-      "t": "strong_bearish",
-      "rsi": 24.904083081258293,
-      "fp": 33.0
-    },
-    {
-      "s": "RENDER/USDT",
-      "t": "bullish",
-      "rsi": 27.45529958341224,
-      "fp": 100.0
-    },
-    {
-      "s": "FET/USDT",
-      "t": "strong_bullish",
-      "rsi": 36.824409083844564,
-      "fp": 69.0
-    },
-    {
-      "s": "BCH/USDT",
-      "t": "strong_bearish",
-      "rsi": 8.862319297396013,
-      "fp": 22.0
-    },
-    {
-      "s": "WIF/USDT",
-      "t": "strong_bearish",
-      "rsi": 25.234936496245652,
-      "fp": 9.0
     }
   ],
   "history": [
@@ -432,5 +216,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-05-28T13:06:11Z"
+  "updated": "2026-05-28T13:18:24Z"
 }
