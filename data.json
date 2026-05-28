@@ -39,6 +39,15 @@
       "tp1": 52.508,
       "tp2": 53.856,
       "tp3": 55.204
+    },
+    {
+      "sym": "SOL/USDT",
+      "dir": "long",
+      "ep": 81.103,
+      "sl": 79.044,
+      "tp1": 85.22,
+      "tp2": 88.308,
+      "tp3": 91.396
     }
   ],
   "coins": [
@@ -185,6 +194,78 @@
       "t": "strong_bearish",
       "rsi": 19.97847329869515,
       "fp": 2.0
+    },
+    {
+      "s": "BTC/USDT",
+      "t": "strong_bearish",
+      "rsi": 20.722967396577033,
+      "fp": 100.0
+    },
+    {
+      "s": "ETH/USDT",
+      "t": "strong_bearish",
+      "rsi": 24.967592860735422,
+      "fp": 31.0
+    },
+    {
+      "s": "DOGE/USDT",
+      "t": "strong_bearish",
+      "rsi": 26.158130331235853,
+      "fp": 12.0
+    },
+    {
+      "s": "TON/USDT",
+      "t": "ranging",
+      "rsi": 32.15970504752406,
+      "fp": 14.000000000000002
+    },
+    {
+      "s": "SOL/USDT",
+      "t": "strong_bearish",
+      "rsi": 31.32531535810179,
+      "fp": 10.0
+    },
+    {
+      "s": "LTC/USDT",
+      "t": "strong_bearish",
+      "rsi": 28.911219456631684,
+      "fp": 1.0
+    },
+    {
+      "s": "LINK/USDT",
+      "t": "strong_bearish",
+      "rsi": 21.612516642887,
+      "fp": 3.0
+    },
+    {
+      "s": "POL/USDT",
+      "t": "strong_bearish",
+      "rsi": 22.91613764851938,
+      "fp": 32.0
+    },
+    {
+      "s": "RENDER/USDT",
+      "t": "bullish",
+      "rsi": 28.091948720355177,
+      "fp": 100.0
+    },
+    {
+      "s": "FET/USDT",
+      "t": "strong_bullish",
+      "rsi": 36.660786473222416,
+      "fp": 70.0
+    },
+    {
+      "s": "BCH/USDT",
+      "t": "strong_bearish",
+      "rsi": 9.132280199923926,
+      "fp": 23.0
+    },
+    {
+      "s": "WIF/USDT",
+      "t": "strong_bearish",
+      "rsi": 21.086898349965992,
+      "fp": 8.0
     }
   ],
   "history": [
@@ -259,6 +340,18 @@
       "tp3": 55.204,
       "time": "2026-05-28T10:59:47.643723+00:00",
       "result": "open"
+    },
+    {
+      "symbol": "SOL/USDT",
+      "direction": "long",
+      "signal_level": "MODERATE",
+      "entry_price": 81.103,
+      "stop_loss": 79.044,
+      "tp1": 85.22,
+      "tp2": 88.308,
+      "tp3": 91.396,
+      "time": "2026-05-28T12:50:19.846946+00:00",
+      "result": "open"
     }
   ],
   "chart": {
@@ -267,5 +360,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-05-28T12:36:07Z"
+  "updated": "2026-05-28T12:51:06Z"
 }
