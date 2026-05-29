@@ -808,26 +808,6 @@ function startLivePrices(){
 
 function updateLivePrice(sym, price, change){
   // Обновляем в карточках сигналов
-  const sigCards = document.querySelectorAll('.sig-card');
-  sigCards.forEach(card=>{
-    const symEl = card.querySelector('.sc-sym');
-    if(symEl && symEl.textContent === sym){
-      const curEl = card.querySelector('.sp-val.up, .sp-val.dn, .sp-val');
-      const spBoxes = card.querySelectorAll('.sp-box');
-      if(spBoxes[1]){ // TP1 box - actually current price box
-        // найдём текущую цену
-      }
-      // Обновляем время входа на текущую цену
-      const timeEl = card.querySelector('.sc-time');
-      if(timeEl){
-        const epEl = card.querySelector('.sp-box .sp-val'); 
-      const epTxt = epEl ? epEl.textContent.replace('$','').replace(',','') : '0';
-      const ep = parseFloat(epTxt) || 0;
-        const pnl = ep > 0 ? ((price - ep) / ep * 100) : 0;
-        const isLong = card.classList.contains('long');
-        const realPnl = isLong ? pnl : -pnl;
-        timeEl.textContent = `Текущая: $${price.toFixed(4)} (${realPnl>=0?'+':''}${realPnl.toFixed(2)}%)`;
-        timeEl.style.color = realPnl >= 0 ? '#00ff88' : '#ff3b5c';
       }
     }
   });
