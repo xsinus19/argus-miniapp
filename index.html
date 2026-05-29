@@ -2,357 +2,744 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Аргус — Signal Intelligence</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>АРГУС — Разведка Сигналов</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body,html{background:#1a1530;overflow-x:hidden}
-.app{position:relative;font-family:'Space Grotesk',sans-serif;color:#f0ecff;padding:14px;max-width:420px;margin:0 auto;min-height:100vh;overflow:hidden}
-canvas#three{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
-.content{position:relative;z-index:1}
-.glass{background:rgba(255,255,255,0.1);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.18);border-radius:20px}
-.glass-dark{background:rgba(255,255,255,0.07);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.14);border-radius:20px}
-.hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;padding:13px 18px;background:rgba(255,255,255,0.08);backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,0.16);border-radius:18px}
-.brand{font-size:24px;font-weight:800;letter-spacing:-0.5px;color:#fff}
-.brand em{font-style:normal;color:#c084fc}
-.brand-sub{font-size:10px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.45);letter-spacing:1.5px;margin-top:1px}
-.live-row{display:flex;align-items:center;gap:6px;margin-bottom:4px;justify-content:flex-end}
-.dot{width:7px;height:7px;border-radius:50%;background:#4ade80;animation:pp 1.8s infinite}
-@keyframes pp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(1.5)}}
-.live-lbl{font-size:12px;font-family:'JetBrains Mono',monospace;color:#4ade80;font-weight:500}
-.clk{font-size:11px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.45)}
-.hero{padding:20px;margin-bottom:10px}
-.hero-inner{display:flex;justify-content:space-between;align-items:flex-start}
-.fg-big{font-size:80px;font-weight:800;color:#fff;line-height:1;letter-spacing:-5px}
-.fg-sub{font-size:11px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.45);letter-spacing:1.5px;margin-top:8px}
-.hero-stats{text-align:right}
-.hst-lbl{font-size:10px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.4);letter-spacing:1px;margin-bottom:3px}
-.hst-val{font-size:16px;font-weight:700;color:#fff;margin-bottom:10px}
-.bar-outer{width:80px;height:4px;background:rgba(255,255,255,0.1);border-radius:4px;margin-left:auto;margin-top:8px}
-.bar-inner{height:4px;border-radius:4px;background:linear-gradient(90deg,#f87171,#fb923c);transition:width 0.6s}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:10px}
-.mini{padding:12px 6px;text-align:center}
-.mini-l{font-size:10px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.4);letter-spacing:0.5px;margin-bottom:5px}
-.mini-v{font-size:20px;font-weight:800;color:#fff}
-.mini-v.red{color:#ff6b6b}
-.mini-v.green{color:#4ade80}
-.mini-v.purple{color:#c084fc}
-.sec-lbl{font-size:10px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.4);letter-spacing:1.5px;margin-bottom:8px;padding-left:2px;display:flex;align-items:center;gap:8px}
-.sec-lbl::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.08)}
-.sig{padding:16px;margin-bottom:8px;position:relative;overflow:hidden}
-.sig-glow-red{position:absolute;top:-30px;right:-30px;width:100px;height:100px;background:rgba(255,100,100,0.2);border-radius:50%;filter:blur(25px);pointer-events:none}
-.sig-glow-green{position:absolute;top:-30px;right:-30px;width:100px;height:100px;background:rgba(74,222,128,0.15);border-radius:50%;filter:blur(25px);pointer-events:none}
-.sig-bar{position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(180deg,#ff6b6b,rgba(255,107,107,0.1))}
-.sig-bar-g{background:linear-gradient(180deg,#4ade80,rgba(74,222,128,0.1))}
-.sig-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-.sig-sym{font-size:17px;font-weight:800;color:#fff}
-.tags{display:flex;gap:5px}
-.t{font-size:11px;font-family:'JetBrains Mono',monospace;padding:4px 11px;border-radius:20px;font-weight:500}
-.t-short{background:rgba(255,107,107,0.2);color:#ff6b6b;border:1px solid rgba(255,107,107,0.35)}
-.t-long{background:rgba(74,222,128,0.15);color:#4ade80;border:1px solid rgba(74,222,128,0.3)}
-.t-strong{background:rgba(192,132,252,0.2);color:#c084fc;border:1px solid rgba(192,132,252,0.35)}
-.t-mod{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.15)}
-.t-leg{background:rgba(255,200,50,0.2);color:#fbbf24;border:1px solid rgba(255,200,50,0.35)}
-.sig-data{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
-.sd-l{font-size:10px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.4);margin-bottom:3px;letter-spacing:0.3px}
-.sd-v{font-size:14px;font-weight:700;color:rgba(255,255,255,0.9)}
-.sd-v.r{color:#ff6b6b}
-.sd-v.g{color:#4ade80}
-.sc-row{display:flex;align-items:center;gap:8px}
-.sc-track{flex:1;height:3px;background:rgba(255,255,255,0.08);border-radius:3px;overflow:hidden}
-.sc-fill{height:3px;border-radius:3px;background:linear-gradient(90deg,#ff6b6b,#fb923c)}
-.sc-n{font-size:12px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.4);min-width:30px;text-align:right}
-.chart-wrap{padding:16px}
-.coin-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:10px}
-.coin{padding:12px 13px}
-.ctop{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
-.csym{font-size:15px;font-weight:800;color:#fff}
-.ctr{font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:5px;font-weight:500}
-.ctr-bear{background:rgba(255,107,107,0.15);color:#ff6b6b;border:1px solid rgba(255,107,107,0.25)}
-.ctr-bull{background:rgba(74,222,128,0.12);color:#4ade80;border:1px solid rgba(74,222,128,0.22)}
-.ctr-range{background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.12)}
-.cstats{display:flex;justify-content:space-between;margin-bottom:6px}
-.cl{font-size:9px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.35);margin-bottom:2px}
-.cv{font-size:14px;font-weight:700;color:rgba(255,255,255,0.85)}
-.cfbar{height:3px;background:rgba(255,255,255,0.07);border-radius:3px;overflow:hidden}
-.cfb{height:3px;border-radius:3px}
-.nav{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding-bottom:16px}
-.nb{padding:13px 4px;border:1px solid rgba(255,255,255,0.1);border-radius:14px;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;text-align:center;transition:all 0.2s;letter-spacing:0.3px;background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.4)}
-.nb.active{background:rgba(192,132,252,0.25);color:#c084fc;border:1px solid rgba(192,132,252,0.4)}
-.hist-row{padding:13px 16px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center}
-.hsym{font-size:15px;font-weight:700;color:#fff}
-.hsub{font-size:10px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.35);margin-top:3px}
-.r-open{font-size:11px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.35)}
-.r-tp{color:#4ade80;font-size:11px;font-family:'JetBrains Mono',monospace}
-.r-sl{color:#ff6b6b;font-size:11px;font-family:'JetBrains Mono',monospace}
-.set-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.07)}
-.set-row:last-child{border:none}
-.sk{font-size:11px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.4)}
-.sv{font-size:13px;font-weight:600;color:#fff}
-.sv.g{color:#4ade80}
-.empty{text-align:center;padding:30px;color:rgba(255,255,255,0.25);font-family:'JetBrains Mono',monospace;font-size:11px;line-height:2.2}
-.loading{text-align:center;padding:30px;color:rgba(255,255,255,0.25);font-family:'JetBrains Mono',monospace;font-size:11px;animation:pulse 1.5s infinite}
-@keyframes pulse{0%,100%{opacity:0.3}50%{opacity:1}}
+body{background:#050a0f;color:#c8e0f0;font-family:'Share Tech Mono',monospace;font-size:14px;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,212,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.03) 1px,transparent 1px);background-size:30px 30px;pointer-events:none;z-index:0}
+.app{position:relative;z-index:1;max-width:440px;margin:0 auto;padding:10px;padding-bottom:70px}
+.orb{font-family:'Orbitron',monospace}
+.screen{display:none}.screen.active{display:block}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:#0a1520;border:1px solid #1a3a5c;border-top:2px solid #00d4ff;margin-bottom:8px;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%)}
+.brand{font-family:'Orbitron',monospace;font-size:20px;font-weight:900;color:#fff;letter-spacing:3px;text-shadow:0 0 15px #00d4ff}
+.brand-sub{font-size:10px;color:#4a7a9b;letter-spacing:2px;margin-top:2px}
+.hdr-r{text-align:right}
+.live-row{display:flex;align-items:center;gap:5px;justify-content:flex-end;margin-bottom:3px}
+.ldot{width:6px;height:6px;border-radius:50%;background:#00ff88;box-shadow:0 0 6px #00ff88;animation:bl 1.5s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0.3}}
+.lt{font-size:12px;color:#00ff88}
+.ut{font-size:12px;color:#4a7a9b}
+.ticker{overflow:hidden;background:#0d1e2e;border:1px solid #0f2a40;border-left:3px solid #00d4ff;padding:6px 0;margin-bottom:8px}
+.tk-in{display:flex;white-space:nowrap;animation:tk 30s linear infinite}
+@keyframes tk{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ti{font-size:11px;color:#4a7a9b;padding:0 20px}
+.ti.r{color:#ff3b5c}.ti.y{color:#ffcc00}.ti.g{color:#00ff88}
+.panel{background:#0a1520;border:1px solid #1a3a5c;padding:12px 14px;margin-bottom:8px}
+.ptitle{font-size:10px;color:#4a7a9b;letter-spacing:2px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.ptitle::after{content:'';flex:1;height:1px;background:#1a3a5c}
+.pdot{width:5px;height:5px;border-radius:50%;background:#00d4ff;box-shadow:0 0 5px #00d4ff}
+.speedo{background:#0d1e2e;border:1px solid #0f2a40;padding:14px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.si{display:flex;align-items:center;gap:16px}
+.sv{font-family:'Orbitron',monospace;font-size:44px;font-weight:900;color:#fff;line-height:1}
+.sl{font-size:13px;margin-top:5px;letter-spacing:1px}
+.sl.ef{color:#ff3b5c}.sl.f{color:#ff8c00}.sl.n{color:#ffcc00}.sl.g{color:#00ff88}
+.sd{font-size:12px;color:#4a7a9b;margin-top:8px;line-height:1.5}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.mc{background:#0d1e2e;border:1px solid #0f2a40;padding:10px 12px}
+.ml{font-size:10px;color:#4a7a9b;letter-spacing:1px;margin-bottom:5px}
+.mv{font-family:'Orbitron',monospace;font-size:18px;font-weight:700;color:#fff}
+.mch{font-size:12px;margin-top:3px}
+.mch.up{color:#00ff88}.mch.dn{color:#ff3b5c}.mch.fl{color:#4a7a9b}
+.agrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}
+.ac{background:#0d1e2e;border:1px solid #0f2a40;padding:10px 6px;text-align:center}
+.ac.al{border-top:2px solid #ff3b5c}.ac.wt{border-top:2px solid #ffcc00}.ac.ok{border-top:2px solid #00ff88}
+.an{font-family:'Orbitron',monospace;font-size:28px;font-weight:700;line-height:1}
+.an.r{color:#ff3b5c}.an.y{color:#ffcc00}.an.g{color:#00ff88}
+.al2{font-size:11px;color:#4a7a9b;margin-top:4px;line-height:1.3}
+.ubar{background:#0d1e2e;border:1px solid #0f2a40;border-left:3px solid #00d4ff;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ul{font-size:12px;color:#4a7a9b}.ul span{color:#c8e0f0}
+.un{display:flex;align-items:center;gap:6px;font-size:12px;color:#00d4ff}
+.up2{width:60px;height:3px;background:rgba(0,212,255,0.1);border-radius:2px;overflow:hidden}
+.uf{height:100%;background:#00d4ff;border-radius:2px;transition:width 1s linear}
+.cscroll{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.cscroll::-webkit-scrollbar{display:none}
+.cc{flex-shrink:0;width:130px;background:#0d1e2e;border:1px solid #0f2a40;padding:10px}
+.cc.br{border-top:2px solid #ff3b5c}.cc.bu{border-top:2px solid #00ff88}.cc.wt{border-top:2px solid #ffcc00}
+.cs{font-family:'Orbitron',monospace;font-size:14px;font-weight:700;color:#fff;margin-bottom:5px}
+.cst{font-size:11px;font-weight:600;letter-spacing:1px;margin-bottom:6px}
+.cst.br{color:#ff3b5c}.cst.bu{color:#00ff88}.cst.wt{color:#ffcc00}
+.cr2{display:flex;justify-content:space-between;margin-bottom:3px}
+.ck{font-size:10px;color:#2a4a6b}.cv{font-size:10px;color:#4a7a9b}
+.cv.r{color:#ff3b5c}.cv.g{color:#00ff88}.cv.y{color:#ffcc00}
+.cb{margin-top:6px;font-size:9px;padding:2px 6px;display:inline-block}
+.cb.bos{background:rgba(255,59,92,0.15);color:#ff3b5c;border:1px solid rgba(255,59,92,0.3)}
+.cb.choch{background:rgba(255,204,0,0.1);color:#ffcc00;border:1px solid rgba(255,204,0,0.25)}
+.cb.pot{background:rgba(0,212,255,0.1);color:#00d4ff;border:1px solid rgba(0,212,255,0.25)}
+.wr{display:flex;align-items:center;gap:12px;padding:10px 12px;background:#0d1e2e;border:1px solid #0f2a40;margin-bottom:7px}
+.wr:last-child{margin-bottom:0}
+.wi{font-size:18px;flex-shrink:0}
+.winfo{flex:1}
+.wt2{font-size:10px;color:#4a7a9b;letter-spacing:1px;margin-bottom:3px}
+.ws{font-size:12px;color:#c8e0f0}
+.wv{font-size:12px;color:#00d4ff;text-align:right;flex-shrink:0}
+/* SIGNALS */
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px}
+.tab{padding:10px;text-align:center;background:#0a1520;border:1px solid #1a3a5c;cursor:pointer}
+.tab.act{border-top:2px solid #00d4ff;background:#0d1e2e}
+.tab-title{font-size:11px;letter-spacing:1px;color:#4a7a9b;margin-bottom:3px}
+.tab.act .tab-title{color:#00d4ff}
+.tab-count{font-family:'Orbitron',monospace;font-size:20px;font-weight:700}
+.tab-count.r{color:#ff3b5c}.tab-count.y{color:#ffcc00}
+.sig-sec{display:none}.sig-sec.show{display:block}
+.sig-card{background:#0a1520;border:1px solid #1a3a5c;padding:13px;margin-bottom:8px}
+.sig-card.long{border-left:3px solid #00ff88}.sig-card.short{border-left:3px solid #ff3b5c}
+.sc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.sc-sym{font-family:'Orbitron',monospace;font-size:15px;font-weight:700;color:#fff}
+.sc-time{font-size:10px;color:#2a4a6b;margin-top:3px}
+.sc-tags{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.tag{font-size:9px;padding:2px 7px}
+.tag.short{background:rgba(255,59,92,0.2);color:#ff3b5c;border:1px solid rgba(255,59,92,0.4)}
+.tag.long{background:rgba(0,255,136,0.15);color:#00ff88;border:1px solid rgba(0,255,136,0.3)}
+.tag.strong{background:rgba(192,132,252,0.2);color:#c084fc;border:1px solid rgba(192,132,252,0.35)}
+.tag.leg{background:rgba(255,200,50,0.2);color:#fbbf24;border:1px solid rgba(255,200,50,0.35)}
+.sc-prices{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:8px}
+.sp-box{background:#0d1e2e;border:1px solid #0f2a40;padding:7px 8px}
+.sp-lbl{font-size:9px;color:#4a7a9b;letter-spacing:1px;margin-bottom:3px}
+.sp-val{font-size:13px;font-weight:700;color:#fff}
+.sp-val.up{color:#00ff88}.sp-val.dn{color:#ff3b5c}
+.pnl-row{display:flex;gap:6px;margin-bottom:10px}
+.pnl-box{flex:1;background:#0d1e2e;border:1px solid #0f2a40;padding:7px 8px;text-align:center}
+.pnl-lbl{font-size:9px;color:#4a7a9b;margin-bottom:2px}
+.pnl-val{font-family:'Orbitron',monospace;font-size:16px;font-weight:700}
+.pnl-val.pos{color:#00ff88}.pnl-val.neg{color:#ff3b5c}
+.tp-lbl{font-size:10px;color:#4a7a9b;letter-spacing:1px;margin-bottom:6px}
+.tp-row{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.tp-name{font-size:10px;min-width:26px}
+.tp-name.hit{color:#00ff88}.tp-name.miss{color:#2a4a6b}.tp-slname{color:#ff3b5c}
+.tp-track{flex:1;height:5px;background:#0d1e2e;border:1px solid #0f2a40;border-radius:1px;overflow:hidden}
+.tp-fill-g{height:100%;background:#00ff88}.tp-fill-r{height:100%;background:#ff3b5c}.tp-fill-d{height:100%;background:rgba(0,212,255,0.2)}
+.tp-price{font-size:10px;min-width:54px;text-align:right;color:#c8e0f0}
+.tp-badge{font-size:9px;min-width:38px;text-align:right}
+.tp-badge.hit{color:#00ff88}.tp-badge.miss{color:#2a4a6b}
+.pot-card{background:#0a1520;border:1px solid #1a3a5c;border-left:3px solid #00d4ff;padding:13px;margin-bottom:8px}
+.pot-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.pot-sym{font-family:'Orbitron',monospace;font-size:15px;font-weight:700;color:#fff}
+.pot-badge{font-size:10px;padding:3px 9px;background:rgba(0,212,255,0.1);color:#00d4ff;border:1px solid rgba(0,212,255,0.3)}
+.pot-reason{font-size:12px;color:#c8e0f0;margin-bottom:8px;line-height:1.5}
+.pot-score-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.pot-score-lbl{font-size:10px;color:#4a7a9b;min-width:48px}
+.pot-track{flex:1;height:4px;background:#0d1e2e;border:1px solid #0f2a40;border-radius:1px;overflow:hidden}
+.pot-fill{height:100%;background:linear-gradient(90deg,#00d4ff,#0088cc)}
+.pot-pct{font-size:11px;color:#00d4ff;min-width:34px;text-align:right}
+.pot-wait{font-size:11px;color:#ffcc00}
+.empty-state{text-align:center;padding:40px 20px}
+.empty-icon{font-size:32px;margin-bottom:10px;opacity:0.4}
+.empty-title{font-size:13px;color:#4a7a9b;letter-spacing:1px}
+.empty-sub{font-size:11px;color:#2a4a6b;margin-top:6px}
+/* MARKET */
+.filters{display:flex;gap:5px;margin-bottom:8px}
+.flt{flex:1;padding:8px 4px;text-align:center;background:#0a1520;border:1px solid #1a3a5c;cursor:pointer;font-size:10px;letter-spacing:1px;color:#4a7a9b;line-height:1.6}
+.flt.act{background:#0d1e2e;color:#00d4ff;border-color:#00d4ff;border-top:2px solid #00d4ff}
+.flt.bear.act{color:#ff3b5c;border-color:#ff3b5c;border-top:2px solid #ff3b5c}
+.flt.bull.act{color:#00ff88;border-color:#00ff88;border-top:2px solid #00ff88}
+.flt.watch.act{color:#ffcc00;border-color:#ffcc00;border-top:2px solid #ffcc00}
+.flt-num{font-family:'Orbitron',monospace;font-size:18px;display:block;margin-top:2px}
+.coin-row{display:flex;align-items:center;gap:8px;padding:12px 12px;background:#0a1520;border:1px solid #1a3a5c;margin-bottom:5px;cursor:pointer}
+.coin-row:hover{background:#0d1e2e}
+.coin-row.bearish{border-left:3px solid #ff3b5c}
+.coin-row.bullish{border-left:3px solid #00ff88}
+.coin-row.ranging{border-left:3px solid #ffcc00}
+.traffic{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.traffic.r{background:#ff3b5c;box-shadow:0 0 5px rgba(255,59,92,0.6)}
+.traffic.g{background:#00ff88;box-shadow:0 0 5px rgba(0,255,136,0.5)}
+.traffic.y{background:#ffcc00;box-shadow:0 0 5px rgba(255,204,0,0.4)}
+.cr-sym{font-family:'Orbitron',monospace;font-size:13px;font-weight:700;color:#fff;min-width:52px}
+.cr-mid{flex:1}
+.cr-struct{font-size:11px}
+.cr-struct.bear{color:#ff3b5c}.cr-struct.bull{color:#00ff88}.cr-struct.range{color:#ffcc00}
+.cr-hot{font-size:9px;padding:1px 5px;margin-left:4px}
+.cr-hot.bos{background:rgba(255,59,92,0.15);color:#ff3b5c;border:1px solid rgba(255,59,92,0.3)}
+.cr-hot.choch{background:rgba(255,204,0,0.1);color:#ffcc00;border:1px solid rgba(255,204,0,0.2)}
+.cr-hot.pot{background:rgba(0,212,255,0.1);color:#00d4ff;border:1px solid rgba(0,212,255,0.2)}
+.cr-stats{display:flex;gap:10px}
+.cr-stat{text-align:right}
+.cr-stat-lbl{font-size:9px;color:#2a4a6b;margin-bottom:2px}
+.cr-stat-val{font-size:12px;color:#c8e0f0}
+.cr-stat-val.r{color:#ff3b5c}.cr-stat-val.g{color:#00ff88}
+.cr-arrow{font-size:14px;color:#2a4a6b;flex-shrink:0}
+/* HISTORY */
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px}
+.stat-box{background:#0a1520;border:1px solid #1a3a5c;padding:10px 12px}
+.stat-box.win{border-top:2px solid #00ff88}.stat-box.loss{border-top:2px solid #ff3b5c}
+.stat-box.neu{border-top:2px solid #00d4ff}.stat-box.best{border-top:2px solid #ffcc00}
+.stat-lbl{font-size:10px;color:#4a7a9b;letter-spacing:1px;margin-bottom:5px}
+.stat-val{font-family:'Orbitron',monospace;font-size:22px;font-weight:700}
+.stat-val.g{color:#00ff88}.stat-val.r{color:#ff3b5c}.stat-val.b{color:#00d4ff}.stat-val.y{color:#ffcc00}
+.stat-sub{font-size:10px;color:#2a4a6b;margin-top:2px}
+.trade-row{padding:12px 13px;background:#0a1520;border:1px solid #1a3a5c;margin-bottom:5px;cursor:pointer}
+.trade-row:hover{background:#0d1e2e}
+.trade-row.tp{border-left:3px solid #00ff88}.trade-row.sl{border-left:3px solid #ff3b5c}
+.trade-row.exp{border-left:3px solid #2a4a6b}.trade-row.open{border-left:3px solid #00d4ff}
+.tr-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.tr-sym{font-family:'Orbitron',monospace;font-size:13px;font-weight:700;color:#fff}
+.tr-result{font-size:10px;padding:2px 8px}
+.tr-result.tp{background:rgba(0,255,136,0.15);color:#00ff88;border:1px solid rgba(0,255,136,0.3)}
+.tr-result.sl{background:rgba(255,59,92,0.15);color:#ff3b5c;border:1px solid rgba(255,59,92,0.3)}
+.tr-result.open{background:rgba(0,212,255,0.1);color:#00d4ff;border:1px solid rgba(0,212,255,0.3)}
+.tr-result.exp{background:rgba(255,255,255,0.05);color:#4a7a9b;border:1px solid #1a3a5c}
+.tr-bottom{display:flex;justify-content:space-between;align-items:center}
+.tr-tags{display:flex;gap:5px;align-items:center}
+.tr-dir{font-size:10px;padding:2px 7px}
+.tr-dir.long{background:rgba(0,255,136,0.1);color:#00ff88;border:1px solid rgba(0,255,136,0.2)}
+.tr-dir.short{background:rgba(255,59,92,0.1);color:#ff3b5c;border:1px solid rgba(255,59,92,0.2)}
+.tr-date{font-size:10px;color:#2a4a6b}
+.tr-pnl{text-align:right}
+.tr-pnl-pct{font-family:'Orbitron',monospace;font-size:14px;font-weight:700}
+.tr-pnl-pct.pos{color:#00ff88}.tr-pnl-pct.neg{color:#ff3b5c}.tr-pnl-pct.zero{color:#4a7a9b}
+.tr-pnl-r{font-size:10px;color:#4a7a9b;margin-top:1px}
+/* OVERLAY */
+.overlay{position:fixed;inset:0;background:rgba(5,10,15,0.97);z-index:200;display:none;overflow-y:auto;padding:12px}
+.overlay.show{display:block}
+.det-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.det-sym{font-family:'Orbitron',monospace;font-size:20px;font-weight:900;color:#fff}
+.det-close{font-size:18px;color:#4a7a9b;cursor:pointer;padding:4px 8px;background:#0a1520;border:1px solid #1a3a5c}
+.det-badge{font-size:12px;padding:4px 12px;letter-spacing:1px;display:inline-block;margin-bottom:10px}
+.det-badge.bear{background:rgba(255,59,92,0.2);color:#ff3b5c;border:1px solid rgba(255,59,92,0.4)}
+.det-badge.bull{background:rgba(0,255,136,0.15);color:#00ff88;border:1px solid rgba(0,255,136,0.3)}
+.det-badge.range{background:rgba(255,204,0,0.1);color:#ffcc00;border:1px solid rgba(255,204,0,0.25)}
+.det-badge.tp{background:rgba(0,255,136,0.15);color:#00ff88;border:1px solid rgba(0,255,136,0.3)}
+.det-badge.sl{background:rgba(255,59,92,0.2);color:#ff3b5c;border:1px solid rgba(255,59,92,0.4)}
+.det-badge.open{background:rgba(0,212,255,0.1);color:#00d4ff;border:1px solid rgba(0,212,255,0.3)}
+.det-section{background:#0a1520;border:1px solid #1a3a5c;padding:11px 13px;margin-bottom:7px}
+.det-stitle{font-size:10px;color:#4a7a9b;letter-spacing:2px;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.det-stitle::after{content:'';flex:1;height:1px;background:#1a3a5c}
+.det-pdot{width:5px;height:5px;border-radius:50%;background:#00d4ff}
+.det-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.det-cell{background:#0d1e2e;border:1px solid #0f2a40;padding:8px 10px}
+.det-lbl{font-size:10px;color:#4a7a9b;margin-bottom:3px}
+.det-val{font-size:14px;font-weight:700;color:#fff}
+.det-val.r{color:#ff3b5c}.det-val.g{color:#00ff88}.det-val.b{color:#00d4ff}
+.tf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px}
+.tf-box{background:#0d1e2e;border:1px solid #0f2a40;padding:8px;text-align:center}
+.tf-lbl{font-size:10px;color:#4a7a9b;margin-bottom:4px}
+.tf-val{font-size:11px;font-weight:700}
+.tf-val.bear{color:#ff3b5c}.tf-val.bull{color:#00ff88}.tf-val.range{color:#ffcc00}
+.struct-row{display:flex;gap:5px;flex-wrap:wrap}
+.struct-tag{font-size:11px;padding:4px 9px}
+.struct-tag.bos{background:rgba(255,59,92,0.15);color:#ff3b5c;border:1px solid rgba(255,59,92,0.3)}
+.struct-tag.choch{background:rgba(255,204,0,0.1);color:#ffcc00;border:1px solid rgba(255,204,0,0.25)}
+.struct-tag.none{background:rgba(255,255,255,0.05);color:#4a7a9b;border:1px solid #1a3a5c}
+.det-tp-row{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+.det-tp-name{font-size:11px;min-width:30px}
+.det-tp-name.hit{color:#00ff88}.det-tp-name.miss{color:#2a4a6b}
+.det-tp-track{flex:1;height:5px;background:#0d1e2e;border:1px solid #0f2a40;border-radius:1px;overflow:hidden}
+.det-tp-fill-g{height:100%;background:#00ff88}.det-tp-fill-d{height:100%;background:rgba(0,212,255,0.2)}
+.det-tp-price{font-size:11px;min-width:60px;text-align:right;color:#c8e0f0}
+.det-tp-badge{font-size:10px;min-width:40px;text-align:right}
+.det-tp-badge.hit{color:#00ff88}.det-tp-badge.miss{color:#2a4a6b}
+/* NAV */
+.nav{position:fixed;bottom:0;left:0;right:0;background:#0a1520;border-top:2px solid #1a3a5c;display:flex;z-index:100;max-width:440px;margin:0 auto}
+.nb{flex:1;padding:10px 4px 8px;text-align:center;cursor:pointer;border:none;background:none}
+.ni{font-size:16px;margin-bottom:2px}
+.nl{font-size:10px;letter-spacing:1px;color:#2a4a6b}
+.nb.act .nl{color:#00d4ff}
+.nb.act{border-top:2px solid #00d4ff}
 </style>
 </head>
 <body>
-<canvas id="three"></canvas>
 <div class="app">
-<div class="content">
-  <div class="hdr">
-    <div>
-      <div class="brand">AR<em>G</em>US</div>
-      <div class="brand-sub">SIGNAL INTELLIGENCE</div>
-    </div>
-    <div>
-      <div class="live-row"><div class="dot"></div><div class="live-lbl">LIVE</div></div>
-      <div class="clk" id="clk">--:-- TZK</div>
-    </div>
-  </div>
 
-  <div class="glass hero">
-    <div class="hero-inner">
+<div class="hdr">
+  <div><div class="brand orb">АРГУС</div><div class="brand-sub">РАЗВЕДКА СИГНАЛОВ v3.0</div></div>
+  <div class="hdr-r">
+    <div class="live-row"><div class="ldot"></div><div class="lt">ОНЛАЙН</div></div>
+    <div class="ut" id="clk">--:--:-- UTC</div>
+  </div>
+</div>
+
+<!-- ЭКРАН 1: ОБЗОР -->
+<div class="screen active" id="s1">
+  <div class="ticker"><div class="tk-in" id="tkr">
+    <span class="ti r">⬇ BTC — СЛОМ СТРУКТУРЫ</span>
+    <span class="ti y">👀 НАБЛЮДЕНИЕ АКТИВНО</span>
+    <span class="ti">🐋 АРКХАМ ОНЛАЙН</span>
+    <span class="ti y">⚡ РЫНОК СКАНИРУЕТСЯ</span>
+    <span class="ti r">⬇ BTC — СЛОМ СТРУКТУРЫ</span>
+    <span class="ti y">👀 НАБЛЮДЕНИЕ АКТИВНО</span>
+    <span class="ti">🐋 АРКХАМ ОНЛАЙН</span>
+    <span class="ti y">⚡ РЫНОК СКАНИРУЕТСЯ</span>
+  </div></div>
+
+  <div class="panel">
+    <div class="ptitle"><span class="pdot"></span>НАСТРОЕНИЕ РЫНКА</div>
+    <div class="speedo"><div class="si">
+      <svg width="108" height="68" viewBox="0 0 108 68">
+        <path d="M 10 63 A 45 45 0 0 1 98 63" fill="none" stroke="#1a3a5c" stroke-width="8" stroke-linecap="round"/>
+        <path d="M 10 63 A 45 45 0 0 1 32 25" fill="none" stroke="#ff3b5c" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+        <path d="M 32 25 A 45 45 0 0 1 54 18" fill="none" stroke="#ff8c00" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+        <path d="M 54 18 A 45 45 0 0 1 76 25" fill="none" stroke="#ffcc00" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+        <path d="M 76 25 A 45 45 0 0 1 98 63" fill="none" stroke="#00ff88" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+        <line id="needle" x1="54" y1="63" x2="18" y2="30" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="54" cy="63" r="4" fill="#00d4ff"/>
+        <text x="7" y="72" fill="#ff3b5c" font-size="7" font-family="Share Tech Mono">0</text>
+        <text x="93" y="72" fill="#00ff88" font-size="7" font-family="Share Tech Mono">100</text>
+      </svg>
       <div>
-        <div class="fg-big" id="fg-n">--</div>
-        <div class="fg-sub" id="fg-s">LOADING...</div>
+        <div class="sv orb" id="fgVal">--</div>
+        <div class="sl ef" id="fgLabel">ЗАГРУЗКА...</div>
+        <div class="sd" id="fgDesc">Получаем данные...</div>
       </div>
-      <div class="hero-stats">
-        <div class="hst-lbl">BTC_DOM</div>
-        <div class="hst-val" id="btcd">--</div>
-        <div class="hst-lbl">STABLECOIN</div>
-        <div class="hst-val" style="color:#4ade80" id="stbl">--</div>
-        <div class="bar-outer"><div class="bar-inner" id="g-fill" style="width:50%"></div></div>
-      </div>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="ptitle"><span class="pdot"></span>МАКРО ПОКАЗАТЕЛИ</div>
+    <div class="mgrid">
+      <div class="mc"><div class="ml">ДОМИНАНС BTC</div><div class="mv orb" id="btcDom">--%</div><div class="mch fl">→ Нейтрально</div></div>
+      <div class="mc"><div class="ml">СТЕЙБЛКОИНЫ</div><div class="mv orb" id="stable">--B</div><div class="mch up">↑ Топливо готово</div></div>
+      <div class="mc"><div class="ml">ЛИКВИДАЦИИ 4Ч</div><div class="mv orb" style="font-size:15px">--M</div><div class="mch fl">→ Данные</div></div>
+      <div class="mc"><div class="ml">ПОТОКИ КИТОВ</div><div class="mv orb" style="font-size:15px" id="whaleVol">--M</div><div class="mch fl" id="whaleSig">→ Нейтрально</div></div>
     </div>
   </div>
 
-  <div class="grid4">
-    <div class="glass mini"><div class="mini-l">COINS</div><div class="mini-v">12</div></div>
-    <div class="glass mini"><div class="mini-l">SIGNALS</div><div class="mini-v red" id="scnt">0</div></div>
-    <div class="glass mini"><div class="mini-l">LAYERS</div><div class="mini-v purple">4</div></div>
-    <div class="glass mini"><div class="mini-l">SCAN</div><div class="mini-v green">15m</div></div>
-  </div>
-
-  <div id="p-signals">
-    <div class="sec-lbl">active_signals</div>
-    <div id="sigs"><div class="loading">// loading signals...</div></div>
-    <div class="sec-lbl">funding_rate</div>
-    <div class="glass chart-wrap"><canvas id="fc" height="100"></canvas></div>
-  </div>
-
-  <div id="p-market" style="display:none">
-    <div class="sec-lbl">market_scan</div>
-    <div class="coin-grid" id="coins"><div class="loading">// loading...</div></div>
-  </div>
-
-  <div id="p-history" style="display:none">
-    <div class="sec-lbl">signals_history</div>
-    <div id="hist"><div class="loading">// loading history...</div></div>
-  </div>
-
-  <div id="p-settings" style="display:none">
-    <div class="sec-lbl">system_info</div>
-    <div class="glass" style="padding:4px 18px;margin-bottom:8px">
-      <div class="set-row"><span class="sk">version</span><span class="sv">v2.0</span></div>
-      <div class="set-row"><span class="sk">engine</span><span class="sv">4-layer</span></div>
-      <div class="set-row"><span class="sk">indicators</span><span class="sv">12</span></div>
-      <div class="set-row"><span class="sk">domains</span><span class="sv">10</span></div>
-      <div class="set-row"><span class="sk">mtf</span><span class="sv">1h + 4h</span></div>
-      <div class="set-row"><span class="sk">server</span><span class="sv g">hetzner_de</span></div>
-      <div class="set-row"><span class="sk">liquidations</span><span class="sv">binance_ws</span></div>
-      <div class="set-row"><span class="sk">cooldown</span><span class="sv">price-based</span></div>
-      <div class="set-row"><span class="sk">status</span><span class="sv g">operational</span></div>
+  <div class="panel">
+    <div class="ptitle"><span class="pdot"></span>АКТИВНОСТЬ СИСТЕМЫ</div>
+    <div class="agrid">
+      <div class="ac al"><div class="an r orb" id="sigCount">--</div><div class="al2">Сигналов сегодня</div></div>
+      <div class="ac wt"><div class="an y orb" id="watchCount">0</div><div class="al2">На наблюдении</div></div>
+      <div class="ac ok"><div class="an g orb" id="winRate">--</div><div class="al2">Win Rate</div></div>
     </div>
   </div>
 
-  <div class="nav">
-    <button class="nb active" onclick="go('signals',this)">signals</button>
-    <button class="nb" onclick="go('market',this)">market</button>
-    <button class="nb" onclick="go('history',this)">history</button>
-    <button class="nb" onclick="go('settings',this)">settings</button>
+  <div class="ubar">
+    <div class="ul">Обновлено: <span id="lastUpd">--:-- UTC</span></div>
+    <div class="un"><span id="nxtScan">--:--</span><div class="up2"><div class="uf" id="scanPr" style="width:0%"></div></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="ptitle"><span class="pdot"></span>ГОРЯЧИЕ МОНЕТЫ</div>
+    <div class="cscroll" id="hotCoins"><div style="font-size:12px;color:#4a7a9b;padding:10px">Загрузка...</div></div>
+  </div>
+
+  <div class="panel">
+    <div class="ptitle"><span class="pdot"></span>АРКХАМ — КИТЫ</div>
+    <div id="whaleBlock">
+      <div class="wr"><div class="wi">🐋</div><div class="winfo"><div class="wt2">ЗАГРУЗКА...</div><div class="ws">Получаем данные</div></div><div class="wv">--M</div></div>
+    </div>
   </div>
 </div>
+
+<!-- ЭКРАН 2: СИГНАЛЫ -->
+<div class="screen" id="s2">
+  <div class="tabs">
+    <div class="tab act" id="tab1" onclick="switchSigTab(1)">
+      <div class="tab-title">АКТИВНЫЕ</div>
+      <div class="tab-count r orb" id="activeCount">--</div>
+    </div>
+    <div class="tab" id="tab2" onclick="switchSigTab(2)">
+      <div class="tab-title">НАБЛЮДЕНИЕ</div>
+      <div class="tab-count y orb">0</div>
+    </div>
+  </div>
+  <div class="sig-sec show" id="sigSec1"></div>
+  <div class="sig-sec" id="sigSec2">
+    <div class="empty-state"><div class="empty-icon">⏳</div><div class="empty-title">НЕТ СИГНАЛОВ НА НАБЛЮДЕНИИ</div></div>
+  </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<!-- ЭКРАН 3: РЫНОК -->
+<div class="screen" id="s3">
+  <div class="filters" id="mktFilters">
+    <div class="flt act" onclick="mktFilter('all',this)">ВСЕ<span class="flt-num orb" style="color:#00d4ff" id="fAll">12</span></div>
+    <div class="flt bear" onclick="mktFilter('bear',this)">МЕДВЕЖ.<span class="flt-num orb" style="color:#ff3b5c" id="fBear">--</span></div>
+    <div class="flt bull" onclick="mktFilter('bull',this)">БЫЧЬИ<span class="flt-num orb" style="color:#00ff88" id="fBull">--</span></div>
+    <div class="flt watch" onclick="mktFilter('watch',this)">НЕЙТР.<span class="flt-num orb" style="color:#ffcc00" id="fWatch">--</span></div>
+  </div>
+  <div id="coinList"><div style="font-size:12px;color:#4a7a9b;padding:20px;text-align:center">Загрузка...</div></div>
+</div>
+
+<!-- ЭКРАН 4: ИСТОРИЯ -->
+<div class="screen" id="s4">
+  <div class="stats-grid">
+    <div class="stat-box neu"><div class="stat-lbl">ВСЕГО СИГНАЛОВ</div><div class="stat-val b orb" id="hTotal">--</div><div class="stat-sub">за 7 дней</div></div>
+    <div class="stat-box win"><div class="stat-lbl">WIN RATE</div><div class="stat-val g orb" id="hWin">--%</div><div class="stat-sub" id="hWinSub">-- побед</div></div>
+    <div class="stat-box neu"><div class="stat-lbl">СРЕДНИЙ PnL</div><div class="stat-val g orb" id="hAvg">--%</div><div class="stat-sub">на сделку</div></div>
+    <div class="stat-box best"><div class="stat-lbl">ЛУЧШАЯ</div><div class="stat-val y orb" id="hBest">--%</div><div class="stat-sub" id="hBestSym">--</div></div>
+  </div>
+  <div class="filters">
+    <div class="flt act" onclick="histFilter('all',this)">ВСЕ</div>
+    <div class="flt bear" onclick="histFilter('loss',this)">ПОТЕРИ</div>
+    <div class="flt bull" onclick="histFilter('win',this)">ПОБЕДЫ</div>
+  </div>
+  <div id="histList"><div style="font-size:12px;color:#4a7a9b;padding:20px;text-align:center">Загрузка истории...</div></div>
+</div>
+
+</div>
+
+<div class="nav">
+  <button class="nb act" onclick="showScreen(1)"><div class="ni">⬡</div><div class="nl">ОБЗОР</div></button>
+  <button class="nb" onclick="showScreen(2)"><div class="ni">◎</div><div class="nl">СИГНАЛЫ</div></button>
+  <button class="nb" onclick="showScreen(3)"><div class="ni">▤</div><div class="nl">РЫНОК</div></button>
+  <button class="nb" onclick="showScreen(4)"><div class="ni">◷</div><div class="nl">ИСТОРИЯ</div></button>
+</div>
+
+<div class="overlay" id="overlay">
+  <div style="max-width:440px;margin:0 auto">
+    <div class="det-hdr">
+      <div class="det-sym orb" id="dSym">--</div>
+      <div class="det-close" onclick="closeOverlay()">✕</div>
+    </div>
+    <div id="overlayContent"></div>
+  </div>
+</div>
+
 <script>
-if(window.Telegram&&window.Telegram.WebApp){window.Telegram.WebApp.ready();window.Telegram.WebApp.expand();}
-
-function tick(){const n=new Date();const u=new Date(n.getTime()+5*3600000);document.getElementById('clk').textContent=String(u.getUTCHours()).padStart(2,'0')+':'+String(u.getUTCMinutes()).padStart(2,'0')+' TZK';}
-tick();setInterval(tick,1000);
-
-const c3=document.getElementById('three');
-const W=()=>window.innerWidth,H=()=>window.innerHeight;
-const renderer=new THREE.WebGLRenderer({canvas:c3,alpha:true,antialias:true});
-renderer.setSize(W(),H());renderer.setPixelRatio(Math.min(devicePixelRatio,2));
-const scene=new THREE.Scene();
-const camera=new THREE.PerspectiveCamera(55,W()/H(),0.1,100);
-camera.position.set(0,0,5);
-const geo=new THREE.IcosahedronGeometry(2.0,4);
-const mat=new THREE.MeshStandardMaterial({color:0xd4d4d4,metalness:0.95,roughness:0.05});
-const mesh=new THREE.Mesh(geo,mat);scene.add(mesh);
-const wgeo=new THREE.IcosahedronGeometry(2.02,1);
-const wmat=new THREE.MeshBasicMaterial({color:0xffffff,wireframe:true,opacity:0.06,transparent:true});
-const wmesh=new THREE.Mesh(wgeo,wmat);scene.add(wmesh);
-const tgeo=new THREE.TorusGeometry(3.0,0.012,8,100);
-const tmat=new THREE.MeshBasicMaterial({color:0xc084fc,opacity:0.18,transparent:true});
-const ring=new THREE.Mesh(tgeo,tmat);ring.rotation.x=Math.PI/2.5;scene.add(ring);
-const tgeo2=new THREE.TorusGeometry(3.6,0.008,8,100);
-const tmat2=new THREE.MeshBasicMaterial({color:0xa78bfa,opacity:0.1,transparent:true});
-const ring2=new THREE.Mesh(tgeo2,tmat2);ring2.rotation.x=Math.PI/3.5;ring2.rotation.z=0.8;scene.add(ring2);
-scene.add(new THREE.AmbientLight(0xffffff,1.2));
-const pL=new THREE.PointLight(0xffffff,3,15);pL.position.set(3,3,3);scene.add(pL);
-const pL2=new THREE.PointLight(0xc084fc,2,12);pL2.position.set(-3,-2,2);scene.add(pL2);
-const pL3=new THREE.PointLight(0x60a5fa,1.5,10);pL3.position.set(0,3,-2);scene.add(pL3);
-window.addEventListener('resize',()=>{renderer.setSize(W(),H());camera.aspect=W()/H();camera.updateProjectionMatrix();});
-let tt=0;
-(function anim(){requestAnimationFrame(anim);tt+=0.003;
-mesh.rotation.x=tt*0.2;mesh.rotation.y=tt*0.4;
-wmesh.rotation.x=tt*0.2;wmesh.rotation.y=tt*0.4;
-ring.rotation.y=tt*0.12;ring2.rotation.y=-tt*0.08;
-pL.position.x=Math.sin(tt)*4;pL.position.y=Math.cos(tt*0.7)*3;
-pL2.position.x=Math.cos(tt)*3;pL2.position.z=Math.sin(tt)*3;
-renderer.render(scene,camera);})();
-
 const DATA_URL='https://raw.githubusercontent.com/xsinus19/argus-miniapp/main/data.json';
-const FALLBACK={
-  fear_greed:25,fear_label:'EXTREME_FEAR',btc_dom:'57.8%',stablecoin:'$321.8B',
-  signals:[
-    {sym:'RENDER/USDT',dir:'short',lvl:'STRONG',ep:2.26,sl:2.48,tp1:1.90,tp2:1.62,tp3:1.34,funding:'100th',rr:'1:2.0',score:0.72},
-    {sym:'FET/USDT',dir:'short',lvl:'MODERATE',ep:0.2459,sl:0.27,tp1:0.21,tp2:0.18,tp3:0.15,funding:'100th',rr:'1:2.0',score:0.69},
-  ],
-  coins:[
-    {s:'BTC',t:'BEAR',rsi:35,fp:100},{s:'ETH',t:'BEAR',rsi:38,fp:54},
-    {s:'DOGE',t:'BEAR',rsi:54,fp:81},{s:'TON',t:'RANGE',rsi:48,fp:5},
-    {s:'SOL',t:'BEAR',rsi:42,fp:12},{s:'LTC',t:'BEAR',rsi:47,fp:6},
-    {s:'LINK',t:'BEAR',rsi:44,fp:7},{s:'RENDER',t:'BULL',rsi:62,fp:100},
-    {s:'FET',t:'BULL',rsi:65,fp:100},{s:'BCH',t:'BEAR',rsi:40,fp:22},
-    {s:'WIF',t:'BEAR',rsi:36,fp:8},{s:'POL',t:'BEAR',rsi:41,fp:59},
-  ],
-  history:[],
-  chart:{labels:['21:00','01:00','05:00','09:00','13:00','17:00','21:00','01:00'],ton:[-0.000046,-0.000093,-0.000132,-0.000062,-0.000200,-0.000306,-0.000548,-0.001655],render:[0.000020,0.000030,0.000040,0.000045,0.000048,0.000050,0.000050,0.000050],btc:[0.000060,0.000070,0.000080,0.000085,0.000090,0.000095,0.000100,0.000100]}
-};
-
-let D=FALLBACK;
-let chart=null;
+let appData={};let coinsData={};let histData=[];
 
 async function loadData(){
   try{
     const r=await fetch(DATA_URL+'?t='+Date.now());
-    if(r.ok){D=await r.json();}
-  }catch(e){console.log('Using fallback data');}
-  render();
+    appData=await r.json();
+    renderAll();
+  }catch(e){console.log('err',e);}
 }
 
-function render(){
-  document.getElementById('fg-n').textContent=D.fear_greed||'--';
-  document.getElementById('fg-s').textContent=D.fear_label||'--';
-  document.getElementById('btcd').textContent=D.btc_dom||'--';
-  document.getElementById('stbl').textContent=D.stablecoin||'--';
-  const gp=Math.min(100,Math.max(0,D.fear_greed||50));
-  document.getElementById('g-fill').style.width=gp+'%';
-  rSigs();rCoins();rHist();buildChart();
+function renderAll(){
+  renderOverview();
+  renderSignals();
+  renderMarket();
+  renderHistory();
+  updateTicker();
 }
 
-function rSigs(){
-  const w=document.getElementById('sigs');
-  const sigs=D.signals||[];
-  document.getElementById('scnt').textContent=sigs.length;
-  if(!sigs.length){w.innerHTML='<div class="empty">// no_active_signals<br>silence = no setup<br>this is normal</div>';return;}
-  w.innerHTML=sigs.map(s=>{
-    const ep=s.ep<1?s.ep.toFixed(4):s.ep.toFixed(2);
-    const sl=s.sl<1?s.sl.toFixed(4):s.sl.toFixed(2);
-    const t1=s.tp1<1?s.tp1.toFixed(4):s.tp1.toFixed(2);
-    const isS=s.dir==='short';
-    const lvlMap={LEGENDARY:'t-leg',STRONG:'t-strong',MODERATE:'t-mod'};
-    return`<div class="glass-dark sig">
-      <div class="${isS?'sig-glow-red':'sig-glow-green'}"></div>
-      <div class="sig-bar${isS?'':' sig-bar-g'}"></div>
-      <div class="sig-top">
-        <div class="sig-sym">${s.sym}</div>
-        <div class="tags"><span class="t ${lvlMap[s.lvl]||'t-mod'}">${s.lvl}</span><span class="t ${isS?'t-short':'t-long'}">${s.dir.toUpperCase()}</span></div>
+// CLOCK
+function uc(){
+  const n=new Date();
+  document.getElementById('clk').textContent=
+    String(n.getUTCHours()).padStart(2,'0')+':'+
+    String(n.getUTCMinutes()).padStart(2,'0')+':'+
+    String(n.getUTCSeconds()).padStart(2,'0')+' UTC';
+}
+setInterval(uc,1000);uc();
+
+// SCAN TIMER
+function us(){
+  const n=new Date();
+  const sp=(n.getUTCMinutes()%15)*60+n.getUTCSeconds();
+  const sl=900-sp;
+  document.getElementById('nxtScan').textContent=
+    String(Math.floor(sl/60)).padStart(2,'0')+':'+String(sl%60).padStart(2,'0');
+  document.getElementById('scanPr').style.width=((900-sl)/900*100)+'%';
+}
+setInterval(us,1000);us();
+
+// OVERVIEW
+function renderOverview(){
+  const d=appData;if(!d)return;
+  if(d.fear_greed!==undefined){
+    document.getElementById('fgVal').textContent=d.fear_greed;
+    const labels={EXTREME_FEAR:'ЭКСТРЕМ. СТРАХ',FEAR:'СТРАХ',NEUTRAL:'НЕЙТРАЛЬНО',GREED:'ЖАДНОСТЬ',EXTREME_GREED:'ЭКСТРЕМ. ЖАДНОСТЬ'};
+    document.getElementById('fgLabel').textContent=labels[d.fear_label]||d.fear_label||'—';
+    const el=document.getElementById('fgLabel');
+    el.className='sl';
+    const fg=d.fear_greed;
+    if(fg<=25){el.classList.add('ef');document.getElementById('fgDesc').textContent='Рынок в зоне паники. Исторически — зона накопления.';}
+    else if(fg<=45){el.classList.add('f');document.getElementById('fgDesc').textContent='Рынок в зоне страха. Осторожно.';}
+    else if(fg<=55){el.classList.add('n');document.getElementById('fgDesc').textContent='Рынок нейтрален. Ждём сигнала.';}
+    else{el.classList.add('g');document.getElementById('fgDesc').textContent='Рынок в зоне жадности. Осторожно с лонгами.';}
+    // Needle
+    const ang=-90+(fg/100)*180;
+    const rad=ang*Math.PI/180;
+    const x2=54+38*Math.cos(rad);const y2=63+38*Math.sin(rad);
+    document.getElementById('needle').setAttribute('x2',x2.toFixed(1));
+    document.getElementById('needle').setAttribute('y2',y2.toFixed(1));
+  }
+  if(d.btc_dom)document.getElementById('btcDom').textContent=d.btc_dom;
+  if(d.stablecoin)document.getElementById('stable').textContent=d.stablecoin;
+  if(d.signals)document.getElementById('sigCount').textContent=d.signals.length;
+  if(d.updated){
+    const dt=new Date(d.updated);
+    document.getElementById('lastUpd').textContent=
+      String(dt.getUTCHours()).padStart(2,'0')+':'+String(dt.getUTCMinutes()).padStart(2,'0')+' UTC';
+  }
+  // Hot coins
+  if(d.coins&&d.coins.length){
+    const hot=d.coins.filter(c=>c.fp<=10||c.fp>=90||c.rsi<=25||c.rsi>=75);
+    const container=document.getElementById('hotCoins');
+    if(hot.length){
+      container.innerHTML=hot.map(c=>{
+        const isBear=c.t&&c.t.includes('bear');
+        const isBull=c.t&&c.t.includes('bull');
+        const cls=isBear?'br':isBull?'bu':'wt';
+        const stTxt=isBear?'● МЕДВЕЖИЙ':isBull?'● БЫЧИЙ':'◎ НЕЙТРАЛЬНЫЙ';
+        const stCls=isBear?'br':isBull?'bu':'wt';
+        const rsiCls=c.rsi<=30?'r':c.rsi>=70?'r':'';
+        const fpCls=c.fp<=10?'g':c.fp>=90?'r':'';
+        return `<div class="cc ${cls}"><div class="cs">${c.s}</div><div class="cst ${stCls}">${stTxt}</div>
+          <div class="cr2"><span class="ck">RSI</span><span class="cv ${rsiCls}">${c.rsi||'--'}</span></div>
+          <div class="cr2"><span class="ck">ФАНД</span><span class="cv ${fpCls}">${c.fp!=null?c.fp+'%':'--'}</span></div></div>`;
+      }).join('');
+    }else{container.innerHTML='<div style="font-size:12px;color:#4a7a9b;padding:10px">Нет горячих монет</div>';}
+  }
+}
+
+// SIGNALS
+function renderSignals(){
+  const sigs=appData.signals||[];
+  document.getElementById('activeCount').textContent=sigs.length;
+  const sec1=document.getElementById('sigSec1');
+  if(!sigs.length){
+    sec1.innerHTML='<div class="empty-state"><div class="empty-icon">◎</div><div class="empty-title">НЕТ АКТИВНЫХ СИГНАЛОВ</div><div class="empty-sub">Молчание = нет сетапа. Это норма.</div></div>';
+    return;
+  }
+  sec1.innerHTML=sigs.map((s,i)=>{
+    const isLong=s.dir==='long';
+    const cardCls=isLong?'long':'short';
+    const dirTag=isLong?'<span class="tag long">ЛОНГ</span>':'<span class="tag short">ШОРТ</span>';
+    return `<div class="sig-card ${cardCls}" onclick="openSigDetail(${i})">
+      <div class="sc-top">
+        <div><div class="sc-sym">${s.sym}</div><div class="sc-time">Вход: $${s.ep}</div></div>
+        <div class="sc-tags">${dirTag}</div>
       </div>
-      <div class="sig-data">
-        <div><div class="sd-l">entry</div><div class="sd-v">$${ep}</div></div>
-        <div><div class="sd-l">stop</div><div class="sd-v r">$${sl}</div></div>
-        <div><div class="sd-l">tp1</div><div class="sd-v g">$${t1}</div></div>
-        <div><div class="sd-l">funding</div><div class="sd-v r">${s.funding}</div></div>
-        <div><div class="sd-l">r/r</div><div class="sd-v">${s.rr}</div></div>
-        <div><div class="sd-l">score</div><div class="sd-v">${s.score.toFixed(2)}</div></div>
+      <div class="sc-prices">
+        <div class="sp-box"><div class="sp-lbl">ВХОД</div><div class="sp-val">$${s.ep}</div></div>
+        <div class="sp-box"><div class="sp-lbl">TP1</div><div class="sp-val up">$${s.tp1||'--'}</div></div>
+        <div class="sp-box"><div class="sp-lbl">СТОП</div><div class="sp-val dn">$${s.sl||'--'}</div></div>
       </div>
-      <div class="sc-row"><div class="sc-track"><div class="sc-fill" style="width:${Math.round(s.score*100)}%"></div></div><div class="sc-n">${s.score.toFixed(2)}</div></div>
+      <div class="tp-lbl">ЦЕЛИ</div>
+      ${['tp1','tp2','tp3'].map(tp=>`<div class="tp-row">
+        <div class="tp-name miss">${tp.toUpperCase()}</div>
+        <div class="tp-track"><div class="tp-fill-d" style="width:0%"></div></div>
+        <div class="tp-price">$${s[tp]||'--'}</div>
+        <div class="tp-badge miss">ждём</div>
+      </div>`).join('')}
     </div>`;
   }).join('');
 }
 
-function rCoins(){
-  const coins=D.coins||[];
-  document.getElementById('coins').innerHTML=coins.map(c=>{
-    const tc=c.t==='BEAR'?'ctr-bear':c.t==='BULL'?'ctr-bull':'ctr-range';
-    const fc=c.fp>=90?'#ff6b6b':c.fp<=10?'#4ade80':c.fp>=70?'#fb923c':'rgba(255,255,255,0.4)';
-    const rc=c.rsi<=35?'#ff6b6b':c.rsi>=65?'#4ade80':'rgba(255,255,255,0.85)';
-    return`<div class="glass coin">
-      <div class="ctop"><div class="csym">${c.s}</div><div class="ctr ${tc}">${c.t}</div></div>
-      <div class="cstats">
-        <div><div class="cl">RSI</div><div class="cv" style="color:${rc}">${c.rsi}</div></div>
-        <div style="text-align:right"><div class="cl">FUNDING</div><div class="cv" style="color:${fc}">${c.fp}th</div></div>
+function openSigDetail(i){
+  const s=(appData.signals||[])[i];if(!s)return;
+  const isLong=s.dir==='long';
+  document.getElementById('dSym').textContent=s.sym;
+  document.getElementById('overlayContent').innerHTML=`
+    <div class="det-badge open">${isLong?'● ЛОНГ ОТКРЫТ':'● ШОРТ ОТКРЫТ'}</div>
+    <div class="det-section">
+      <div class="det-stitle"><span class="det-pdot"></span>ПАРАМЕТРЫ</div>
+      <div class="det-grid">
+        <div class="det-cell"><div class="det-lbl">ВХОД</div><div class="det-val">$${s.ep}</div></div>
+        <div class="det-cell"><div class="det-lbl">СТОП</div><div class="det-val r">$${s.sl||'--'}</div></div>
       </div>
-      <div class="cfbar"><div class="cfb" style="width:${Math.min(100,c.fp)}%;background:${fc}"></div></div>
+    </div>
+    <div class="det-section">
+      <div class="det-stitle"><span class="det-pdot"></span>ЦЕЛИ</div>
+      ${['tp1','tp2','tp3'].map(tp=>`<div class="det-tp-row">
+        <div class="det-tp-name miss">${tp.toUpperCase()}</div>
+        <div class="det-tp-track"><div class="det-tp-fill-d" style="width:0%"></div></div>
+        <div class="det-tp-price">$${s[tp]||'--'}</div>
+        <div class="det-tp-badge miss">ждём</div>
+      </div>`).join('')}
+    </div>`;
+  document.getElementById('overlay').classList.add('show');
+}
+
+// MARKET
+const STATIC_COINS=[
+  {s:'BTC',t:'strong_bearish',rsi:25.6,fp:97,struct:'BOS↓',hot:'bos',hotTxt:'СЛОМ'},
+  {s:'ETH',t:'strong_bearish',rsi:29.1,fp:30,struct:'CHoCH↓',hot:'choch',hotTxt:'СМЕНА'},
+  {s:'SOL',t:'strong_bearish',rsi:25.9,fp:5,struct:'BOS↓',hot:'',hotTxt:''},
+  {s:'LTC',t:'strong_bearish',rsi:26.3,fp:0,struct:'BOS↓',hot:'',hotTxt:''},
+  {s:'LINK',t:'strong_bearish',rsi:18.9,fp:1,struct:'CHoCH↓',hot:'choch',hotTxt:'СМЕНА'},
+  {s:'WIF',t:'strong_bearish',rsi:20.0,fp:1,struct:'BOS↓',hot:'',hotTxt:''},
+  {s:'DOGE',t:'strong_bearish',rsi:26.3,fp:7,struct:'BOS↓',hot:'',hotTxt:''},
+  {s:'TON',t:'ranging',rsi:31.7,fp:2,struct:'RANGING',hot:'',hotTxt:''},
+  {s:'BCH',t:'strong_bearish',rsi:13.2,fp:22,struct:'BOS↓',hot:'',hotTxt:''},
+  {s:'RENDER',t:'ranging',rsi:26.7,fp:100,struct:'RANGING',hot:'',hotTxt:''},
+  {s:'POL',t:'ranging',rsi:13.6,fp:24,struct:'RANGING',hot:'pot',hotTxt:'ЖДЁМ'},
+  {s:'FET',t:'bullish',rsi:32.6,fp:45,struct:'CHoCH↑',hot:'',hotTxt:''},
+];
+
+function renderMarket(){
+  const raw=appData.coins&&appData.coins.length?appData.coins:null;
+  const coins=raw?raw.map(c=>({
+    s:c.s,t:c.t,rsi:c.rsi,fp:c.fp,
+    struct:c.t&&c.t.includes('bear')?'BOS↓':c.t&&c.t.includes('bull')?'CHoCH↑':'RANGING',
+    hot:c.fp<=5||c.fp>=95?'bos':'',hotTxt:c.fp<=5||c.fp>=95?'ЭКСТРЕМ':''
+  })):STATIC_COINS;
+
+  const bears=coins.filter(c=>c.t&&c.t.includes('bear')).length;
+  const bulls=coins.filter(c=>c.t&&c.t.includes('bull')).length;
+  const watches=coins.length-bears-bulls;
+  document.getElementById('fAll').textContent=coins.length;
+  document.getElementById('fBear').textContent=bears;
+  document.getElementById('fBull').textContent=bulls;
+  document.getElementById('fWatch').textContent=watches;
+  coinsData={};coins.forEach(c=>coinsData[c.s]=c);
+
+  document.getElementById('coinList').innerHTML=coins.map(c=>{
+    const isBear=c.t&&c.t.includes('bear');
+    const isBull=c.t&&c.t.includes('bull');
+    const rowCls=isBear?'bearish':isBull?'bullish':'ranging';
+    const tCls=isBear?'r':isBull?'g':'y';
+    const sCls=isBear?'bear':isBull?'bull':'range';
+    const rsiCls=c.rsi<=25?'r':'';
+    const fpCls=c.fp<=5?'g':c.fp>=95?'r':'';
+    const dtype=isBear?'bear':isBull?'bull':'watch';
+    const hotBadge=c.hot?`<span class="cr-hot ${c.hot}">${c.hotTxt}</span>`:'';
+    return `<div class="coin-row ${rowCls}" data-type="${dtype}" onclick="openCoinDetail('${c.s}')">
+      <div class="traffic ${tCls}"></div>
+      <div class="cr-sym">${c.s}</div>
+      <div class="cr-mid"><div class="cr-struct ${sCls}">${c.struct}${hotBadge}</div></div>
+      <div class="cr-stats">
+        <div class="cr-stat"><div class="cr-stat-lbl">RSI</div><div class="cr-stat-val ${rsiCls}">${c.rsi||'--'}</div></div>
+        <div class="cr-stat"><div class="cr-stat-lbl">ФАНД</div><div class="cr-stat-val ${fpCls}">${c.fp!=null?c.fp+'%':'--'}</div></div>
+      </div>
+      <div class="cr-arrow">›</div>
     </div>`;
   }).join('');
 }
 
-function rHist(){
-  const hist=D.history||[];
-  const w=document.getElementById('hist');
-  if(!hist.length){w.innerHTML='<div class="empty">// no_history_yet<br>signals will appear here</div>';return;}
-  w.innerHTML=hist.slice().reverse().slice(0,10).map(h=>{
-    const ep=h.ep<1?parseFloat(h.ep).toFixed(4):parseFloat(h.ep).toFixed(2);
-    const rc=h.result==='open'?'r-open':h.result&&h.result.includes('tp')?'r-tp':'r-sl';
-    const rt=h.result==='open'?'// open':h.result==='sl'?'✗ SL':h.result?'✓ '+h.result.toUpperCase():'--';
-    return`<div class="glass-dark hist-row">
-      <div><div class="hsym">${h.sym}</div><div class="hsub">$${ep} · ${h.time||''}</div></div>
-      <div class="${rc}">${rt}</div>
-    </div>`;
-  }).join('');
-}
-
-function buildChart(){
-  const cd=D.chart||FALLBACK.chart;
-  if(chart){chart.destroy();}
-  chart=new Chart(document.getElementById('fc'),{
-    type:'line',
-    data:{
-      labels:cd.labels,
-      datasets:[
-        {label:'TON',data:cd.ton,borderColor:'#4ade80',backgroundColor:'rgba(74,222,128,0.06)',borderWidth:2,pointRadius:3,fill:true,tension:0.4},
-        {label:'RENDER',data:cd.render,borderColor:'#ff6b6b',backgroundColor:'rgba(255,107,107,0.06)',borderWidth:2,pointRadius:3,fill:true,tension:0.4},
-        {label:'BTC',data:cd.btc,borderColor:'#c084fc',backgroundColor:'rgba(192,132,252,0.06)',borderWidth:2,pointRadius:3,fill:true,tension:0.4},
-      ]
-    },
-    options:{responsive:true,interaction:{mode:'index',intersect:false},
-      plugins:{legend:{position:'top',labels:{font:{size:11,family:'JetBrains Mono'},color:'rgba(255,255,255,0.45)',boxWidth:10,padding:10}},
-      tooltip:{backgroundColor:'rgba(10,6,30,0.9)',borderColor:'rgba(255,255,255,0.15)',borderWidth:1,titleColor:'rgba(255,255,255,0.5)',bodyColor:'#fff',callbacks:{label:c=>` ${c.dataset.label}: ${(c.raw*100).toFixed(4)}%`}}},
-      scales:{
-        x:{ticks:{font:{size:10,family:'JetBrains Mono'},color:'rgba(255,255,255,0.3)'},grid:{color:'rgba(255,255,255,0.04)'}},
-        y:{ticks:{font:{size:10,family:'JetBrains Mono'},color:'rgba(255,255,255,0.3)',callback:v=>(v*100).toFixed(3)+'%'},grid:{color:'rgba(255,255,255,0.04)'}}
-      }
-    }
+function mktFilter(type,el){
+  document.querySelectorAll('#mktFilters .flt').forEach(f=>f.classList.remove('act'));
+  el.classList.add('act');
+  document.querySelectorAll('.coin-row').forEach(r=>{
+    const t=r.dataset.type;
+    r.style.display=(type==='all'||(type==='bear'&&t==='bear')||(type==='bull'&&t==='bull')||(type==='watch'&&t==='watch'))?'flex':'none';
   });
 }
 
-function go(name,btn){
-  ['signals','market','history','settings'].forEach(p=>document.getElementById('p-'+p).style.display='none');
-  document.getElementById('p-'+name).style.display='block';
-  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
+function openCoinDetail(sym){
+  const c=coinsData[sym]||{};
+  const isBear=c.t&&c.t.includes('bear');
+  const isBull=c.t&&c.t.includes('bull');
+  const badge=isBear?'bear':isBull?'bull':'range';
+  const badgeTxt=isBear?'● МЕДВЕЖИЙ':isBull?'● БЫЧИЙ':'◎ НЕЙТРАЛЬНЫЙ';
+  const tfCls=isBear?'bear':isBull?'bull':'range';
+  const tf=isBear?'МЕДВЕЖИЙ':isBull?'БЫЧИЙ':'RANGING';
+  document.getElementById('dSym').textContent=sym+'/USDT';
+  document.getElementById('overlayContent').innerHTML=`
+    <div class="det-badge ${badge}">${badgeTxt}</div>
+    <div class="det-section">
+      <div class="det-stitle"><span class="det-pdot"></span>ТАЙМФРЕЙМЫ</div>
+      <div class="tf-grid">
+        <div class="tf-box"><div class="tf-lbl">4Ч</div><div class="tf-val ${tfCls}">${tf}</div></div>
+        <div class="tf-box"><div class="tf-lbl">1Ч</div><div class="tf-val ${tfCls}">${tf}</div></div>
+        <div class="tf-box"><div class="tf-lbl">15М</div><div class="tf-val ${tfCls}">${c.struct||'--'}</div></div>
+      </div>
+    </div>
+    <div class="det-section">
+      <div class="det-stitle"><span class="det-pdot"></span>ИНДИКАТОРЫ</div>
+      <div class="det-grid">
+        <div class="det-cell"><div class="det-lbl">RSI (14)</div><div class="det-val ${c.rsi<=30?'r':''}">${c.rsi||'--'}</div></div>
+        <div class="det-cell"><div class="det-lbl">ФАНДИНГ</div><div class="det-val ${c.fp<=5?'g':c.fp>=95?'r':''}">${c.fp!=null?c.fp+'th %':'--'}</div></div>
+      </div>
+    </div>
+    <div class="det-section">
+      <div class="det-stitle"><span class="det-pdot"></span>СТРУКТУРА</div>
+      <div class="struct-row">
+        ${c.struct&&c.struct!=='RANGING'?`<span class="struct-tag ${isBear?'bos':'choch'}">${c.struct}</span>`:'<span class="struct-tag none">Нет активной структуры</span>'}
+      </div>
+    </div>`;
+  document.getElementById('overlay').classList.add('show');
 }
 
+// HISTORY
+function renderHistory(){
+  const hist=appData.history||[];
+  histData=hist;
+  document.getElementById('hTotal').textContent=hist.length||'--';
+  const wins=hist.filter(h=>h.result&&h.result.startsWith('tp'));
+  const losses=hist.filter(h=>h.result==='sl');
+  const wr=hist.length?Math.round(wins.length/hist.length*100):0;
+  document.getElementById('hWin').textContent=hist.length?wr+'%':'--%';
+  document.getElementById('hWinSub').textContent=wins.length+' побед / '+losses.length+' потерь';
+  renderHistList(hist);
+}
+
+function renderHistList(list){
+  if(!list.length){
+    document.getElementById('histList').innerHTML='<div style="font-size:12px;color:#4a7a9b;padding:20px;text-align:center">История пуста</div>';
+    return;
+  }
+  document.getElementById('histList').innerHTML=list.map((h,i)=>{
+    const isLong=h.direction==='long';
+    const res=h.result||'open';
+    const rowCls=res.startsWith('tp')?'tp':res==='sl'?'sl':res==='open'?'open':'exp';
+    const resTxt=res.startsWith('tp')?'✓ '+res.toUpperCase()+' ДОСТИГНУТ':res==='sl'?'✕ СТОП':res==='open'?'⟳ ОТКРЫТА':'⏱ ИСТЁК';
+    const dt=h.time?new Date(h.time):null;
+    const dateStr=dt?String(dt.getDate()).padStart(2,'0')+'.'+String(dt.getMonth()+1).padStart(2,'0')+' '+String(dt.getUTCHours()).padStart(2,'0')+':'+String(dt.getUTCMinutes()).padStart(2,'0'):'--';
+    return `<div class="trade-row ${rowCls}" onclick="openTradeDetail(${i})">
+      <div class="tr-top">
+        <div class="tr-sym">${h.symbol||'--'}</div>
+        <div class="tr-result ${rowCls}">${resTxt}</div>
+      </div>
+      <div class="tr-bottom">
+        <div class="tr-tags">
+          <span class="tr-dir ${isLong?'long':'short'}">${isLong?'ЛОНГ':'ШОРТ'}</span>
+          <span class="tr-date">${dateStr}</span>
+        </div>
+        <div class="tr-pnl">
+          <div class="tr-pnl-pct zero">--</div>
+          <div class="tr-pnl-r">--R</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function histFilter(type,el){
+  document.querySelectorAll('.filters .flt').forEach(f=>f.classList.remove('act'));
+  el.classList.add('act');
+  const hist=histData;
+  let filtered=hist;
+  if(type==='win')filtered=hist.filter(h=>h.result&&h.result.startsWith('tp'));
+  if(type==='loss')filtered=hist.filter(h=>h.result==='sl');
+  renderHistList(filtered);
+}
+
+function openTradeDetail(i){
+  const h=histData[i];if(!h)return;
+  const res=h.result||'open';
+  const rowCls=res.startsWith('tp')?'tp':res==='sl'?'sl':'open';
+  const resTxt=res.startsWith('tp')?'✓ '+res.toUpperCase()+' ДОСТИГНУТ':res==='sl'?'✕ СТОП':'⟳ ОТКРЫТА';
+  document.getElementById('dSym').textContent=h.symbol||'--';
+  document.getElementById('overlayContent').innerHTML=`
+    <div class="det-badge ${rowCls}">${resTxt}</div>
+    <div class="det-section">
+      <div class="det-stitle"><span class="det-pdot"></span>ПАРАМЕТРЫ</div>
+      <div class="det-grid">
+        <div class="det-cell"><div class="det-lbl">ВХОД</div><div class="det-val">$${h.entry_price||'--'}</div></div>
+        <div class="det-cell"><div class="det-lbl">СТОП</div><div class="det-val r">$${h.stop_loss||'--'}</div></div>
+        <div class="det-cell"><div class="det-lbl">TP1</div><div class="det-val g">$${h.tp1||'--'}</div></div>
+        <div class="det-cell"><div class="det-lbl">TP2</div><div class="det-val g">$${h.tp2||'--'}</div></div>
+      </div>
+    </div>`;
+  document.getElementById('overlay').classList.add('show');
+}
+
+// TICKER UPDATE
+function updateTicker(){
+  const coins=appData.coins||[];
+  const hot=coins.filter(c=>c.fp<=5||c.fp>=95||c.rsi<=25);
+  if(!hot.length)return;
+  const items=hot.map(c=>{
+    const bear=c.t&&c.t.includes('bear');
+    return `<span class="ti ${bear?'r':'g'}">${bear?'⬇':'⬆'} ${c.s} RSI:${c.rsi} ФАНД:${c.fp}%</span>`;
+  });
+  document.getElementById('tkr').innerHTML=[...items,...items].join('');
+}
+
+// NAV
+function showScreen(n){
+  document.querySelectorAll('.screen').forEach((s,i)=>s.classList.toggle('active',i===n-1));
+  document.querySelectorAll('.nb').forEach((b,i)=>b.classList.toggle('act',i===n-1));
+}
+function switchSigTab(n){
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('act',i===n-1));
+  document.querySelectorAll('.sig-sec').forEach((s,i)=>s.classList.toggle('show',i===n-1));
+}
+function closeOverlay(){document.getElementById('overlay').classList.remove('show');}
+
+// INIT
 loadData();
 setInterval(loadData,60000);
+if(window.Telegram&&window.Telegram.WebApp){
+  window.Telegram.WebApp.ready();
+  window.Telegram.WebApp.expand();
+}
 </script>
 </body>
 </html>
