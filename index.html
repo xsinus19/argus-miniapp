@@ -680,7 +680,7 @@ function renderHistList(list){
     const dateStr=dt?String(dt.getDate()).padStart(2,'0')+'.'+String(dt.getMonth()+1).padStart(2,'0')+' '+String(dt.getUTCHours()).padStart(2,'0')+':'+String(dt.getUTCMinutes()).padStart(2,'0'):'--';
     return `<div class="trade-row ${rowCls}" onclick="openTradeDetail(${i})">
       <div class="tr-top">
-        <div class="tr-sym">${h.symbol||'--'}</div>
+        <div class="tr-sym">${(h.symbol||'--').replace('/USDT','')}</div>
         <div class="tr-result ${rowCls}">${resTxt}</div>
       </div>
       <div class="tr-bottom">
@@ -712,7 +712,7 @@ function openTradeDetail(i){
   const res=h.result||'open';
   const rowCls=res.startsWith('tp')?'tp':res==='sl'?'sl':'open';
   const resTxt=res.startsWith('tp')?'✓ '+res.toUpperCase()+' ДОСТИГНУТ':res==='sl'?'✕ СТОП':'⟳ ОТКРЫТА';
-  document.getElementById('dSym').textContent=h.symbol||'--';
+  document.getElementById('dSym').textContent=(h.symbol||'--').replace('/USDT','');
   document.getElementById('overlayContent').innerHTML=`
     <div class="det-badge ${rowCls}">${resTxt}</div>
     <div class="det-section">
