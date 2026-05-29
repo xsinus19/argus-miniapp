@@ -500,7 +500,7 @@ function renderSignals(){
     const dirTag=isLong?'<span class="tag long">ЛОНГ</span>':'<span class="tag short">ШОРТ</span>';
     return `<div class="sig-card ${cardCls}" onclick="openSigDetail(${i})">
       <div class="sc-top">
-        <div><div class="sc-sym">${s.sym}</div><div class="sc-time">Вход: $${s.ep}</div></div>
+        <div><div class="sc-sym">${s.sym.replace("/USDT","")}</div><div class="sc-time">Вход: $${s.ep}</div></div>
         <div class="sc-tags">${dirTag}</div>
       </div>
       <div class="sc-prices">
@@ -509,12 +509,18 @@ function renderSignals(){
         <div class="sp-box"><div class="sp-lbl">СТОП</div><div class="sp-val dn">$${s.sl||'--'}</div></div>
       </div>
       <div class="tp-lbl">ЦЕЛИ</div>
-      ${['tp1','tp2','tp3'].map(tp=>`<div class="tp-row">
-        <div class="tp-name miss">${tp.toUpperCase()}</div>
-        <div class="tp-track"><div class="tp-fill-d" style="width:0%"></div></div>
-        <div class="tp-price">$${s[tp]||'--'}</div>
-        <div class="tp-badge miss">ждём</div>
-      </div>`).join('')}
+      ${['tp1','tp2','tp3'].map(tp=>{
+        const tpVal=parseFloat(s[tp]||0);
+        const ep=parseFloat(s.ep||0);
+        const isLong=s.dir==='long';
+        const range=isLong?tpVal-ep:ep-tpVal;
+        const pct=range>0?Math.min(100,Math.round(range/Math.abs(ep)*1000))+'%':'0%';
+        return `<div class="tp-row">
+          <div class="tp-name miss">${tp.toUpperCase()}</div>
+          <div class="tp-track"><div class="tp-fill-d" style="width:${pct}"></div></div>
+          <div class="tp-price">$${s[tp]||'--'}</div>
+          <div class="tp-badge miss">ждём</div>
+        </div>`;}).join('')}
     </div>`;
   }).join('');
 }
@@ -522,7 +528,7 @@ function renderSignals(){
 function openSigDetail(i){
   const s=(appData.signals||[])[i];if(!s)return;
   const isLong=s.dir==='long';
-  document.getElementById('dSym').textContent=s.sym;
+  document.getElementById('dSym').textContent=s.sym.replace('/USDT','');
   document.getElementById('overlayContent').innerHTML=`
     <div class="det-badge open">${isLong?'● ЛОНГ ОТКРЫТ':'● ШОРТ ОТКРЫТ'}</div>
     <div class="det-section">
