@@ -371,7 +371,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 
 <div class="nav">
   <button class="nb act" onclick="showScreen(1)"><div class="ni">⬡</div><div class="nl">ОБЗОР</div></button>
-  <button class="nb" onclick="showScreen(2)"><div class="ni">◎</div><div class="nl">СИГНАЛЫ</div></button>
+  <button class="nb" onclick="showScreen(2)"><div style="position:relative;display:inline-block"><div class="ni">◎</div><span id="sigDot" style="display:none;position:absolute;top:0px;right:-2px;width:8px;height:8px;background:#ff3b5c;border-radius:50%;box-shadow:0 0 6px #ff3b5c"></span></div><div class="nl">СИГНАЛЫ</div></button>
   <button class="nb" onclick="showScreen(3)"><div class="ni">▤</div><div class="nl">РЫНОК</div></button>
   <button class="nb" onclick="showScreen(4)"><div class="ni">◷</div><div class="nl">ИСТОРИЯ</div></button>
 </div>
@@ -489,16 +489,26 @@ function renderOverview(){
 function renderSignals(){
   const sigs=appData.signals||[];
   document.getElementById('activeCount').textContent=sigs.length;
+  const dot=document.getElementById('sigDot');
+  if(dot){dot.style.display=sigs.length>0?'inline-block':'none';}
+  // Дедупликация — один символ одна позиция, порядок сохраняем (последний wins)
+  const sigMap={};
+  [...sigs].reverse().forEach(s=>{const k=s.sym.replace('/USDT','');if(!sigMap[k])sigMap[k]=s;});
+  const uniqueSigs=Object.values(sigMap).reverse();
+  document.getElementById('activeCount').textContent=uniqueSigs.length;
+  const dot=document.getElementById('sigDot');
+  if(dot){dot.style.display=uniqueSigs.length>0?'block':'none';}
   const sec1=document.getElementById('sigSec1');
-  if(!sigs.length){
+  if(!uniqueSigs.length){
     sec1.innerHTML='<div class="empty-state"><div class="empty-icon">◎</div><div class="empty-title">НЕТ АКТИВНЫХ СИГНАЛОВ</div><div class="empty-sub">Молчание = нет сетапа. Это норма.</div></div>';
     return;
   }
-  sec1.innerHTML=sigs.map((s,i)=>{
+  const sigsRev=[...uniqueSigs].reverse();
+  sec1.innerHTML=sigsRev.map((s,i)=>{
     const isLong=s.dir==='long';
     const cardCls=isLong?'long':'short';
     const dirTag=isLong?'<span class="tag long">ЛОНГ</span>':'<span class="tag short">ШОРТ</span>';
-    return `<div class="sig-card ${cardCls}" onclick="openSigDetail(${i})">
+    return `<div class="sig-card ${cardCls}" onclick="openSigDetail(${sigsRev.length-1-i})">
       <div class="sc-top">
         <div><div class="sc-sym">${s.sym.replace("/USDT","")}</div><div class="sc-time">Вход: $${s.ep}</div></div>
         <div class="sc-tags">${dirTag}</div>
