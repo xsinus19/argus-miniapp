@@ -86,32 +86,84 @@
       "tp3": 8.0332
     }
   ],
-  "coins": [],
+  "liq_4h": 0.0,
+  "whale_usd": 151.1,
+  "whale_signal": "neutral",
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "strong_bearish",
+      "rsi": 53.7,
+      "fp": 89
+    },
+    {
+      "s": "ETH",
+      "t": "strong_bearish",
+      "rsi": 58.4,
+      "fp": 93
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 57.5,
+      "fp": 55
+    },
+    {
+      "s": "TON",
+      "t": "ranging",
+      "rsi": 48.5,
+      "fp": 71
+    },
+    {
+      "s": "SOL",
+      "t": "strong_bearish",
+      "rsi": 56.9,
+      "fp": 84
+    },
+    {
+      "s": "LTC",
+      "t": "strong_bearish",
+      "rsi": 61.0,
+      "fp": 75
+    },
+    {
+      "s": "LINK",
+      "t": "strong_bearish",
+      "rsi": 53.4,
+      "fp": 35
+    },
+    {
+      "s": "POL",
+      "t": "strong_bearish",
+      "rsi": 54.7,
+      "fp": 90
+    },
+    {
+      "s": "RENDER",
+      "t": "strong_bullish",
+      "rsi": 49.6,
+      "fp": 13
+    },
+    {
+      "s": "FET",
+      "t": "strong_bullish",
+      "rsi": 74.1,
+      "fp": 52
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 38.2,
+      "fp": 71
+    },
+    {
+      "s": "WIF",
+      "t": "bearish",
+      "rsi": 65.3,
+      "fp": 100
+    }
+  ],
   "history": [
-    {
-      "symbol": "RENDER/USDT",
-      "direction": "short",
-      "signal_level": "STRONG",
-      "entry_price": 2.1735,
-      "stop_loss": 2.426,
-      "tp1": 1.6685,
-      "tp2": 1.2898,
-      "tp3": 0.911,
-      "time": "2026-05-27T17:45:32.546676+00:00",
-      "result": "open"
-    },
-    {
-      "symbol": "RENDER/USDT",
-      "direction": "long",
-      "signal_level": "LEGENDARY",
-      "entry_price": 2.0069,
-      "stop_loss": 1.9115,
-      "tp1": 2.1976,
-      "tp2": 2.3407,
-      "tp3": 2.4838,
-      "time": "2026-05-28T09:52:01.231068+00:00",
-      "result": "open"
-    },
     {
       "symbol": "LINK/USDT",
       "direction": "long",
@@ -233,9 +285,11 @@
       "result": "open"
     }
   ],
-  "chart": {},
-  "liq_4h": 0,
-  "whale_usd": 156.9,
-  "whale_signal": "neutral",
-  "updated": "2026-05-29T17:43:40Z"
+  "chart": {
+    "labels": [],
+    "ton": [],
+    "render": [],
+    "btc": []
+  },
+  "updated": "2026-05-29T17:45:58Z"
 }
