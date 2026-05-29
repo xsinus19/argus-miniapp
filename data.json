@@ -1,13 +1,20 @@
 {
   "fear_greed": 23,
   "fear_label": "EXTREME_FEAR",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "strong_bearish",
+      "rsi": 39.2,
+      "fp": 56
+    }
+  ],
   "signals": [],
   "history": [],
   "chart": {},
-  "btc_dom": "57%",
+  "btc_dom": "57.8%",
   "stablecoin": "319B",
   "liq_4h": 0,
-  "whale_usd": 0,
-  "updated": "2026-05-29T14:29:59Z"
+  "whale_usd": 120.9,
+  "updated": "2026-05-29T14:34:43Z"
 }
