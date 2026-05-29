@@ -392,6 +392,7 @@ let appData={"fear_greed": 23, "fear_label": "EXTREME_FEAR", "btc_dom": "57.8%",
 
 async function loadData(){
   if(!DATA_URL){renderAll();const ls=document.getElementById('loadStatus');if(ls)ls.style.display='none';return;}
+  if(!DATA_URL){renderAll();const ls=document.getElementById('loadStatus');if(ls)ls.style.display='none';return;}
   try{
     const r=await fetch(DATA_URL+'?t='+Date.now());
     if(!r.ok)throw new Error('HTTP '+r.status);
