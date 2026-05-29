@@ -137,7 +137,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .flt.bull.act{color:#00ff88;border-color:#00ff88;border-top:2px solid #00ff88}
 .flt.watch.act{color:#ffcc00;border-color:#ffcc00;border-top:2px solid #ffcc00}
 .flt-num{font-family:'Orbitron',monospace;font-size:18px;display:block;margin-top:2px}
-.coin-row{display:flex;align-items:center;gap:8px;padding:12px 12px;background:#0a1520;border:1px solid #1a3a5c;margin-bottom:5px;cursor:pointer}
+.coin-row{display:flex;align-items:center;gap:10px;padding:15px 14px;background:#0a1520;border:1px solid #1a3a5c;margin-bottom:6px;cursor:pointer}
 .coin-row:hover{background:#0d1e2e}
 .coin-row.bearish{border-left:3px solid #ff3b5c}
 .coin-row.bullish{border-left:3px solid #00ff88}
@@ -146,9 +146,9 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .traffic.r{background:#ff3b5c;box-shadow:0 0 5px rgba(255,59,92,0.6)}
 .traffic.g{background:#00ff88;box-shadow:0 0 5px rgba(0,255,136,0.5)}
 .traffic.y{background:#ffcc00;box-shadow:0 0 5px rgba(255,204,0,0.4)}
-.cr-sym{font-family:'Orbitron',monospace;font-size:13px;font-weight:700;color:#fff;min-width:52px}
+.cr-sym{font-family:'Orbitron',monospace;font-size:15px;font-weight:700;color:#fff;min-width:58px}
 .cr-mid{flex:1}
-.cr-struct{font-size:11px}
+.cr-struct{font-size:13px}
 .cr-struct.bear{color:#ff3b5c}.cr-struct.bull{color:#00ff88}.cr-struct.range{color:#ffcc00}
 .cr-hot{font-size:9px;padding:1px 5px;margin-left:4px}
 .cr-hot.bos{background:rgba(255,59,92,0.15);color:#ff3b5c;border:1px solid rgba(255,59,92,0.3)}
@@ -156,8 +156,8 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .cr-hot.pot{background:rgba(0,212,255,0.1);color:#00d4ff;border:1px solid rgba(0,212,255,0.2)}
 .cr-stats{display:flex;gap:10px}
 .cr-stat{text-align:right}
-.cr-stat-lbl{font-size:9px;color:#2a4a6b;margin-bottom:2px}
-.cr-stat-val{font-size:12px;color:#c8e0f0}
+.cr-stat-lbl{font-size:11px;color:#2a4a6b;margin-bottom:3px}
+.cr-stat-val{font-size:14px;color:#c8e0f0}
 .cr-stat-val.r{color:#ff3b5c}.cr-stat-val.g{color:#00ff88}
 .cr-arrow{font-size:14px;color:#2a4a6b;flex-shrink:0}
 /* HISTORY */
@@ -568,7 +568,10 @@ const STATIC_COINS=[
 
 function renderMarket(){
   const raw=appData.coins&&appData.coins.length?appData.coins:null;
-  const coins=raw?raw.map(c=>({
+  // Дедупликация по символу
+  const seen=new Set();
+  const uniqueRaw=raw?raw.filter(c=>{if(seen.has(c.s))return false;seen.add(c.s);return true;}):null;
+  const coins=uniqueRaw?uniqueRaw.map(c=>({
     s:c.s,t:c.t,rsi:c.rsi,fp:c.fp,
     struct:c.t&&c.t.includes('bear')?'BOS↓':c.t&&c.t.includes('bull')?'CHoCH↑':'RANGING',
     hot:c.fp<=5||c.fp>=95?'bos':'',hotTxt:c.fp<=5||c.fp>=95?'ЭКСТРЕМ':''
@@ -623,7 +626,7 @@ function openCoinDetail(sym){
   const badgeTxt=isBear?'● МЕДВЕЖИЙ':isBull?'● БЫЧИЙ':'◎ НЕЙТРАЛЬНЫЙ';
   const tfCls=isBear?'bear':isBull?'bull':'range';
   const tf=isBear?'МЕДВЕЖИЙ':isBull?'БЫЧИЙ':'RANGING';
-  document.getElementById('dSym').textContent=sym+'/USDT';
+  document.getElementById('dSym').textContent=sym.replace('/USDT','');
   document.getElementById('overlayContent').innerHTML=`
     <div class="det-badge ${badge}">${badgeTxt}</div>
     <div class="det-section">
@@ -638,7 +641,7 @@ function openCoinDetail(sym){
       <div class="det-stitle"><span class="det-pdot"></span>ИНДИКАТОРЫ</div>
       <div class="det-grid">
         <div class="det-cell"><div class="det-lbl">RSI (14)</div><div class="det-val ${c.rsi<=30?'r':''}">${c.rsi||'--'}</div></div>
-        <div class="det-cell"><div class="det-lbl">ФАНДИНГ</div><div class="det-val ${c.fp<=5?'g':c.fp>=95?'r':''}">${c.fp!=null?c.fp+'th %':'--'}</div></div>
+        <div class="det-cell"><div class="det-lbl">ФАНДИНГ</div><div class="det-val ${c.fp<=5?'g':c.fp>=95?'r':''}">${c.fp!=null?c.fp+'%':'--'}</div></div>
       </div>
     </div>
     <div class="det-section">
