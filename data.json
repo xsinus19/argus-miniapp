@@ -10,41 +10,29 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 44.0,
-      "fp": 82
+      "rsi": 54.3,
+      "fp": 83
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 46.9,
-      "fp": 82
+      "rsi": 55.4,
+      "fp": 67
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 57.1,
-      "fp": 64
+      "rsi": 59.4,
+      "fp": 16
     },
     {
       "s": "TON",
       "t": "ranging",
-      "rsi": 41.5,
-      "fp": 54
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 50.8,
-      "fp": 51
-    },
-    {
-      "s": "LTC",
-      "t": "strong_bearish",
-      "rsi": 67.6,
-      "fp": 6
+      "rsi": 49.5,
+      "fp": 65
     }
   ],
   "history": [],
   "chart": {},
-  "updated": "2026-05-30T10:13:57Z"
+  "updated": "2026-05-30T14:58:45Z"
 }
