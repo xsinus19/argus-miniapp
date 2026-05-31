@@ -48,9 +48,33 @@
       "t": "strong_bearish",
       "rsi": 42.9,
       "fp": 55
+    },
+    {
+      "s": "POL",
+      "t": "strong_bearish",
+      "rsi": 47.7,
+      "fp": 78
+    },
+    {
+      "s": "RENDER",
+      "t": "bullish",
+      "rsi": 39.7,
+      "fp": 100
+    },
+    {
+      "s": "FET",
+      "t": "strong_bullish",
+      "rsi": 55.5,
+      "fp": 89
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 31.3,
+      "fp": 20
     }
   ],
   "history": [],
   "chart": {},
-  "updated": "2026-05-31T14:44:04Z"
+  "updated": "2026-05-31T14:44:30Z"
 }
