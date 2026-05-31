@@ -3,71 +3,7 @@
   "fear_label": "FEAR",
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
-  "signals": [
-    {
-      "sym": "POL/USDT",
-      "dir": "short",
-      "ep": 0.08889,
-      "sl": 0.09042,
-      "tp1": 0.08582,
-      "tp2": 0.08351,
-      "tp3": 0.08121
-    },
-    {
-      "sym": "LTC/USDT",
-      "dir": "long",
-      "ep": 52.541,
-      "sl": 51.066,
-      "tp1": 55.49,
-      "tp2": 57.702,
-      "tp3": 59.914
-    },
-    {
-      "sym": "TON/USDT",
-      "dir": "long",
-      "ep": 1.7745,
-      "sl": 1.6931,
-      "tp1": 1.9373,
-      "tp2": 2.0594,
-      "tp3": 2.1815
-    },
-    {
-      "sym": "WIF/USDT",
-      "dir": "short",
-      "ep": 0.18926,
-      "sl": 0.19756,
-      "tp1": 0.17268,
-      "tp2": 0.16024,
-      "tp3": 0.1478
-    },
-    {
-      "sym": "RENDER/USDT",
-      "dir": "short",
-      "ep": 2.0613,
-      "sl": 2.2116,
-      "tp1": 1.7607,
-      "tp2": 1.5353,
-      "tp3": 1.3098
-    },
-    {
-      "sym": "LINK/USDT",
-      "dir": "short",
-      "ep": 9.1065,
-      "sl": 9.4094,
-      "tp1": 8.5006,
-      "tp2": 8.0462,
-      "tp3": 7.5918
-    },
-    {
-      "sym": "BCH/USDT",
-      "dir": "short",
-      "ep": 299.374,
-      "sl": 312.339,
-      "tp1": 273.444,
-      "tp2": 253.997,
-      "tp3": 234.55
-    }
-  ],
+  "signals": [],
   "liq_4h": 0.0,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
@@ -75,74 +11,74 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 42.6,
-      "fp": 49
+      "rsi": 41.0,
+      "fp": 48
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 33.3,
-      "fp": 31
+      "rsi": 31.6,
+      "fp": 32
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 37.4,
-      "fp": 12
+      "rsi": 36.9,
+      "fp": 7
     },
     {
       "s": "TON",
-      "t": "bearish",
-      "rsi": 56.5,
-      "fp": 38
+      "t": "strong_bearish",
+      "rsi": 54.5,
+      "fp": 32
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 37.7,
+      "rsi": 36.3,
       "fp": 30
     },
     {
       "s": "LTC",
       "t": "strong_bearish",
-      "rsi": 32.5,
-      "fp": 11
+      "rsi": 30.4,
+      "fp": 15
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 39.7,
-      "fp": 25
+      "rsi": 38.9,
+      "fp": 24
     },
     {
       "s": "POL",
       "t": "ranging",
-      "rsi": 59.5,
+      "rsi": 59.8,
       "fp": 85
     },
     {
       "s": "RENDER",
       "t": "bullish",
-      "rsi": 46.0,
-      "fp": 100
+      "rsi": 44.6,
+      "fp": 34
     },
     {
       "s": "FET",
       "t": "strong_bullish",
-      "rsi": 54.2,
+      "rsi": 55.6,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 32.6,
+      "rsi": 31.6,
       "fp": 20
     },
     {
       "s": "WIF",
       "t": "strong_bearish",
-      "rsi": 46.7,
-      "fp": 100
+      "rsi": 42.0,
+      "fp": 54
     }
   ],
   "history": [
@@ -273,5 +209,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-05-31T18:39:08Z"
+  "updated": "2026-05-31T18:52:07Z"
 }
