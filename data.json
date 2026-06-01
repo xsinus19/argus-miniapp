@@ -41,10 +41,83 @@
       "tp3": 58.108
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 0.0,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "strong_bearish",
+      "rsi": 12.4,
+      "fp": 100
+    },
+    {
+      "s": "ETH",
+      "t": "strong_bearish",
+      "rsi": 28.8,
+      "fp": 98
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 40.2,
+      "fp": 100
+    },
+    {
+      "s": "TON",
+      "t": "strong_bullish",
+      "rsi": 78.9,
+      "fp": 100
+    },
+    {
+      "s": "SOL",
+      "t": "strong_bearish",
+      "rsi": 26.6,
+      "fp": 62
+    },
+    {
+      "s": "LTC",
+      "t": "strong_bearish",
+      "rsi": 20.3,
+      "fp": 83
+    },
+    {
+      "s": "LINK",
+      "t": "strong_bearish",
+      "rsi": 36.6,
+      "fp": 63
+    },
+    {
+      "s": "POL",
+      "t": "ranging",
+      "rsi": 68.2,
+      "fp": 100
+    },
+    {
+      "s": "RENDER",
+      "t": "bullish",
+      "rsi": 37.4,
+      "fp": 100
+    },
+    {
+      "s": "FET",
+      "t": "strong_bullish",
+      "rsi": 48.8,
+      "fp": 56
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 33.7,
+      "fp": 3
+    },
+    {
+      "s": "WIF",
+      "t": "strong_bearish",
+      "rsi": 40.1,
+      "fp": 56
+    }
+  ],
   "history": [
     {
       "symbol": "WIF/USDT",
@@ -173,5 +246,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-01T16:15:26Z"
+  "updated": "2026-06-01T16:31:30Z"
 }
