@@ -41,17 +41,10 @@
       "tp3": 58.108
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 13.1,
-      "fp": 100
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "WIF/USDT",
@@ -180,5 +173,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-01T15:45:34Z"
+  "updated": "2026-06-01T16:00:27Z"
 }
