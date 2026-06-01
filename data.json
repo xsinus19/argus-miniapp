@@ -3,9 +3,47 @@
   "fear_label": "FEAR",
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
-  "signals": [],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "signals": [
+    {
+      "sym": "BCH/USDT",
+      "dir": "short",
+      "ep": 300.112,
+      "sl": 312.037,
+      "tp1": 276.261,
+      "tp2": 258.373,
+      "tp3": 240.484
+    },
+    {
+      "sym": "RENDER/USDT",
+      "dir": "long",
+      "ep": 2.0574,
+      "sl": 1.9577,
+      "tp1": 2.2569,
+      "tp2": 2.4065,
+      "tp3": 2.556
+    },
+    {
+      "sym": "LINK/USDT",
+      "dir": "short",
+      "ep": 9.1597,
+      "sl": 9.386,
+      "tp1": 8.707,
+      "tp2": 8.3674,
+      "tp3": 8.0279
+    },
+    {
+      "sym": "SOL/USDT",
+      "dir": "short",
+      "ep": 80.3617,
+      "sl": 84.023,
+      "tp1": 71.065,
+      "tp2": 64.586,
+      "tp3": 58.108
+    }
+  ],
+  "liq_4h": 0.0,
+  "whale_usd": 0.0,
+  "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
@@ -36,9 +74,177 @@
       "t": "strong_bearish",
       "rsi": 25.8,
       "fp": 54
+    },
+    {
+      "s": "LTC",
+      "t": "strong_bearish",
+      "rsi": 22.2,
+      "fp": 100
+    },
+    {
+      "s": "LINK",
+      "t": "strong_bearish",
+      "rsi": 32.7,
+      "fp": 60
+    },
+    {
+      "s": "POL",
+      "t": "ranging",
+      "rsi": 56.5,
+      "fp": 100
+    },
+    {
+      "s": "RENDER",
+      "t": "bullish",
+      "rsi": 33.6,
+      "fp": 100
+    },
+    {
+      "s": "FET",
+      "t": "strong_bullish",
+      "rsi": 47.5,
+      "fp": 33
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 23.3,
+      "fp": 1
+    },
+    {
+      "s": "WIF",
+      "t": "strong_bearish",
+      "rsi": 32.5,
+      "fp": 100
     }
   ],
-  "history": [],
-  "chart": {},
-  "updated": "2026-06-01T15:00:33Z"
+  "history": [
+    {
+      "symbol": "WIF/USDT",
+      "direction": "short",
+      "signal_level": "MODERATE",
+      "entry_price": 0.19124,
+      "stop_loss": 0.19987,
+      "tp1": 0.17399,
+      "tp2": 0.16105,
+      "tp3": 0.14811,
+      "time": "2026-05-30T22:14:35.630106+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "WIF/USDT",
+      "direction": "long",
+      "signal_level": "STRONG",
+      "entry_price": 0.19175,
+      "stop_loss": 0.18526,
+      "tp1": 0.20473,
+      "tp2": 0.21446,
+      "tp3": 0.2242,
+      "time": "2026-05-31T03:14:34.531247+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "WIF/USDT",
+      "direction": "short",
+      "signal_level": "LEGENDARY",
+      "entry_price": 0.18926,
+      "stop_loss": 0.19756,
+      "tp1": 0.17268,
+      "tp2": 0.16024,
+      "tp3": 0.1478,
+      "time": "2026-05-31T10:44:35.685747+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "RENDER/USDT",
+      "direction": "short",
+      "signal_level": "STRONG",
+      "entry_price": 2.0613,
+      "stop_loss": 2.2116,
+      "tp1": 1.7607,
+      "tp2": 1.5353,
+      "tp3": 1.3098,
+      "time": "2026-05-31T14:14:17.782928+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "LINK/USDT",
+      "direction": "short",
+      "signal_level": "MODERATE",
+      "entry_price": 9.1065,
+      "stop_loss": 9.4094,
+      "tp1": 8.5006,
+      "tp2": 8.0462,
+      "tp3": 7.5918,
+      "time": "2026-05-31T14:44:04.352941+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "BCH/USDT",
+      "direction": "short",
+      "signal_level": "MODERATE",
+      "entry_price": 299.374,
+      "stop_loss": 312.339,
+      "tp1": 273.444,
+      "tp2": 253.997,
+      "tp3": 234.55,
+      "time": "2026-05-31T14:44:30.229302+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "BCH/USDT",
+      "direction": "short",
+      "signal_level": "MODERATE",
+      "entry_price": 300.112,
+      "stop_loss": 312.037,
+      "tp1": 276.261,
+      "tp2": 258.373,
+      "tp3": 240.484,
+      "time": "2026-05-31T19:08:17.615301+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "RENDER/USDT",
+      "direction": "long",
+      "signal_level": "MODERATE",
+      "entry_price": 2.0574,
+      "stop_loss": 1.9577,
+      "tp1": 2.2569,
+      "tp2": 2.4065,
+      "tp3": 2.556,
+      "time": "2026-05-31T20:23:03.820112+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "LINK/USDT",
+      "direction": "short",
+      "signal_level": "MODERATE",
+      "entry_price": 9.1597,
+      "stop_loss": 9.386,
+      "tp1": 8.707,
+      "tp2": 8.3674,
+      "tp3": 8.0279,
+      "time": "2026-05-31T23:22:51.276158+00:00",
+      "result": "open"
+    },
+    {
+      "symbol": "SOL/USDT",
+      "direction": "short",
+      "signal_level": "MODERATE",
+      "entry_price": 80.3617,
+      "stop_loss": 84.023,
+      "tp1": 71.065,
+      "tp2": 64.586,
+      "tp3": 58.108,
+      "time": "2026-06-01T15:00:33.180959+00:00",
+      "result": "open"
+    }
+  ],
+  "chart": {
+    "labels": [],
+    "ton": [],
+    "render": [],
+    "btc": []
+  },
+  "updated": "2026-06-01T15:01:21Z"
 }
