@@ -5,15 +5,6 @@
   "stablecoin": "319.7B",
   "signals": [
     {
-      "sym": "BCH/USDT",
-      "dir": "short",
-      "ep": 300.112,
-      "sl": 312.037,
-      "tp1": 276.261,
-      "tp2": 258.373,
-      "tp3": 240.484
-    },
-    {
       "sym": "RENDER/USDT",
       "dir": "long",
       "ep": 2.0574,
@@ -81,14 +72,14 @@
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 19.0,
-      "fp": 94
+      "rsi": 19.5,
+      "fp": 95
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 17.8,
-      "fp": 5
+      "rsi": 17.5,
+      "fp": 3
     },
     {
       "s": "LINK",
@@ -105,44 +96,44 @@
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 19.0,
+      "rsi": 19.2,
       "fp": 2
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
       "rsi": 54.6,
-      "fp": 21
+      "fp": 17
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 27.6,
-      "fp": 44
+      "rsi": 28.7,
+      "fp": 45
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 22.6,
+      "rsi": 22.8,
       "fp": 0
     },
     {
       "s": "TON",
       "t": "strong_bullish",
-      "rsi": 46.0,
+      "rsi": 45.9,
       "fp": 100
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 67.3,
-      "fp": 82
+      "rsi": 66.3,
+      "fp": 100
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 27.3,
-      "fp": 25
+      "rsi": 27.1,
+      "fp": 21
     }
   ],
   "history": [
@@ -180,7 +171,7 @@
       "tp2": 253.997,
       "tp3": 234.55,
       "time": "2026-05-31T14:44:30.229302+00:00",
-      "result": "open"
+      "result": "expired"
     },
     {
       "symbol": "BCH/USDT",
@@ -273,5 +264,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-02T18:53:25Z"
+  "updated": "2026-06-02T19:08:27Z"
 }
