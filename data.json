@@ -14,15 +14,6 @@
       "tp3": 2.556
     },
     {
-      "sym": "SOL/USDT",
-      "dir": "short",
-      "ep": 80.3617,
-      "sl": 84.023,
-      "tp1": 71.065,
-      "tp2": 64.586,
-      "tp3": 58.108
-    },
-    {
       "sym": "ETH/USDT",
       "dir": "short",
       "ep": 1991.48,
@@ -57,73 +48,73 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 26.3,
+      "rsi": 24.6,
       "fp": 93
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 29.1,
-      "fp": 100
+      "rsi": 28.3,
+      "fp": 95
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 31.0,
-      "fp": 30
+      "rsi": 29.9,
+      "fp": 27
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 37.2,
-      "fp": 66
+      "rsi": 36.3,
+      "fp": 62
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 36.0,
+      "rsi": 34.1,
       "fp": 28
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 44.5,
-      "fp": 57
+      "rsi": 42.7,
+      "fp": 69
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 77.4,
-      "fp": 18
+      "rsi": 77.8,
+      "fp": 21
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 15.5,
+      "rsi": 16.0,
       "fp": 100
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 35.0,
-      "fp": 73
+      "rsi": 34.0,
+      "fp": 74
     },
     {
       "s": "TON",
       "t": "strong_bullish",
-      "rsi": 63.7,
+      "rsi": 63.5,
       "fp": 100
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 81.0,
+      "rsi": 81.2,
       "fp": 100
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 40.0,
+      "rsi": 38.6,
       "fp": 100
     }
   ],
@@ -210,7 +201,7 @@
       "tp2": 64.586,
       "tp3": 58.108,
       "time": "2026-06-01T15:00:33.180959+00:00",
-      "result": "open"
+      "result": "expired"
     },
     {
       "symbol": "ETH/USDT",
@@ -255,5 +246,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-03T14:59:18Z"
+  "updated": "2026-06-03T15:15:45Z"
 }
