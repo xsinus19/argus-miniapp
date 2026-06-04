@@ -32,107 +32,10 @@
       "tp3": 0.14564
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 118.6,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 15.8,
-      "fp": 39
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 28.8,
-      "fp": 86
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 23.2,
-      "fp": 8
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 38.3,
-      "fp": 11
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 29.7,
-      "fp": 28
-    },
-    {
-      "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 44.4,
-      "fp": 1
-    },
-    {
-      "s": "NEAR",
-      "t": "strong_bullish",
-      "rsi": 60.5,
-      "fp": 44
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 14.9,
-      "fp": 75
-    },
-    {
-      "s": "DOGE",
-      "t": "strong_bearish",
-      "rsi": 27.3,
-      "fp": 34
-    },
-    {
-      "s": "TON",
-      "t": "bullish",
-      "rsi": 38.5,
-      "fp": 64
-    },
-    {
-      "s": "ONDO",
-      "t": "strong_bullish",
-      "rsi": 71.5,
-      "fp": 100
-    },
-    {
-      "s": "TAO",
-      "t": "strong_bearish",
-      "rsi": 35.5,
-      "fp": 100
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 66.0,
-      "fp": 99
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 77
-    },
-    {
-      "s": "ZEC",
-      "t": "strong_bullish",
-      "rsi": 66.2,
-      "fp": 1
-    },
-    {
-      "s": "BNB",
-      "t": "ranging",
-      "rsi": 21.5,
-      "fp": 34
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "RENDER/USDT",
@@ -261,5 +164,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-03T23:52:27Z"
+  "updated": "2026-06-04T00:06:16Z"
 }
