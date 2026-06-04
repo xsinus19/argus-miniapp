@@ -30,79 +30,79 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 33.2,
+      "rsi": 34.9,
       "fp": 17
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 30.1,
-      "fp": 56
+      "rsi": 32.2,
+      "fp": 55
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 31.1,
-      "fp": 11
+      "rsi": 30.2,
+      "fp": 9
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 33.8,
-      "fp": 23
+      "rsi": 34.1,
+      "fp": 24
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 25.9,
+      "rsi": 26.3,
       "fp": 4
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 41.8,
+      "rsi": 39.2,
       "fp": 17
     },
     {
       "s": "NEAR",
       "t": "bullish",
-      "rsi": 32.4,
-      "fp": 39
+      "rsi": 32.2,
+      "fp": 34
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 36.4,
-      "fp": 95
+      "rsi": 32.4,
+      "fp": 91
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 31.7,
+      "rsi": 29.5,
       "fp": 9
     },
     {
       "s": "TON",
       "t": "ranging",
-      "rsi": 31.7,
-      "fp": 28
+      "rsi": 31.9,
+      "fp": 30
     },
     {
       "s": "ONDO",
       "t": "bullish",
       "rsi": 43.5,
-      "fp": 40
+      "fp": 35
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 32.9,
+      "rsi": 31.6,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "bullish",
-      "rsi": 34.2,
+      "rsi": 32.5,
       "fp": 98
     },
     {
@@ -114,13 +114,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 28.6,
-      "fp": 24
+      "rsi": 28.4,
+      "fp": 13
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 25.9,
+      "rsi": 25.5,
       "fp": 35
     }
   ],
@@ -252,5 +252,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-04T14:07:37Z"
+  "updated": "2026-06-04T14:22:30Z"
 }
