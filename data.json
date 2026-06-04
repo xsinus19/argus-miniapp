@@ -14,15 +14,6 @@
       "tp3": 2.556
     },
     {
-      "sym": "BTC/USDT",
-      "dir": "short",
-      "ep": 70392.15,
-      "sl": 70392.15,
-      "tp1": 64317.99,
-      "tp2": 59762.37,
-      "tp3": 55206.75
-    },
-    {
       "sym": "WIF/USDT",
       "dir": "short",
       "ep": 0.18958,
@@ -39,79 +30,79 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 18.1,
-      "fp": 28
+      "rsi": 19.5,
+      "fp": 30
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 21.9,
-      "fp": 78
+      "rsi": 23.5,
+      "fp": 79
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 19.5,
+      "rsi": 20.7,
       "fp": 1
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 30.0,
+      "rsi": 31.9,
       "fp": 66
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 22.7,
-      "fp": 43
+      "rsi": 24.5,
+      "fp": 46
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 31.2,
-      "fp": 28
+      "rsi": 33.6,
+      "fp": 36
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 36.9,
-      "fp": 49
+      "rsi": 37.3,
+      "fp": 53
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 21.6,
+      "rsi": 21.8,
       "fp": 94
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 22.6,
-      "fp": 33
+      "rsi": 24.5,
+      "fp": 43
     },
     {
       "s": "TON",
       "t": "ranging",
-      "rsi": 25.2,
-      "fp": 30
+      "rsi": 26.1,
+      "fp": 28
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 42.0,
-      "fp": 53
+      "rsi": 46.7,
+      "fp": 52
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 28.6,
-      "fp": 13
+      "rsi": 30.9,
+      "fp": 16
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 53.1,
+      "rsi": 50.6,
       "fp": 99
     },
     {
@@ -123,14 +114,14 @@
     {
       "s": "ZEC",
       "t": "strong_bullish",
-      "rsi": 54.9,
+      "rsi": 57.0,
       "fp": 0
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 16.3,
-      "fp": 46
+      "rsi": 17.3,
+      "fp": 51
     }
   ],
   "history": [
@@ -240,7 +231,7 @@
       "tp2": 59762.37,
       "tp3": 55206.75,
       "time": "2026-06-02T06:21:16.246891+00:00",
-      "result": "open"
+      "result": "tp1"
     },
     {
       "symbol": "WIF/USDT",
@@ -261,5 +252,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-04T06:07:35Z"
+  "updated": "2026-06-04T06:22:26Z"
 }
