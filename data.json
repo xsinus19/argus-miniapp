@@ -24,7 +24,7 @@
     }
   ],
   "liq_4h": 0.0,
-  "whale_usd": 152.8,
+  "whale_usd": 554.2,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -36,85 +36,85 @@
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 22.0,
-      "fp": 25
+      "rsi": 21.9,
+      "fp": 21
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 21.9,
+      "rsi": 20.0,
       "fp": 2
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 28.9,
-      "fp": 34
+      "rsi": 26.6,
+      "fp": 36
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 25.3,
-      "fp": 25
+      "rsi": 24.3,
+      "fp": 30
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 29.8,
-      "fp": 37
+      "rsi": 26.7,
+      "fp": 33
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 27.7,
+      "rsi": 25.5,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 27.0,
-      "fp": 78
+      "rsi": 26.4,
+      "fp": 77
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 26.1,
+      "rsi": 23.0,
       "fp": 6
     },
     {
       "s": "TON",
       "t": "ranging",
-      "rsi": 24.4,
+      "rsi": 23.4,
       "fp": 28
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 40.5,
-      "fp": 44
+      "rsi": 38.6,
+      "fp": 41
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 27.5,
+      "rsi": 25.1,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "bullish",
-      "rsi": 25.6,
+      "rsi": 20.1,
       "fp": 98
     },
     {
       "s": "XMR",
       "t": "strong_bearish",
       "rsi": 49.4,
-      "fp": 89
+      "fp": 86
     },
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 14.6,
+      "rsi": 13.8,
       "fp": 100
     },
     {
@@ -252,5 +252,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-05T04:37:24Z"
+  "updated": "2026-06-05T04:52:28Z"
 }
