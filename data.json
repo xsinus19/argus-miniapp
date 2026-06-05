@@ -30,79 +30,79 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 32.0,
-      "fp": 24
+      "rsi": 36.9,
+      "fp": 26
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 21.9,
+      "rsi": 25.9,
       "fp": 21
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 20.0,
+      "rsi": 26.0,
       "fp": 2
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 26.6,
+      "rsi": 29.4,
       "fp": 36
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 24.3,
-      "fp": 30
+      "rsi": 27.5,
+      "fp": 33
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 26.7,
-      "fp": 33
+      "rsi": 29.0,
+      "fp": 41
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 25.5,
+      "rsi": 28.2,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 26.4,
-      "fp": 77
+      "rsi": 27.0,
+      "fp": 79
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 23.0,
+      "rsi": 27.2,
       "fp": 6
     },
     {
       "s": "TON",
       "t": "ranging",
-      "rsi": 23.4,
-      "fp": 28
+      "rsi": 24.9,
+      "fp": 30
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 38.6,
-      "fp": 41
+      "rsi": 41.4,
+      "fp": 44
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 25.1,
+      "rsi": 28.2,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "bullish",
-      "rsi": 20.1,
+      "rsi": 29.6,
       "fp": 98
     },
     {
@@ -114,13 +114,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 13.8,
+      "rsi": 13.7,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 26.3,
+      "rsi": 29.0,
       "fp": 36
     }
   ],
@@ -252,5 +252,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-05T04:52:28Z"
+  "updated": "2026-06-05T05:07:22Z"
 }
