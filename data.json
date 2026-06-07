@@ -77,41 +77,10 @@
       "tp3": 70809.39
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 97.5,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 60.8,
-      "fp": 32
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 54.2,
-      "fp": 8
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 54.3,
-      "fp": 0
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 62.5,
-      "fp": 54
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 37.2,
-      "fp": 4
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "SOL/USDT",
@@ -240,5 +209,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-07T11:46:46Z"
+  "updated": "2026-06-07T11:53:21Z"
 }
