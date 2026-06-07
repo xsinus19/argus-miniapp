@@ -68,41 +68,10 @@
       "tp3": 2.2826
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 117.3,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 34.2,
-      "fp": 12
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 24.4,
-      "fp": 5
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 18.2,
-      "fp": 21
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 39.3,
-      "fp": 34
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 26.4,
-      "fp": 23
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -231,5 +200,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-07T00:03:36Z"
+  "updated": "2026-06-07T00:08:21Z"
 }
