@@ -23,15 +23,6 @@
       "tp3": 0.14564
     },
     {
-      "sym": "BNB/USDT",
-      "dir": "short",
-      "ep": 560.643,
-      "sl": 609.923,
-      "tp1": 462.085,
-      "tp2": 388.165,
-      "tp3": 314.246
-    },
-    {
       "sym": "LINK/USDT",
       "dir": "long",
       "ep": 7.0552,
@@ -59,10 +50,107 @@
       "tp3": 70809.39
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 0.0,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "strong_bearish",
+      "rsi": 57.4,
+      "fp": 39
+    },
+    {
+      "s": "ETH",
+      "t": "strong_bearish",
+      "rsi": 58.3,
+      "fp": 6
+    },
+    {
+      "s": "SOL",
+      "t": "strong_bearish",
+      "rsi": 55.3,
+      "fp": 4
+    },
+    {
+      "s": "LINK",
+      "t": "strong_bearish",
+      "rsi": 57.5,
+      "fp": 20
+    },
+    {
+      "s": "AVAX",
+      "t": "strong_bearish",
+      "rsi": 38.7,
+      "fp": 32
+    },
+    {
+      "s": "SUI",
+      "t": "strong_bearish",
+      "rsi": 52.3,
+      "fp": 30
+    },
+    {
+      "s": "NEAR",
+      "t": "ranging",
+      "rsi": 54.6,
+      "fp": 28
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 46.6,
+      "fp": 26
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 55.6,
+      "fp": 25
+    },
+    {
+      "s": "TON",
+      "t": "strong_bearish",
+      "rsi": 57.2,
+      "fp": 70
+    },
+    {
+      "s": "ONDO",
+      "t": "strong_bearish",
+      "rsi": 51.7,
+      "fp": 56
+    },
+    {
+      "s": "TAO",
+      "t": "strong_bearish",
+      "rsi": 56.0,
+      "fp": 32
+    },
+    {
+      "s": "HYPE",
+      "t": "ranging",
+      "rsi": 53.9,
+      "fp": 19
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 80
+    },
+    {
+      "s": "ZEC",
+      "t": "strong_bearish",
+      "rsi": 56.9,
+      "fp": 2
+    },
+    {
+      "s": "BNB",
+      "t": "strong_bearish",
+      "rsi": 56.0,
+      "fp": 42
+    }
+  ],
   "history": [
     {
       "symbol": "SOL/USDT",
@@ -146,7 +234,7 @@
       "tp2": 388.165,
       "tp3": 314.246,
       "time": "2026-06-06T04:39:57.408225+00:00",
-      "result": "open"
+      "result": "expired"
     },
     {
       "symbol": "LINK/USDT",
@@ -191,5 +279,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-08T04:09:18Z"
+  "updated": "2026-06-08T04:44:55Z"
 }
