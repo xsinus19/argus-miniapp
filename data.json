@@ -59,10 +59,47 @@
       "tp3": 1.0834
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 0.0,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "ONDO",
+      "t": "strong_bearish",
+      "rsi": 46.9,
+      "fp": 80
+    },
+    {
+      "s": "TAO",
+      "t": "strong_bearish",
+      "rsi": 51.8,
+      "fp": 24
+    },
+    {
+      "s": "HYPE",
+      "t": "ranging",
+      "rsi": 37.9,
+      "fp": 36
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 86
+    },
+    {
+      "s": "ZEC",
+      "t": "strong_bearish",
+      "rsi": 46.3,
+      "fp": 11
+    },
+    {
+      "s": "BNB",
+      "t": "strong_bearish",
+      "rsi": 53.4,
+      "fp": 48
+    }
+  ],
   "history": [
     {
       "symbol": "BNB/USDT",
@@ -191,5 +228,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-11T04:01:18Z"
+  "updated": "2026-06-11T04:16:43Z"
 }
