@@ -51,86 +51,86 @@
     }
   ],
   "liq_4h": 0.0,
-  "whale_usd": 174.0,
+  "whale_usd": 220.7,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 63.7,
-      "fp": 42
+      "t": "bearish",
+      "rsi": 64.7,
+      "fp": 47
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 57.4,
+      "rsi": 59.6,
       "fp": 7
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 64.1,
+      "rsi": 64.8,
       "fp": 18
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 57.1,
-      "fp": 62
+      "rsi": 58.0,
+      "fp": 68
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 56.6,
-      "fp": 21
+      "rsi": 57.7,
+      "fp": 25
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 55.9,
-      "fp": 53
+      "rsi": 57.0,
+      "fp": 56
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 55.6,
+      "rsi": 56.7,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 57.9,
-      "fp": 87
+      "rsi": 58.6,
+      "fp": 93
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 63.2,
+      "rsi": 63.8,
       "fp": 42
     },
     {
       "s": "TON",
       "t": "bearish",
-      "rsi": 61.2,
-      "fp": 12
+      "rsi": 59.8,
+      "fp": 13
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 64.1,
-      "fp": 75
+      "rsi": 63.9,
+      "fp": 74
     },
     {
       "s": "TAO",
       "t": "bearish",
-      "rsi": 62.7,
-      "fp": 24
+      "rsi": 63.8,
+      "fp": 22
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 60.6,
-      "fp": 24
+      "rsi": 59.1,
+      "fp": 23
     },
     {
       "s": "XMR",
@@ -141,13 +141,13 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 52.2,
+      "rsi": 53.8,
       "fp": 30
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 58.0,
+      "rsi": 59.9,
       "fp": 49
     }
   ],
@@ -279,5 +279,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-12T04:20:49Z"
+  "updated": "2026-06-12T04:35:48Z"
 }
