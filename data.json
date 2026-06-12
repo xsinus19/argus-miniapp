@@ -3,134 +3,87 @@
   "fear_label": "EXTREME_FEAR",
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
-  "signals": [
-    {
-      "sym": "RENDER/USDT",
-      "dir": "long",
-      "ep": 2.0574,
-      "sl": 1.9577,
-      "tp1": 2.2569,
-      "tp2": 2.4065,
-      "tp3": 2.556
-    },
-    {
-      "sym": "WIF/USDT",
-      "dir": "short",
-      "ep": 0.18958,
-      "sl": 0.19837,
-      "tp1": 0.172,
-      "tp2": 0.15882,
-      "tp3": 0.14564
-    },
-    {
-      "sym": "TON/USDT",
-      "dir": "short",
-      "ep": 1.638,
-      "sl": 1.7549,
-      "tp1": 1.4192,
-      "tp2": 1.2513,
-      "tp3": 1.0834
-    },
-    {
-      "sym": "SUI/USDT",
-      "dir": "short",
-      "ep": 0.755,
-      "sl": 0.77715,
-      "tp1": 0.69846,
-      "tp2": 0.65912,
-      "tp3": 0.61978
-    },
-    {
-      "sym": "BTC/USDT",
-      "dir": "short",
-      "ep": 63550.0,
-      "sl": 64537.14,
-      "tp1": 61567.35,
-      "tp2": 60082.45,
-      "tp3": 58597.55
-    }
-  ],
-  "liq_4h": 0.0,
-  "whale_usd": 153.0,
-  "whale_signal": "neutral",
+  "signals": [],
+  "liq_4h": 0,
+  "whale_usd": 0,
   "coins": [
     {
       "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 57.7,
-      "fp": 21
+      "t": "bearish",
+      "rsi": 64.6,
+      "fp": 30
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 53.8,
-      "fp": 13
+      "rsi": 59.6,
+      "fp": 19
     },
     {
       "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 62.5,
+      "t": "bearish",
+      "rsi": 67.0,
       "fp": 66
     },
     {
       "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 53.9,
-      "fp": 38
+      "t": "bearish",
+      "rsi": 59.0,
+      "fp": 44
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 48.6,
-      "fp": 8
+      "rsi": 54.8,
+      "fp": 9
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 51.7,
-      "fp": 79
+      "rsi": 58.3,
+      "fp": 86
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 48.1,
-      "fp": 24
+      "rsi": 55.0,
+      "fp": 28
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 53.1,
-      "fp": 84
+      "rsi": 59.6,
+      "fp": 85
     },
     {
       "s": "DOGE",
       "t": "bearish",
-      "rsi": 74.9,
-      "fp": 22
+      "rsi": 75.8,
+      "fp": 18
     },
     {
       "s": "TON",
       "t": "bearish",
-      "rsi": 58.9,
-      "fp": 25
+      "rsi": 60.8,
+      "fp": 26
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 56.6,
+      "rsi": 60.7,
       "fp": 100
     },
     {
       "s": "TAO",
-      "t": "strong_bearish",
-      "rsi": 60.0,
-      "fp": 15
+      "t": "bearish",
+      "rsi": 62.5,
+      "fp": 16
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 60.5,
-      "fp": 3
+      "rsi": 62.9,
+      "fp": 5
     },
     {
       "s": "XMR",
@@ -141,143 +94,17 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 47.1,
-      "fp": 68
+      "rsi": 48.7,
+      "fp": 71
     },
     {
       "s": "BNB",
       "t": "bearish",
-      "rsi": 63.2,
-      "fp": 80
+      "rsi": 65.6,
+      "fp": 83
     }
   ],
-  "history": [
-    {
-      "symbol": "AVAX/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 6.6305,
-      "stop_loss": 7.5001,
-      "tp1": 4.8914,
-      "tp2": 3.587,
-      "tp3": 2.2826,
-      "time": "2026-06-06T07:23:26.000607+00:00",
-      "result": "expired"
-    },
-    {
-      "symbol": "BTC/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 61220.69,
-      "stop_loss": 59302.96,
-      "tp1": 65056.17,
-      "tp2": 67932.78,
-      "tp3": 70809.39,
-      "time": "2026-06-07T01:08:53.597164+00:00",
-      "result": "expired"
-    },
-    {
-      "symbol": "BNB/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 594.63,
-      "stop_loss": 619.054,
-      "tp1": 544.814,
-      "tp2": 507.694,
-      "tp3": 470.573,
-      "time": "2026-06-08T08:45:33.926326+00:00",
-      "result": "expired"
-    },
-    {
-      "symbol": "BCH/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 207.0,
-      "stop_loss": 230.317,
-      "tp1": 161.202,
-      "tp2": 126.644,
-      "tp3": 92.087,
-      "time": "2026-06-09T00:23:48.831165+00:00",
-      "result": "open"
-    },
-    {
-      "symbol": "TAO/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 216.5,
-      "stop_loss": 225.0,
-      "tp1": 201.291,
-      "tp2": 189.436,
-      "tp3": 177.582,
-      "time": "2026-06-09T07:39:17.483893+00:00",
-      "result": "tp1"
-    },
-    {
-      "symbol": "BTC/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 61665.85,
-      "stop_loss": 64688.52,
-      "tp1": 55620.52,
-      "tp2": 51086.52,
-      "tp3": 46552.53,
-      "time": "2026-06-09T15:08:06.236536+00:00",
-      "result": "expired"
-    },
-    {
-      "symbol": "LINK/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 7.800000000000001,
-      "stop_loss": 8.1742,
-      "tp1": 7.0644,
-      "tp2": 6.5095,
-      "tp3": 5.9546,
-      "time": "2026-06-09T23:38:23.215939+00:00",
-      "result": "open"
-    },
-    {
-      "symbol": "TON/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 1.638,
-      "stop_loss": 1.7549,
-      "tp1": 1.4192,
-      "tp2": 1.2513,
-      "tp3": 1.0834,
-      "time": "2026-06-10T19:31:44.730724+00:00",
-      "result": "open"
-    },
-    {
-      "symbol": "SUI/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 0.755,
-      "stop_loss": 0.77715,
-      "tp1": 0.69846,
-      "tp2": 0.65912,
-      "tp3": 0.61978,
-      "time": "2026-06-11T09:04:46.922492+00:00",
-      "result": "open"
-    },
-    {
-      "symbol": "BTC/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry_price": 63550.0,
-      "stop_loss": 64537.14,
-      "tp1": 61567.35,
-      "tp2": 60082.45,
-      "tp3": 58597.55,
-      "time": "2026-06-11T18:04:11.034716+00:00",
-      "result": "open"
-    }
-  ],
-  "chart": {
-    "labels": [],
-    "ton": [],
-    "render": [],
-    "btc": []
-  },
-  "updated": "2026-06-12T14:50:47Z"
+  "history": [],
+  "chart": {},
+  "updated": "2026-06-12T15:05:47Z"
 }
