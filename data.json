@@ -66,56 +66,56 @@
     {
       "s": "BTC",
       "t": "bearish",
-      "rsi": 62.4,
-      "fp": 23
+      "rsi": 62.5,
+      "fp": 24
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 54.3,
-      "fp": 19
+      "rsi": 53.8,
+      "fp": 20
     },
     {
       "s": "SOL",
       "t": "bearish",
-      "rsi": 65.4,
+      "rsi": 65.3,
       "fp": 28
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 53.5,
-      "fp": 64
+      "rsi": 53.3,
+      "fp": 67
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 50.2,
+      "rsi": 49.9,
       "fp": 9
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 52.8,
-      "fp": 61
+      "rsi": 51.8,
+      "fp": 62
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 49.8,
-      "fp": 31
+      "rsi": 49.2,
+      "fp": 36
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 55.0,
-      "fp": 83
+      "rsi": 55.7,
+      "fp": 85
     },
     {
       "s": "DOGE",
       "t": "bearish",
-      "rsi": 71.4,
-      "fp": 14
+      "rsi": 70.9,
+      "fp": 15
     },
     {
       "s": "TON",
@@ -126,19 +126,19 @@
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 59.4,
-      "fp": 74
+      "rsi": 57.7,
+      "fp": 68
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 59.0,
+      "rsi": 58.8,
       "fp": 16
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 69.2,
+      "rsi": 70.2,
       "fp": 9
     },
     {
@@ -150,14 +150,14 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 44.2,
-      "fp": 23
+      "rsi": 44.3,
+      "fp": 22
     },
     {
       "s": "BNB",
       "t": "bearish",
-      "rsi": 61.3,
-      "fp": 70
+      "rsi": 61.6,
+      "fp": 65
     }
   ],
   "history": [
@@ -288,5 +288,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-12T17:27:04Z"
+  "updated": "2026-06-12T17:41:59Z"
 }
