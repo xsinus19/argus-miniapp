@@ -30,79 +30,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 74.6,
-      "fp": 46
+      "rsi": 75.3,
+      "fp": 44
     },
     {
       "s": "ETH",
       "t": "bearish",
-      "rsi": 77.0,
-      "fp": 49
+      "rsi": 77.4,
+      "fp": 42
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 75.8,
+      "rsi": 77.6,
       "fp": 47
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 69.4,
-      "fp": 76
+      "rsi": 70.9,
+      "fp": 77
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 59.8,
-      "fp": 52
+      "rsi": 61.6,
+      "fp": 64
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 72.6,
-      "fp": 45
+      "rsi": 74.9,
+      "fp": 52
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 69.5,
-      "fp": 47
+      "rsi": 69.6,
+      "fp": 44
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 60.5,
-      "fp": 88
+      "rsi": 61.6,
+      "fp": 92
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 65.0,
-      "fp": 74
+      "rsi": 66.4,
+      "fp": 82
     },
     {
       "s": "TON",
       "t": "bearish",
-      "rsi": 59.3,
-      "fp": 13
+      "rsi": 60.6,
+      "fp": 18
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 59.0,
-      "fp": 69
+      "rsi": 60.7,
+      "fp": 74
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 70.8,
+      "rsi": 70.6,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 75.9,
+      "rsi": 76.3,
       "fp": 97
     },
     {
@@ -114,13 +114,13 @@
     {
       "s": "ZEC",
       "t": "bearish",
-      "rsi": 82.6,
+      "rsi": 82.5,
       "fp": 77
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 65.0,
+      "rsi": 66.2,
       "fp": 53
     }
   ],
@@ -252,5 +252,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-14T23:40:25Z"
+  "updated": "2026-06-14T23:55:18Z"
 }
