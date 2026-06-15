@@ -25,6 +25,14 @@
   ],
   "events": [
     {
+      "ts": "2026-06-15T07:11:09.461981+00:00",
+      "type": "rejected",
+      "symbol": "HYPE/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_STRONG",
+      "reason": "Недостаточно уверенности (score=0.55) | RG: Высокий RSI и потенциальная манипуляция на тихом рынке а"
+    },
+    {
       "ts": "2026-06-15T06:40:57.037627+00:00",
       "type": "signal",
       "symbol": "BCH/USDT",
@@ -77,79 +85,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 74.9,
-      "fp": 28
+      "rsi": 73.7,
+      "fp": 27
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 73.4,
+      "rsi": 73.7,
       "fp": 25
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 77.9,
-      "fp": 46
+      "rsi": 77.5,
+      "fp": 47
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 72.9,
-      "fp": 70
+      "rsi": 70.9,
+      "fp": 67
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 60.8,
-      "fp": 71
+      "rsi": 60.4,
+      "fp": 67
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 72.7,
-      "fp": 35
+      "rsi": 69.3,
+      "fp": 34
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 80.9,
-      "fp": 22
+      "rsi": 80.4,
+      "fp": 24
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 66.2,
-      "fp": 85
+      "rsi": 66.4,
+      "fp": 84
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 65.1,
+      "rsi": 61.1,
       "fp": 100
     },
     {
       "s": "TON",
       "t": "ranging",
-      "rsi": 68.9,
-      "fp": 15
+      "rsi": 64.2,
+      "fp": 13
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 69.7,
-      "fp": 56
+      "rsi": 69.5,
+      "fp": 59
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 77.6,
+      "rsi": 76.2,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 78.7,
+      "rsi": 79.9,
       "fp": 15
     },
     {
@@ -161,14 +169,14 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 87.5,
-      "fp": 87
+      "rsi": 87.4,
+      "fp": 82
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 67.3,
-      "fp": 91
+      "rsi": 65.8,
+      "fp": 90
     }
   ],
   "history": [
@@ -299,5 +307,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-15T06:56:34Z"
+  "updated": "2026-06-15T07:11:33Z"
 }
