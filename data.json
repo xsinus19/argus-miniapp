@@ -201,107 +201,10 @@
       "reason": "Низкий AI score (0.28) | RG: MTF конфликт и высокий RSI указывают на повышенный риск, а история торг"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 193.7,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "ranging",
-      "rsi": 79.3,
-      "fp": 0
-    },
-    {
-      "s": "ETH",
-      "t": "ranging",
-      "rsi": 88.1,
-      "fp": 75
-    },
-    {
-      "s": "SOL",
-      "t": "ranging",
-      "rsi": 86.9,
-      "fp": 34
-    },
-    {
-      "s": "LINK",
-      "t": "ranging",
-      "rsi": 81.8,
-      "fp": 100
-    },
-    {
-      "s": "AVAX",
-      "t": "bearish",
-      "rsi": 70.4,
-      "fp": 47
-    },
-    {
-      "s": "SUI",
-      "t": "ranging",
-      "rsi": 75.4,
-      "fp": 70
-    },
-    {
-      "s": "NEAR",
-      "t": "strong_bullish",
-      "rsi": 83.3,
-      "fp": 26
-    },
-    {
-      "s": "BCH",
-      "t": "ranging",
-      "rsi": 72.4,
-      "fp": 76
-    },
-    {
-      "s": "DOGE",
-      "t": "ranging",
-      "rsi": 66.9,
-      "fp": 91
-    },
-    {
-      "s": "TON",
-      "t": "ranging",
-      "rsi": 63.8,
-      "fp": 84
-    },
-    {
-      "s": "ONDO",
-      "t": "strong_bullish",
-      "rsi": 73.4,
-      "fp": 60
-    },
-    {
-      "s": "TAO",
-      "t": "ranging",
-      "rsi": 63.1,
-      "fp": 100
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 81.8,
-      "fp": 6
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 91
-    },
-    {
-      "s": "ZEC",
-      "t": "ranging",
-      "rsi": 83.3,
-      "fp": 49
-    },
-    {
-      "s": "BNB",
-      "t": "ranging",
-      "rsi": 74.2,
-      "fp": 59
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -436,5 +339,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-15T15:38:12Z"
+  "updated": "2026-06-15T15:52:08Z"
 }
