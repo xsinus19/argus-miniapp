@@ -3,190 +3,10 @@
   "fear_label": "EXTREME_FEAR",
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
-  "signals": [
-    {
-      "sym": "AVAX/USDT",
-      "dir": "short",
-      "ep": 6.7,
-      "sl": 6.9028,
-      "tp1": 6.5584,
-      "tp2": 6.3862,
-      "tp3": 6.214
-    },
-    {
-      "sym": "BCH/USDT",
-      "dir": "short",
-      "ep": 211.0,
-      "sl": 216.343,
-      "tp1": 203.805,
-      "tp2": 197.536,
-      "tp3": 191.267
-    }
-  ],
-  "events": [
-    {
-      "ts": "2026-06-15T07:25:08.538078+00:00",
-      "type": "rejected",
-      "symbol": "SOL/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Risk Guardian HARD REJECT: Высокий RSI и конфликт на MTF, что указывает на высокий риск входа в длин"
-    },
-    {
-      "ts": "2026-06-15T07:11:09.461981+00:00",
-      "type": "rejected",
-      "symbol": "HYPE/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Недостаточно уверенности (score=0.55) | RG: Высокий RSI и потенциальная манипуляция на тихом рынке а"
-    },
-    {
-      "ts": "2026-06-15T06:40:57.037627+00:00",
-      "type": "signal",
-      "symbol": "BCH/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry": 211.0,
-      "sl": 216.343,
-      "tp1": 203.805,
-      "tp2": 197.536,
-      "tp3": 191.267,
-      "rr": 2.0,
-      "pa_score": 0.9500000000000001,
-      "ai_unavailable": false
-    },
-    {
-      "ts": "2026-06-15T06:10:18.871614+00:00",
-      "type": "signal",
-      "symbol": "AVAX/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "entry": 6.7,
-      "sl": 6.9028,
-      "tp1": 6.5584,
-      "tp2": 6.3862,
-      "tp3": 6.214,
-      "rr": 2.0,
-      "pa_score": 0.9,
-      "ai_unavailable": false
-    },
-    {
-      "ts": "2026-06-15T03:40:08.663424+00:00",
-      "type": "rejected",
-      "symbol": "SOL/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.28) | RG: MTF конфликт и высокий RSI указывают на повышенный риск, а история торг"
-    },
-    {
-      "ts": "2026-06-15T03:08:50.792874+00:00",
-      "type": "watch",
-      "symbol": "AVAX/USDT",
-      "direction": "SHORT",
-      "reason": "resistance + pin_bar_bear"
-    }
-  ],
-  "liq_4h": 0.0,
-  "whale_usd": 120.5,
-  "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "ranging",
-      "rsi": 69.7,
-      "fp": 21
-    },
-    {
-      "s": "ETH",
-      "t": "ranging",
-      "rsi": 70.3,
-      "fp": 22
-    },
-    {
-      "s": "SOL",
-      "t": "ranging",
-      "rsi": 76.2,
-      "fp": 36
-    },
-    {
-      "s": "LINK",
-      "t": "ranging",
-      "rsi": 69.9,
-      "fp": 57
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 58.8,
-      "fp": 40
-    },
-    {
-      "s": "SUI",
-      "t": "ranging",
-      "rsi": 67.2,
-      "fp": 38
-    },
-    {
-      "s": "NEAR",
-      "t": "strong_bullish",
-      "rsi": 80.6,
-      "fp": 20
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 66.3,
-      "fp": 76
-    },
-    {
-      "s": "DOGE",
-      "t": "ranging",
-      "rsi": 61.2,
-      "fp": 68
-    },
-    {
-      "s": "TON",
-      "t": "ranging",
-      "rsi": 68.9,
-      "fp": 34
-    },
-    {
-      "s": "ONDO",
-      "t": "ranging",
-      "rsi": 67.7,
-      "fp": 71
-    },
-    {
-      "s": "TAO",
-      "t": "ranging",
-      "rsi": 78.6,
-      "fp": 56
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 80.4,
-      "fp": 10
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 97
-    },
-    {
-      "s": "ZEC",
-      "t": "ranging",
-      "rsi": 86.6,
-      "fp": 82
-    },
-    {
-      "s": "BNB",
-      "t": "ranging",
-      "rsi": 62.0,
-      "fp": 74
-    }
-  ],
+  "signals": [],
+  "liq_4h": 0,
+  "whale_usd": 0,
+  "coins": [],
   "history": [
     {
       "symbol": "BTC/USDT",
@@ -309,11 +129,69 @@
       "result": "open"
     }
   ],
-  "chart": {
-    "labels": [],
-    "ton": [],
-    "render": [],
-    "btc": []
-  },
-  "updated": "2026-06-15T08:26:46Z"
+  "chart": {},
+  "events": [
+    {
+      "ts": "2026-06-15T07:25:08.538078+00:00",
+      "type": "rejected",
+      "symbol": "SOL/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_STRONG",
+      "reason": "Risk Guardian HARD REJECT: Высокий RSI и конфликт на MTF, что указывает на высокий риск входа в длин"
+    },
+    {
+      "ts": "2026-06-15T07:11:09.461981+00:00",
+      "type": "rejected",
+      "symbol": "HYPE/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_STRONG",
+      "reason": "Недостаточно уверенности (score=0.55) | RG: Высокий RSI и потенциальная манипуляция на тихом рынке а"
+    },
+    {
+      "ts": "2026-06-15T06:40:57.037627+00:00",
+      "type": "signal",
+      "symbol": "BCH/USDT",
+      "direction": "short",
+      "signal_level": "SIGNAL_STRONG",
+      "entry": 211.0,
+      "sl": 216.343,
+      "tp1": 203.805,
+      "tp2": 197.536,
+      "tp3": 191.267,
+      "rr": 2.0,
+      "pa_score": 0.9500000000000001,
+      "ai_unavailable": false
+    },
+    {
+      "ts": "2026-06-15T06:10:18.871614+00:00",
+      "type": "signal",
+      "symbol": "AVAX/USDT",
+      "direction": "short",
+      "signal_level": "SIGNAL_STRONG",
+      "entry": 6.7,
+      "sl": 6.9028,
+      "tp1": 6.5584,
+      "tp2": 6.3862,
+      "tp3": 6.214,
+      "rr": 2.0,
+      "pa_score": 0.9,
+      "ai_unavailable": false
+    },
+    {
+      "ts": "2026-06-15T03:40:08.663424+00:00",
+      "type": "rejected",
+      "symbol": "SOL/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_STRONG",
+      "reason": "Низкий AI score (0.28) | RG: MTF конфликт и высокий RSI указывают на повышенный риск, а история торг"
+    },
+    {
+      "ts": "2026-06-15T03:08:50.792874+00:00",
+      "type": "watch",
+      "symbol": "AVAX/USDT",
+      "direction": "SHORT",
+      "reason": "resistance + pin_bar_bear"
+    }
+  ],
+  "updated": "2026-06-15T08:33:48Z"
 }
