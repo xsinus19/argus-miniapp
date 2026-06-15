@@ -3,10 +3,127 @@
   "fear_label": "EXTREME_FEAR",
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
-  "signals": [],
-  "liq_4h": 0,
-  "whale_usd": 0,
-  "coins": [],
+  "signals": [
+    {
+      "sym": "RENDER/USDT",
+      "dir": "long",
+      "ep": 2.0574,
+      "sl": 1.9577,
+      "tp1": 2.2569,
+      "tp2": 2.4065,
+      "tp3": 2.556
+    },
+    {
+      "sym": "WIF/USDT",
+      "dir": "short",
+      "ep": 0.18958,
+      "sl": 0.19837,
+      "tp1": 0.172,
+      "tp2": 0.15882,
+      "tp3": 0.14564
+    }
+  ],
+  "liq_4h": 0.0,
+  "whale_usd": 133.0,
+  "whale_signal": "neutral",
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "ranging",
+      "rsi": 74.2,
+      "fp": 16
+    },
+    {
+      "s": "ETH",
+      "t": "bearish",
+      "rsi": 73.2,
+      "fp": 28
+    },
+    {
+      "s": "SOL",
+      "t": "ranging",
+      "rsi": 77.9,
+      "fp": 36
+    },
+    {
+      "s": "LINK",
+      "t": "ranging",
+      "rsi": 69.1,
+      "fp": 91
+    },
+    {
+      "s": "AVAX",
+      "t": "strong_bearish",
+      "rsi": 57.8,
+      "fp": 87
+    },
+    {
+      "s": "SUI",
+      "t": "ranging",
+      "rsi": 67.2,
+      "fp": 59
+    },
+    {
+      "s": "NEAR",
+      "t": "strong_bullish",
+      "rsi": 71.5,
+      "fp": 47
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 63.2,
+      "fp": 97
+    },
+    {
+      "s": "DOGE",
+      "t": "ranging",
+      "rsi": 65.5,
+      "fp": 100
+    },
+    {
+      "s": "TON",
+      "t": "ranging",
+      "rsi": 60.6,
+      "fp": 61
+    },
+    {
+      "s": "ONDO",
+      "t": "ranging",
+      "rsi": 60.4,
+      "fp": 100
+    },
+    {
+      "s": "TAO",
+      "t": "ranging",
+      "rsi": 72.3,
+      "fp": 100
+    },
+    {
+      "s": "HYPE",
+      "t": "strong_bullish",
+      "rsi": 76.2,
+      "fp": 8
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 91
+    },
+    {
+      "s": "ZEC",
+      "t": "bearish",
+      "rsi": 82.2,
+      "fp": 92
+    },
+    {
+      "s": "BNB",
+      "t": "ranging",
+      "rsi": 64.2,
+      "fp": 80
+    }
+  ],
   "history": [
     {
       "symbol": "BCH/USDT",
@@ -129,6 +246,11 @@
       "result": "open"
     }
   ],
-  "chart": {},
-  "updated": "2026-06-15T01:40:55Z"
+  "chart": {
+    "labels": [],
+    "ton": [],
+    "render": [],
+    "btc": []
+  },
+  "updated": "2026-06-15T01:48:39Z"
 }
