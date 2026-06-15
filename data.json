@@ -4,116 +4,9 @@
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
   "signals": [],
-  "events": [
-    {
-      "ts": "2026-06-15T03:08:50.792874+00:00",
-      "type": "watch",
-      "symbol": "AVAX/USDT",
-      "direction": "SHORT",
-      "reason": "resistance + pin_bar_bear"
-    }
-  ],
-  "liq_4h": 0.0,
-  "whale_usd": 82.2,
-  "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "ranging",
-      "rsi": 71.2,
-      "fp": 6
-    },
-    {
-      "s": "ETH",
-      "t": "bearish",
-      "rsi": 71.5,
-      "fp": 20
-    },
-    {
-      "s": "SOL",
-      "t": "ranging",
-      "rsi": 74.6,
-      "fp": 36
-    },
-    {
-      "s": "LINK",
-      "t": "ranging",
-      "rsi": 69.1,
-      "fp": 100
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 57.7,
-      "fp": 89
-    },
-    {
-      "s": "SUI",
-      "t": "ranging",
-      "rsi": 67.5,
-      "fp": 53
-    },
-    {
-      "s": "NEAR",
-      "t": "strong_bullish",
-      "rsi": 73.2,
-      "fp": 54
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 63.4,
-      "fp": 97
-    },
-    {
-      "s": "DOGE",
-      "t": "ranging",
-      "rsi": 66.0,
-      "fp": 100
-    },
-    {
-      "s": "TON",
-      "t": "ranging",
-      "rsi": 60.6,
-      "fp": 75
-    },
-    {
-      "s": "ONDO",
-      "t": "ranging",
-      "rsi": 65.4,
-      "fp": 100
-    },
-    {
-      "s": "TAO",
-      "t": "ranging",
-      "rsi": 73.8,
-      "fp": 100
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 78.8,
-      "fp": 9
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 91
-    },
-    {
-      "s": "ZEC",
-      "t": "bearish",
-      "rsi": 84.7,
-      "fp": 92
-    },
-    {
-      "s": "BNB",
-      "t": "ranging",
-      "rsi": 65.2,
-      "fp": 90
-    }
-  ],
+  "liq_4h": 0,
+  "whale_usd": 0,
+  "coins": [],
   "history": [
     {
       "symbol": "BCH/USDT",
@@ -236,11 +129,15 @@
       "result": "open"
     }
   ],
-  "chart": {
-    "labels": [],
-    "ton": [],
-    "render": [],
-    "btc": []
-  },
-  "updated": "2026-06-15T03:10:04Z"
+  "chart": {},
+  "events": [
+    {
+      "ts": "2026-06-15T03:08:50.792874+00:00",
+      "type": "watch",
+      "symbol": "AVAX/USDT",
+      "direction": "SHORT",
+      "reason": "resistance + pin_bar_bear"
+    }
+  ],
+  "updated": "2026-06-15T03:11:25Z"
 }
