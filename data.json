@@ -199,80 +199,80 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 77.9,
+      "rsi": 78.0,
       "fp": 0
     },
     {
       "s": "ETH",
       "t": "ranging",
       "rsi": 87.6,
-      "fp": 60
+      "fp": 64
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 85.4,
+      "rsi": 86.2,
       "fp": 32
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 81.5,
+      "rsi": 81.6,
       "fp": 100
     },
     {
       "s": "AVAX",
       "t": "bearish",
-      "rsi": 69.7,
-      "fp": 62
+      "rsi": 71.5,
+      "fp": 63
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 76.3,
-      "fp": 44
+      "rsi": 76.0,
+      "fp": 47
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 83.9,
-      "fp": 44
+      "rsi": 85.7,
+      "fp": 45
     },
     {
       "s": "BCH",
       "t": "bearish",
-      "rsi": 80.7,
-      "fp": 71
+      "rsi": 82.4,
+      "fp": 72
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 71.9,
-      "fp": 72
+      "rsi": 66.0,
+      "fp": 74
     },
     {
       "s": "TON",
       "t": "ranging",
-      "rsi": 59.1,
-      "fp": 53
+      "rsi": 65.4,
+      "fp": 69
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 74.0,
+      "rsi": 75.5,
       "fp": 100
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 65.4,
+      "rsi": 66.7,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 79.8,
-      "fp": 23
+      "rsi": 78.2,
+      "fp": 19
     },
     {
       "s": "XMR",
@@ -283,14 +283,14 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 84.5,
-      "fp": 32
+      "rsi": 84.3,
+      "fp": 34
     },
     {
       "s": "BNB",
       "t": "ranging",
       "rsi": 74.4,
-      "fp": 67
+      "fp": 66
     }
   ],
   "history": [
@@ -427,5 +427,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-15T14:23:15Z"
+  "updated": "2026-06-15T14:38:14Z"
 }
