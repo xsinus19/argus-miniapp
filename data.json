@@ -1,5 +1,5 @@
 {
-  "fear_greed": 18,
+  "fear_greed": 20,
   "fear_label": "EXTREME_FEAR",
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
@@ -23,10 +23,107 @@
       "tp3": 0.14564
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 0.0,
+  "whale_usd": 102.7,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "ranging",
+      "rsi": 74.7,
+      "fp": 34
+    },
+    {
+      "s": "ETH",
+      "t": "bearish",
+      "rsi": 76.8,
+      "fp": 36
+    },
+    {
+      "s": "SOL",
+      "t": "ranging",
+      "rsi": 78.2,
+      "fp": 47
+    },
+    {
+      "s": "LINK",
+      "t": "ranging",
+      "rsi": 70.9,
+      "fp": 82
+    },
+    {
+      "s": "AVAX",
+      "t": "strong_bearish",
+      "rsi": 59.6,
+      "fp": 72
+    },
+    {
+      "s": "SUI",
+      "t": "ranging",
+      "rsi": 71.2,
+      "fp": 51
+    },
+    {
+      "s": "NEAR",
+      "t": "strong_bullish",
+      "rsi": 71.3,
+      "fp": 47
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 63.7,
+      "fp": 94
+    },
+    {
+      "s": "DOGE",
+      "t": "ranging",
+      "rsi": 66.4,
+      "fp": 84
+    },
+    {
+      "s": "TON",
+      "t": "bearish",
+      "rsi": 61.2,
+      "fp": 45
+    },
+    {
+      "s": "ONDO",
+      "t": "ranging",
+      "rsi": 61.1,
+      "fp": 80
+    },
+    {
+      "s": "TAO",
+      "t": "ranging",
+      "rsi": 68.9,
+      "fp": 100
+    },
+    {
+      "s": "HYPE",
+      "t": "strong_bullish",
+      "rsi": 75.2,
+      "fp": 23
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 91
+    },
+    {
+      "s": "ZEC",
+      "t": "bearish",
+      "rsi": 82.3,
+      "fp": 82
+    },
+    {
+      "s": "BNB",
+      "t": "ranging",
+      "rsi": 65.6,
+      "fp": 54
+    }
+  ],
   "history": [
     {
       "symbol": "BCH/USDT",
@@ -155,5 +252,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-15T00:09:14Z"
+  "updated": "2026-06-15T00:25:37Z"
 }
