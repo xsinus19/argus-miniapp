@@ -6,6 +6,14 @@
   "signals": [],
   "events": [
     {
+      "ts": "2026-06-15T03:40:08.663424+00:00",
+      "type": "rejected",
+      "symbol": "SOL/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_STRONG",
+      "reason": "Низкий AI score (0.28) | RG: MTF конфликт и высокий RSI указывают на повышенный риск, а история торг"
+    },
+    {
       "ts": "2026-06-15T03:08:50.792874+00:00",
       "type": "watch",
       "symbol": "AVAX/USDT",
@@ -20,13 +28,13 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 74.2,
-      "fp": 6
+      "rsi": 75.2,
+      "fp": 8
     },
     {
       "s": "ETH",
       "t": "bearish",
-      "rsi": 73.0,
+      "rsi": 73.1,
       "fp": 20
     },
     {
@@ -38,62 +46,62 @@
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 71.5,
+      "rsi": 71.9,
       "fp": 100
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 58.5,
+      "rsi": 58.7,
       "fp": 89
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 69.6,
-      "fp": 57
+      "rsi": 70.2,
+      "fp": 62
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 73.4,
-      "fp": 52
+      "rsi": 75.2,
+      "fp": 48
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 65.0,
+      "rsi": 64.0,
       "fp": 100
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 67.3,
+      "rsi": 67.2,
       "fp": 100
     },
     {
       "s": "TON",
       "t": "ranging",
       "rsi": 64.7,
-      "fp": 86
+      "fp": 100
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 67.8,
-      "fp": 100
+      "rsi": 69.7,
+      "fp": 82
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 75.4,
+      "rsi": 75.7,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 78.9,
-      "fp": 9
+      "rsi": 79.4,
+      "fp": 15
     },
     {
       "s": "XMR",
@@ -103,15 +111,15 @@
     },
     {
       "s": "ZEC",
-      "t": "bearish",
-      "rsi": 84.6,
+      "t": "ranging",
+      "rsi": 85.0,
       "fp": 92
     },
     {
       "s": "BNB",
       "t": "ranging",
       "rsi": 66.3,
-      "fp": 92
+      "fp": 93
     }
   ],
   "history": [
@@ -242,5 +250,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-15T03:24:46Z"
+  "updated": "2026-06-15T03:41:33Z"
 }
