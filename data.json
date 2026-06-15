@@ -16,6 +16,14 @@
   ],
   "events": [
     {
+      "ts": "2026-06-15T12:40:06.339010+00:00",
+      "type": "rejected",
+      "symbol": "SOL/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_STRONG",
+      "reason": "Risk Guardian HARD REJECT: Высокий RSI и конфликт MTF указывают на высокий риск входа, а также отсут"
+    },
+    {
       "ts": "2026-06-15T12:25:11.722778+00:00",
       "type": "rejected",
       "symbol": "SOL/USDT",
@@ -183,79 +191,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 76.2,
+      "rsi": 76.5,
       "fp": 0
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 81.6,
+      "rsi": 83.0,
       "fp": 26
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 81.8,
+      "rsi": 83.2,
       "fp": 16
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 76.9,
+      "rsi": 77.6,
       "fp": 100
     },
     {
       "s": "AVAX",
       "t": "bearish",
-      "rsi": 68.1,
-      "fp": 49
+      "rsi": 69.0,
+      "fp": 51
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 74.4,
-      "fp": 44
+      "rsi": 74.3,
+      "fp": 39
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 80.7,
-      "fp": 22
+      "rsi": 79.4,
+      "fp": 20
     },
     {
       "s": "BCH",
       "t": "bearish",
-      "rsi": 82.5,
-      "fp": 72
+      "rsi": 81.5,
+      "fp": 71
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 70.5,
-      "fp": 35
+      "rsi": 71.4,
+      "fp": 38
     },
     {
       "s": "TON",
       "t": "ranging",
-      "rsi": 57.5,
-      "fp": 56
+      "rsi": 55.7,
+      "fp": 47
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 68.9,
+      "rsi": 69.7,
       "fp": 100
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 76.7,
-      "fp": 43
+      "rsi": 73.7,
+      "fp": 48
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 85.7,
+      "rsi": 85.4,
       "fp": 13
     },
     {
@@ -267,13 +275,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 89.1,
-      "fp": 27
+      "rsi": 86.9,
+      "fp": 24
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 67.4,
+      "rsi": 68.9,
       "fp": 90
     }
   ],
@@ -405,5 +413,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-15T12:26:40Z"
+  "updated": "2026-06-15T12:41:30Z"
 }
