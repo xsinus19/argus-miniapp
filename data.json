@@ -16,6 +16,14 @@
   ],
   "events": [
     {
+      "ts": "2026-06-15T12:25:11.722778+00:00",
+      "type": "rejected",
+      "symbol": "SOL/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_STRONG",
+      "reason": "Risk Guardian HARD REJECT: Высокий RSI и конфликт MTF указывают на высокий риск входа, а также отсут"
+    },
+    {
       "ts": "2026-06-15T11:26:33.917812+00:00",
       "type": "sl",
       "symbol": "AVAX/USDT",
@@ -168,10 +176,107 @@
       "reason": "resistance + pin_bar_bear"
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 0.0,
+  "whale_usd": 205.5,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "ranging",
+      "rsi": 76.2,
+      "fp": 0
+    },
+    {
+      "s": "ETH",
+      "t": "ranging",
+      "rsi": 81.6,
+      "fp": 26
+    },
+    {
+      "s": "SOL",
+      "t": "ranging",
+      "rsi": 81.8,
+      "fp": 16
+    },
+    {
+      "s": "LINK",
+      "t": "ranging",
+      "rsi": 76.9,
+      "fp": 100
+    },
+    {
+      "s": "AVAX",
+      "t": "bearish",
+      "rsi": 68.1,
+      "fp": 49
+    },
+    {
+      "s": "SUI",
+      "t": "ranging",
+      "rsi": 74.4,
+      "fp": 44
+    },
+    {
+      "s": "NEAR",
+      "t": "strong_bullish",
+      "rsi": 80.7,
+      "fp": 22
+    },
+    {
+      "s": "BCH",
+      "t": "bearish",
+      "rsi": 82.5,
+      "fp": 72
+    },
+    {
+      "s": "DOGE",
+      "t": "ranging",
+      "rsi": 70.5,
+      "fp": 35
+    },
+    {
+      "s": "TON",
+      "t": "ranging",
+      "rsi": 57.5,
+      "fp": 56
+    },
+    {
+      "s": "ONDO",
+      "t": "strong_bullish",
+      "rsi": 68.9,
+      "fp": 100
+    },
+    {
+      "s": "TAO",
+      "t": "ranging",
+      "rsi": 76.7,
+      "fp": 43
+    },
+    {
+      "s": "HYPE",
+      "t": "strong_bullish",
+      "rsi": 85.7,
+      "fp": 13
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 91
+    },
+    {
+      "s": "ZEC",
+      "t": "ranging",
+      "rsi": 89.1,
+      "fp": 27
+    },
+    {
+      "s": "BNB",
+      "t": "ranging",
+      "rsi": 67.4,
+      "fp": 90
+    }
+  ],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -300,5 +405,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-15T12:10:25Z"
+  "updated": "2026-06-15T12:26:40Z"
 }
