@@ -564,17 +564,28 @@ function renderSignals(){
         <div class="sp-box"><div class="sp-lbl">СТОП</div><div class="sp-val dn">$${s.sl||'--'}</div></div>
       </div>
       <div class="tp-lbl">ЦЕЛИ</div>
-      ${['tp1','tp2','tp3'].map(tp=>{
+      ${['tp1','tp2','tp3'].map((tp,idx)=>{
         const tpVal=parseFloat(s[tp]||0);
         const ep=parseFloat(s.ep||0);
+        const cp=parseFloat(s.cp||0);
         const isLong=s.dir==='long';
-        const range=isLong?tpVal-ep:ep-tpVal;
-        const pct=range>0?Math.min(100,Math.round(range/Math.abs(ep)*1000))+'%':'0%';
+        const hit=s[tp+'_hit']||false;
+        const totalRange=isLong?tpVal-ep:ep-tpVal;
+        let pct=0;
+        if(hit){pct=100;}
+        else if(cp>0&&totalRange>0){
+          const moved=isLong?cp-ep:ep-cp;
+          pct=Math.min(100,Math.max(0,Math.round(moved/totalRange*100)));
+        }
+        const fillCls=hit?'tp-fill-g':'tp-fill-d';
+        const badgeCls=hit?'hit':'miss';
+        const badgeTxt=hit?'✓ HIT':'ждём';
+        const tpPct=ep&&tpVal?(Math.abs(tpVal-ep)/ep*100).toFixed(1)+'%':'';
         return `<div class="tp-row">
-          <div class="tp-name miss">${tp.toUpperCase()}</div>
-          <div class="tp-track"><div class="tp-fill-d" style="width:${pct}"></div></div>
-          <div class="tp-price">$${s[tp]||'--'}</div>
-          <div class="tp-badge miss">ждём</div>
+          <div class="tp-name ${badgeCls}">TP${idx+1}</div>
+          <div class="tp-track"><div class="${fillCls}" style="width:${pct}%"></div></div>
+          <div class="tp-price">$${tpVal||'--'}<span style="color:#6a9ab8;font-size:10px"> +${tpPct}</span></div>
+          <div class="tp-badge ${badgeCls}">${badgeTxt}</div>
         </div>`;}).join('')}
     </div>`;
   }).join('');
