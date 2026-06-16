@@ -220,98 +220,98 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 57.2,
+      "rsi": 55.0,
       "fp": 6
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 67.0,
-      "fp": 71
+      "rsi": 66.9,
+      "fp": 76
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 67.9,
-      "fp": 56
+      "rsi": 68.1,
+      "fp": 55
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 59.3,
-      "fp": 68
+      "rsi": 57.8,
+      "fp": 66
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 55.7,
-      "fp": 10
+      "rsi": 55.5,
+      "fp": 11
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 51.4,
-      "fp": 87
+      "rsi": 51.9,
+      "fp": 85
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 58.3,
-      "fp": 2
+      "rsi": 58.7,
+      "fp": 5
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 52.1,
+      "rsi": 52.7,
       "fp": 22
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 45.5,
-      "fp": 62
+      "rsi": 44.9,
+      "fp": 65
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 31.3,
-      "fp": 3
+      "rsi": 31.1,
+      "fp": 4
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 52.4,
+      "rsi": 53.4,
       "fp": 54
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 48.9,
-      "fp": 38
+      "rsi": 49.4,
+      "fp": 46
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 89.8,
+      "rsi": 90.1,
       "fp": 97
     },
     {
       "s": "XMR",
       "t": "strong_bearish",
       "rsi": 49.4,
-      "fp": 2
+      "fp": 1
     },
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 57.2,
-      "fp": 56
+      "rsi": 56.8,
+      "fp": 55
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 43.6,
-      "fp": 76
+      "rsi": 38.5,
+      "fp": 63
     }
   ],
   "history": [
@@ -448,5 +448,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-16T13:26:20Z"
+  "updated": "2026-06-16T13:41:12Z"
 }
