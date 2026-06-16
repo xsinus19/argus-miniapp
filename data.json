@@ -220,79 +220,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 59.4,
-      "fp": 8
+      "rsi": 60.9,
+      "fp": 9
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 55.5,
+      "rsi": 55.4,
       "fp": 17
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 70.4,
-      "fp": 62
+      "rsi": 70.0,
+      "fp": 60
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 53.2,
-      "fp": 54
+      "rsi": 52.4,
+      "fp": 47
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 53.9,
+      "rsi": 53.1,
       "fp": 5
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 49.7,
-      "fp": 21
+      "rsi": 49.2,
+      "fp": 31
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 69.5,
-      "fp": 14
+      "rsi": 69.0,
+      "fp": 13
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 66.7,
-      "fp": 95
+      "rsi": 66.3,
+      "fp": 87
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 42.4,
-      "fp": 6
+      "rsi": 42.9,
+      "fp": 5
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 39.2,
+      "rsi": 38.6,
       "fp": 5
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 52.3,
-      "fp": 52
+      "rsi": 52.4,
+      "fp": 49
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 47.8,
+      "rsi": 49.1,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 86.2,
+      "rsi": 85.8,
       "fp": 97
     },
     {
@@ -304,13 +304,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 74.6,
+      "rsi": 74.9,
       "fp": 34
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 48.5,
+      "rsi": 49.4,
       "fp": 54
     }
   ],
@@ -448,5 +448,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-16T06:11:12Z"
+  "updated": "2026-06-16T06:26:17Z"
 }
