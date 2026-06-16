@@ -3,332 +3,78 @@
   "fear_label": "EXTREME_FEAR",
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
-  "signals": [
-    {
-      "sym": "HYPE/USDT",
-      "dir": "long",
-      "ep": 67.789,
-      "sl": 58.056,
-      "tp1": 87.253,
-      "tp2": 101.852,
-      "tp3": 116.45,
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
-      "rr": 2.0,
-      "signal_level": "SIGNAL_LITE",
-      "cp": 0
-    },
-    {
-      "sym": "AVAX/USDT",
-      "dir": "long",
-      "ep": 7.0587,
-      "sl": 6.3558,
-      "tp1": 8.4644,
-      "tp2": 9.5187,
-      "tp3": 10.573,
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
-      "rr": 2.0,
-      "signal_level": "SIGNAL_LITE",
-      "cp": 0
-    }
-  ],
-  "events": [
-    {
-      "ts": "2026-06-16T14:09:38.860292+00:00",
-      "type": "rejected",
-      "symbol": "BTC/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.45) | RG: MTF конфликт и умеренная активность на европейской сессии увеличивают р"
-    },
-    {
-      "ts": "2026-06-16T11:24:39.763399+00:00",
-      "type": "rejected",
-      "symbol": "BTC/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.45) | RG: MTF конфликт и слабый Weighted Score указывают на высокий риск входа, а"
-    },
-    {
-      "ts": "2026-06-16T10:10:07.203171+00:00",
-      "type": "rejected",
-      "symbol": "SUI/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.45) | RG: MTF конфликт и низкая статистика по SUI/USDT указывают на высокий риск "
-    },
-    {
-      "ts": "2026-06-16T09:25:20.037724+00:00",
-      "type": "rejected",
-      "symbol": "NEAR/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Недостаточно уверенности (score=0.55) | RG: Высокий RSI и отсутствие истории торгов могут указывать "
-    },
-    {
-      "ts": "2026-06-15T23:39:45.474508+00:00",
-      "type": "rejected",
-      "symbol": "ETH/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.45) | RG: MTF конфликт и низкая ликвидность повышают риск неудачного входа, а выс"
-    },
-    {
-      "ts": "2026-06-15T21:09:43.163643+00:00",
-      "type": "rejected",
-      "symbol": "ETH/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.45) | RG: MTF конфликт и высокий RSI указывают на повышенный риск, вход может быт"
-    },
-    {
-      "ts": "2026-06-15T19:09:44.299040+00:00",
-      "type": "rejected",
-      "symbol": "ETH/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.45) | RG: MTF конфликт и высокий RSI указывают на повышенный риск, вход может быт"
-    },
-    {
-      "ts": "2026-06-15T16:37:02.852920+00:00",
-      "type": "signal",
-      "symbol": "AVAX/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_LITE",
-      "entry": 7.0587,
-      "sl": 6.3558,
-      "tp1": 8.4644,
-      "tp2": 9.5187,
-      "tp3": 10.573,
-      "rr": 2.0,
-      "pa_score": 0.7000000000000001,
-      "ai_unavailable": false
-    },
-    {
-      "ts": "2026-06-15T16:36:44.621066+00:00",
-      "type": "rejected",
-      "symbol": "ETH/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Недостаточно уверенности (score=0.55) | RG: MTF конфликт и высокий RSI указывают на повышенный риск,"
-    },
-    {
-      "ts": "2026-06-15T15:06:58.064335+00:00",
-      "type": "rejected",
-      "symbol": "LINK/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.17) | RG: Высокий уровень funding и конфликт MTF увеличивают риск для лонга, что "
-    },
-    {
-      "ts": "2026-06-15T14:51:45.482226+00:00",
-      "type": "rejected",
-      "symbol": "ETH/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.35) | RG: Высокий RSI и конфликт на MTF указывают на повышенный риск, что делает "
-    },
-    {
-      "ts": "2026-06-15T14:21:44.493946+00:00",
-      "type": "rejected",
-      "symbol": "ETH/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.35) | RG: Высокий RSI и конфликт на MTF указывают на повышенный риск, что делает "
-    },
-    {
-      "ts": "2026-06-15T12:40:06.339010+00:00",
-      "type": "rejected",
-      "symbol": "SOL/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Risk Guardian HARD REJECT: Высокий RSI и конфликт MTF указывают на высокий риск входа, а также отсут"
-    },
-    {
-      "ts": "2026-06-15T12:25:11.722778+00:00",
-      "type": "rejected",
-      "symbol": "SOL/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Risk Guardian HARD REJECT: Высокий RSI и конфликт MTF указывают на высокий риск входа, а также отсут"
-    },
-    {
-      "ts": "2026-06-15T11:26:33.917812+00:00",
-      "type": "sl",
-      "symbol": "AVAX/USDT",
-      "direction": "short",
-      "price": 6.929,
-      "entry": 6.7,
-      "loss": 3.4179104477611952,
-      "signal_level": "SIGNAL_STRONG"
-    },
-    {
-      "ts": "2026-06-15T10:56:07.044037+00:00",
-      "type": "signal",
-      "symbol": "HYPE/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_LITE",
-      "entry": 67.789,
-      "sl": 58.056,
-      "tp1": 87.253,
-      "tp2": 101.852,
-      "tp3": 116.45,
-      "rr": 2.0,
-      "pa_score": 0.85,
-      "ai_unavailable": false
-    },
-    {
-      "ts": "2026-06-15T10:26:30.373586+00:00",
-      "type": "sl",
-      "symbol": "BCH/USDT",
-      "direction": "short",
-      "price": 216.5,
-      "entry": 211.0,
-      "loss": 2.6066350710900474,
-      "signal_level": "SIGNAL_STRONG"
-    },
-    {
-      "ts": "2026-06-15T09:56:08.178622+00:00",
-      "type": "rejected",
-      "symbol": "HYPE/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Недостаточно уверенности (score=0.55) | RG: Высокий RSI и отсутствие подтверждения тренда, что указы"
-    },
-    {
-      "ts": "2026-06-15T09:40:40.561129+00:00",
-      "type": "rejected",
-      "symbol": "SUI/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Risk Guardian HARD REJECT: MTF конфликт и высокий RSI указывают на повышенный риск, а история торгов"
-    },
-    {
-      "ts": "2026-06-15T09:25:07.072416+00:00",
-      "type": "rejected",
-      "symbol": "SOL/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Risk Guardian HARD REJECT: Высокий RSI и конфликт на MTF, что указывает на высокий риск входа в длин"
-    }
-  ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
-  "whale_signal": "neutral",
+  "signals": [],
+  "liq_4h": 0,
+  "whale_usd": 0,
   "coins": [
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 49.5,
+      "rsi": 51.0,
       "fp": 81
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 60.8,
-      "fp": 40
+      "rsi": 62.4,
+      "fp": 50
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 62.8,
+      "rsi": 63.8,
       "fp": 82
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 55.8,
-      "fp": 25
+      "rsi": 58.5,
+      "fp": 40
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 55.6,
-      "fp": 48
+      "rsi": 59.2,
+      "fp": 59
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 58.0,
-      "fp": 82
+      "rsi": 59.4,
+      "fp": 88
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 50.9,
-      "fp": 25
+      "rsi": 54.6,
+      "fp": 23
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 55.0,
-      "fp": 42
+      "rsi": 56.6,
+      "fp": 47
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 46.4,
+      "rsi": 48.0,
       "fp": 100
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 30.6,
-      "fp": 6
+      "rsi": 35.9,
+      "fp": 7
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 48.5,
+      "rsi": 55.5,
       "fp": 20
-    },
-    {
-      "s": "TAO",
-      "t": "ranging",
-      "rsi": 40.5,
-      "fp": 31
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 69.0,
-      "fp": 97
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 91
-    },
-    {
-      "s": "ZEC",
-      "t": "ranging",
-      "rsi": 52.5,
-      "fp": 68
-    },
-    {
-      "s": "BNB",
-      "t": "ranging",
-      "rsi": 39.4,
-      "fp": 54
     }
   ],
   "history": [
-    {
-      "symbol": "TON/USDT",
-      "direction": "long",
-      "signal_level": "MODERATE",
-      "entry_price": 1.7745,
-      "stop_loss": 1.6931,
-      "tp1": 1.9373,
-      "tp2": 2.0594,
-      "tp3": 2.1815,
-      "time": "2026-05-30T14:58:44.707723+00:00",
-      "result": "expired"
-    },
     {
       "symbol": "LINK/USDT",
       "direction": "long",
@@ -690,13 +436,20 @@
       "tp3": 10.573,
       "time": "2026-06-15T16:37:02.853899+00:00",
       "result": "open"
+    },
+    {
+      "symbol": "ONDO/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_LITE",
+      "entry_price": 0.3787,
+      "stop_loss": 0.3533,
+      "tp1": 0.42952,
+      "tp2": 0.46763,
+      "tp3": 0.50574,
+      "time": "2026-06-16T20:51:58.201554+00:00",
+      "result": "open"
     }
   ],
-  "chart": {
-    "labels": [],
-    "ton": [],
-    "render": [],
-    "btc": []
-  },
-  "updated": "2026-06-16T20:37:36Z"
+  "chart": {},
+  "updated": "2026-06-16T20:51:58Z"
 }
