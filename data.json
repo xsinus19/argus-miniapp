@@ -220,79 +220,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 55.1,
-      "fp": 68
+      "rsi": 52.1,
+      "fp": 66
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 63.5,
-      "fp": 28
+      "rsi": 62.4,
+      "fp": 30
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 62.5,
+      "rsi": 61.3,
       "fp": 55
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 57.2,
+      "rsi": 56.3,
       "fp": 28
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 55.5,
-      "fp": 17
+      "rsi": 54.1,
+      "fp": 18
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 54.7,
-      "fp": 49
+      "rsi": 53.7,
+      "fp": 45
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 50.3,
-      "fp": 72
+      "rsi": 49.7,
+      "fp": 62
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 54.5,
+      "rsi": 52.6,
       "fp": 30
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 46.4,
-      "fp": 81
+      "rsi": 45.2,
+      "fp": 82
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 27.9,
-      "fp": 6
+      "rsi": 27.5,
+      "fp": 5
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 46.0,
-      "fp": 37
+      "rsi": 45.6,
+      "fp": 39
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 37.1,
+      "rsi": 34.5,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 77.9,
+      "rsi": 72.7,
       "fp": 97
     },
     {
@@ -304,13 +304,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 56.4,
-      "fp": 66
+      "rsi": 55.3,
+      "fp": 59
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 39.2,
+      "rsi": 39.3,
       "fp": 54
     }
   ],
@@ -448,5 +448,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-16T18:21:14Z"
+  "updated": "2026-06-16T18:36:11Z"
 }
