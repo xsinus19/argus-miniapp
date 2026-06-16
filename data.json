@@ -220,79 +220,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 51.9,
-      "fp": 60
+      "rsi": 56.3,
+      "fp": 65
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 62.0,
-      "fp": 30
+      "rsi": 64.4,
+      "fp": 32
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 60.5,
-      "fp": 49
+      "rsi": 63.4,
+      "fp": 55
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 53.0,
-      "fp": 23
+      "rsi": 57.1,
+      "fp": 25
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 52.1,
-      "fp": 12
+      "rsi": 55.5,
+      "fp": 17
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 50.6,
-      "fp": 45
+      "rsi": 55.4,
+      "fp": 51
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 49.1,
+      "rsi": 51.5,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 51.8,
-      "fp": 28
+      "rsi": 53.9,
+      "fp": 30
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 41.9,
-      "fp": 74
+      "rsi": 46.8,
+      "fp": 78
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 26.6,
-      "fp": 15
+      "rsi": 27.9,
+      "fp": 13
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 45.6,
-      "fp": 41
+      "rsi": 48.1,
+      "fp": 37
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 38.4,
+      "rsi": 40.4,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 77.3,
+      "rsi": 83.9,
       "fp": 97
     },
     {
@@ -304,13 +304,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 55.5,
-      "fp": 69
+      "rsi": 57.8,
+      "fp": 68
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 39.5,
+      "rsi": 42.3,
       "fp": 54
     }
   ],
@@ -448,5 +448,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-16T17:51:18Z"
+  "updated": "2026-06-16T18:06:11Z"
 }
