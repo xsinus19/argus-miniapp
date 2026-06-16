@@ -213,107 +213,10 @@
       "reason": "Недостаточно уверенности (score=0.55) | RG: Высокий RSI и потенциальная манипуляция на тихом рынке а"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 41.3,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "ranging",
-      "rsi": 62.8,
-      "fp": 10
-    },
-    {
-      "s": "ETH",
-      "t": "ranging",
-      "rsi": 59.0,
-      "fp": 19
-    },
-    {
-      "s": "SOL",
-      "t": "ranging",
-      "rsi": 72.9,
-      "fp": 56
-    },
-    {
-      "s": "LINK",
-      "t": "ranging",
-      "rsi": 57.6,
-      "fp": 47
-    },
-    {
-      "s": "AVAX",
-      "t": "ranging",
-      "rsi": 61.3,
-      "fp": 7
-    },
-    {
-      "s": "SUI",
-      "t": "ranging",
-      "rsi": 52.6,
-      "fp": 31
-    },
-    {
-      "s": "NEAR",
-      "t": "strong_bullish",
-      "rsi": 71.2,
-      "fp": 14
-    },
-    {
-      "s": "BCH",
-      "t": "ranging",
-      "rsi": 68.9,
-      "fp": 71
-    },
-    {
-      "s": "DOGE",
-      "t": "ranging",
-      "rsi": 46.4,
-      "fp": 6
-    },
-    {
-      "s": "TON",
-      "t": "strong_bearish",
-      "rsi": 37.0,
-      "fp": 20
-    },
-    {
-      "s": "ONDO",
-      "t": "strong_bullish",
-      "rsi": 55.0,
-      "fp": 45
-    },
-    {
-      "s": "TAO",
-      "t": "ranging",
-      "rsi": 53.5,
-      "fp": 100
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 86.5,
-      "fp": 97
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 91
-    },
-    {
-      "s": "ZEC",
-      "t": "ranging",
-      "rsi": 75.7,
-      "fp": 35
-    },
-    {
-      "s": "BNB",
-      "t": "ranging",
-      "rsi": 54.8,
-      "fp": 54
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "TON/USDT",
@@ -448,5 +351,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-16T07:41:11Z"
+  "updated": "2026-06-16T07:55:08Z"
 }
