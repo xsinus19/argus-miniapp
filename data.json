@@ -213,107 +213,10 @@
       "reason": "Risk Guardian HARD REJECT: Высокий RSI и конфликт на MTF, что указывает на высокий риск входа в длин"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "ranging",
-      "rsi": 51.5,
-      "fp": 20
-    },
-    {
-      "s": "ETH",
-      "t": "ranging",
-      "rsi": 58.2,
-      "fp": 51
-    },
-    {
-      "s": "SOL",
-      "t": "ranging",
-      "rsi": 58.5,
-      "fp": 53
-    },
-    {
-      "s": "LINK",
-      "t": "ranging",
-      "rsi": 48.6,
-      "fp": 40
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 47.4,
-      "fp": 10
-    },
-    {
-      "s": "SUI",
-      "t": "ranging",
-      "rsi": 46.5,
-      "fp": 44
-    },
-    {
-      "s": "NEAR",
-      "t": "strong_bullish",
-      "rsi": 48.8,
-      "fp": 54
-    },
-    {
-      "s": "BCH",
-      "t": "ranging",
-      "rsi": 48.5,
-      "fp": 22
-    },
-    {
-      "s": "DOGE",
-      "t": "ranging",
-      "rsi": 41.2,
-      "fp": 60
-    },
-    {
-      "s": "TON",
-      "t": "strong_bearish",
-      "rsi": 28.5,
-      "fp": 10
-    },
-    {
-      "s": "ONDO",
-      "t": "strong_bullish",
-      "rsi": 48.2,
-      "fp": 52
-    },
-    {
-      "s": "TAO",
-      "t": "ranging",
-      "rsi": 37.7,
-      "fp": 100
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 80.6,
-      "fp": 97
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 0
-    },
-    {
-      "s": "ZEC",
-      "t": "ranging",
-      "rsi": 51.9,
-      "fp": 68
-    },
-    {
-      "s": "BNB",
-      "t": "strong_bearish",
-      "rsi": 35.5,
-      "fp": 54
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "TON/USDT",
@@ -448,5 +351,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-16T15:43:42Z"
+  "updated": "2026-06-16T15:59:21Z"
 }
