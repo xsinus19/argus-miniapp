@@ -220,79 +220,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 60.9,
-      "fp": 9
+      "rsi": 63.9,
+      "fp": 12
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 55.4,
-      "fp": 17
+      "rsi": 57.9,
+      "fp": 19
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 70.0,
+      "rsi": 71.5,
       "fp": 60
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 52.4,
-      "fp": 47
+      "rsi": 55.6,
+      "fp": 56
     },
     {
       "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 53.1,
-      "fp": 5
+      "t": "bearish",
+      "rsi": 56.0,
+      "fp": 6
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 49.2,
-      "fp": 31
+      "rsi": 51.0,
+      "fp": 33
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 69.0,
+      "rsi": 69.3,
       "fp": 13
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 66.3,
-      "fp": 87
+      "rsi": 68.6,
+      "fp": 83
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 42.9,
+      "rsi": 44.4,
       "fp": 5
     },
     {
       "s": "TON",
       "t": "strong_bearish",
       "rsi": 38.6,
-      "fp": 5
+      "fp": 6
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 52.4,
-      "fp": 49
+      "rsi": 53.4,
+      "fp": 51
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 49.1,
+      "rsi": 48.3,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 85.8,
+      "rsi": 86.2,
       "fp": 97
     },
     {
@@ -304,13 +304,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 74.9,
+      "rsi": 75.2,
       "fp": 34
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 49.4,
+      "rsi": 51.0,
       "fp": 54
     }
   ],
@@ -448,5 +448,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-16T06:26:17Z"
+  "updated": "2026-06-16T06:41:13Z"
 }
