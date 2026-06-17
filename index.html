@@ -945,6 +945,13 @@ if(window.Telegram&&window.Telegram.WebApp){
   window.Telegram.WebApp.ready();
   window.Telegram.WebApp.expand();
 }
+// Deep link
+(function(){
+  const params=new URLSearchParams(window.location.search);
+  const tab=params.get('tab');
+  const tabMap={'overview':1,'signals':2,'market':3,'history':4,'events':5,'account':6};
+  if(tab&&tabMap[tab]){setTimeout(function(){showScreen(tabMap[tab]);},300);}
+})();
 </script>
 </body>
 </html>
