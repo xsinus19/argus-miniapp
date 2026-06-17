@@ -915,14 +915,17 @@ function renderEvents(){
       detail = `${e.symbol||''} ${dir}<br>${(e.reason||'').substring(0,60)}`;
     } else if(e.type==='rejected'){
       const sym=(e.symbol||'').replace('/USDT','');
-      const dir=(e.direction||'').toUpperCase();
-      detail = `${sym} ${dir} — не прошёл фильтр`;
+      const dir=e.direction==='long'?'🟢 LONG':'🔴 SHORT';
+      const reason=(e.reason||'').split('|')[0].trim().substring(0,60);
+      detail = `${sym} ${dir}<br><span style='color:#6a9ab8;font-size:11px'>${reason}</span>`;
     } else if(e.type==='expired'){
       const sym=(e.symbol||'').replace('/USDT','');
-      const dir=(e.direction||'').toUpperCase();
-      detail = `${sym} ${dir} — истёк без TP`;
+      const dir=e.direction==='long'?'🟢 LONG':'🔴 SHORT';
+      const price=e.price?` | Цена: $${parseFloat(e.price).toFixed(4)}`:'';
+      detail = `${sym} ${dir} — истёк без TP${price}`;
     } else if(e.type==='digest'){
-      detail = 'Утренний дайджест готов';
+      const txt=(e.text||'').replace(/<[^>]+>/g,'').substring(0,120).trim();
+      detail = txt||'Утренний дайджест готов';
     }
     return `<div style="background:#0d1e2e;border:1px solid #1a3a5c;border-left:3px solid #00d4ff;padding:10px 12px;margin-bottom:8px">
       <div style="display:flex;justify-content:space-between;margin-bottom:5px">
