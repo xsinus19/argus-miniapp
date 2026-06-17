@@ -630,20 +630,7 @@ function openSigDetail(i){
 }
 
 // MARKET
-const STATIC_COINS=[
-  {s:'BTC',t:'strong_bearish',rsi:25.6,fp:97,struct:'BOS↓',hot:'bos',hotTxt:'СЛОМ'},
-  {s:'ETH',t:'strong_bearish',rsi:29.1,fp:30,struct:'CHoCH↓',hot:'choch',hotTxt:'СМЕНА'},
-  {s:'SOL',t:'strong_bearish',rsi:25.9,fp:5,struct:'BOS↓',hot:'',hotTxt:''},
-  {s:'LTC',t:'strong_bearish',rsi:26.3,fp:0,struct:'BOS↓',hot:'',hotTxt:''},
-  {s:'LINK',t:'strong_bearish',rsi:18.9,fp:1,struct:'CHoCH↓',hot:'choch',hotTxt:'СМЕНА'},
-  {s:'WIF',t:'strong_bearish',rsi:20.0,fp:1,struct:'BOS↓',hot:'',hotTxt:''},
-  {s:'DOGE',t:'strong_bearish',rsi:26.3,fp:7,struct:'BOS↓',hot:'',hotTxt:''},
-  {s:'TON',t:'ranging',rsi:31.7,fp:2,struct:'RANGING',hot:'',hotTxt:''},
-  {s:'BCH',t:'strong_bearish',rsi:13.2,fp:22,struct:'BOS↓',hot:'',hotTxt:''},
-  {s:'RENDER',t:'ranging',rsi:26.7,fp:100,struct:'RANGING',hot:'',hotTxt:''},
-  {s:'POL',t:'ranging',rsi:13.6,fp:24,struct:'RANGING',hot:'pot',hotTxt:'ЖДЁМ'},
-  {s:'FET',t:'bullish',rsi:32.6,fp:45,struct:'CHoCH↑',hot:'',hotTxt:''},
-];
+const STATIC_COINS=[];
 
 function renderMarket(){
   const raw=appData.coins&&appData.coins.length?appData.coins:null;
