@@ -52,6 +52,11 @@
   ],
   "events": [
     {
+      "ts": "2026-06-17T04:06:28.399414+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-17 04:06 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 LINK/USDT: funding 100.0th (экстремальные лонги)\n  🔴 SUI/USDT: funding 95.0th (экстремальные лонги)\n  🔴 HYPE/USDT: funding 97.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • BTC/USDT: trend=ranging RSI=51 funding=6.0th\n  • LINK/USDT: trend=ranging RSI=60 funding=100.0th\n  • SUI/USDT: trend=ranging RSI=64 funding=95.0th\n  • HYPE/USDT: tr"
+    },
+    {
       "ts": "2026-06-16T22:21:40.400997+00:00",
       "type": "rejected",
       "symbol": "BCH/USDT",
@@ -227,14 +232,6 @@
       "entry": 211.0,
       "loss": 2.6066350710900474,
       "signal_level": "SIGNAL_STRONG"
-    },
-    {
-      "ts": "2026-06-15T09:56:08.178622+00:00",
-      "type": "rejected",
-      "symbol": "HYPE/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Недостаточно уверенности (score=0.55) | RG: Высокий RSI и отсутствие подтверждения тренда, что указы"
     }
   ],
   "liq_4h": 0,
@@ -623,5 +620,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-17T03:51:27Z"
+  "updated": "2026-06-17T04:06:28Z"
 }
