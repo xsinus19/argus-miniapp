@@ -241,79 +241,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 34.7,
+      "rsi": 34.6,
       "fp": 0
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 49.6,
+      "rsi": 50.1,
       "fp": 33
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 44.7,
-      "fp": 39
+      "rsi": 46.0,
+      "fp": 40
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 44.8,
-      "fp": 65
+      "rsi": 45.7,
+      "fp": 64
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 47.6,
-      "fp": 51
+      "rsi": 48.5,
+      "fp": 50
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 48.1,
+      "rsi": 48.5,
       "fp": 100
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 39.7,
-      "fp": 45
+      "rsi": 41.7,
+      "fp": 48
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 44.6,
+      "rsi": 44.1,
       "fp": 38
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 31.9,
-      "fp": 61
+      "rsi": 32.0,
+      "fp": 60
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 34.1,
+      "rsi": 32.1,
       "fp": 54
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 45.9,
-      "fp": 17
+      "rsi": 46.1,
+      "fp": 21
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 37.8,
+      "rsi": 37.7,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 61.1,
+      "rsi": 62.2,
       "fp": 97
     },
     {
@@ -325,13 +325,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 59.5,
-      "fp": 88
+      "rsi": 59.6,
+      "fp": 89
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 32.6,
+      "rsi": 32.1,
       "fp": 62
     }
   ],
@@ -717,5 +717,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-17T09:37:31Z"
+  "updated": "2026-06-17T09:52:37Z"
 }
