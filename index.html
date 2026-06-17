@@ -616,11 +616,20 @@ function openSigDetail(i){
         const tpVal=parseFloat(s[tp])||0;
         const tpPct=ep&&tpVal?Math.abs(tpVal-ep)/ep*100:0;
         const hit=s[tp+'_hit']||false;
+        const cp=parseFloat(s.cp||0);
+        const isLong=s.dir==='long';
+        const totalRange=isLong?tpVal-ep:ep-tpVal;
+        let pct=0;
+        if(hit){pct=100;}
+        else if(cp>0&&totalRange>0){
+          const moved=isLong?cp-ep:ep-cp;
+          pct=Math.min(100,Math.max(0,Math.round(moved/totalRange*100)));
+        }
         const cls=hit?'hit':'miss';
         const badge=hit?'✓ HIT':'ждём';
         return `<div class="det-tp-row">
           <div class="det-tp-name ${cls}">TP${idx+1}</div>
-          <div class="det-tp-track"><div class="det-tp-fill-d" style="width:${hit?'100':'0'}%"></div></div>
+          <div class="det-tp-track"><div class="det-tp-fill-d" style="width:${pct}%"></div></div>
           <div class="det-tp-price">$${tpVal||'--'} <span style="color:#6a9ab8;font-size:10px">(+${tpPct.toFixed(1)}%)</span></div>
           <div class="det-tp-badge ${cls}">${badge}</div>
         </div>`;
