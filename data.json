@@ -5,21 +5,6 @@
   "stablecoin": "319.7B",
   "signals": [
     {
-      "sym": "HYPE/USDT",
-      "dir": "long",
-      "ep": 67.789,
-      "sl": 58.056,
-      "tp1": 87.253,
-      "tp2": 101.852,
-      "tp3": 116.45,
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
-      "rr": 2.0,
-      "signal_level": "SIGNAL_LITE",
-      "cp": 0
-    },
-    {
       "sym": "AVAX/USDT",
       "dir": "long",
       "ep": 7.0587,
@@ -51,6 +36,15 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-06-17T11:07:30.479354+00:00",
+      "type": "expired",
+      "symbol": "HYPE/USDT",
+      "direction": "long",
+      "price": 71.687,
+      "entry": 67.789,
+      "signal_level": "SIGNAL_LITE"
+    },
     {
       "ts": "2026-06-17T04:06:28.399414+00:00",
       "type": "digest",
@@ -222,16 +216,6 @@
       "rr": 2.0,
       "pa_score": 0.85,
       "ai_unavailable": false
-    },
-    {
-      "ts": "2026-06-15T10:26:30.373586+00:00",
-      "type": "sl",
-      "symbol": "BCH/USDT",
-      "direction": "short",
-      "price": 216.5,
-      "entry": 211.0,
-      "loss": 2.6066350710900474,
-      "signal_level": "SIGNAL_STRONG"
     }
   ],
   "liq_4h": 0.0,
@@ -241,79 +225,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 33.5,
+      "rsi": 30.6,
       "fp": 2
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 49.2,
-      "fp": 37
+      "rsi": 44.7,
+      "fp": 35
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 43.9,
+      "rsi": 40.1,
       "fp": 54
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 44.6,
-      "fp": 68
+      "rsi": 41.1,
+      "fp": 67
     },
     {
       "s": "AVAX",
-      "t": "ranging",
-      "rsi": 47.5,
-      "fp": 48
+      "t": "strong_bearish",
+      "rsi": 44.9,
+      "fp": 45
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 49.0,
+      "rsi": 45.4,
       "fp": 100
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 40.0,
-      "fp": 56
+      "rsi": 39.3,
+      "fp": 54
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 42.7,
-      "fp": 31
+      "rsi": 39.9,
+      "fp": 28
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 32.5,
-      "fp": 48
+      "rsi": 30.5,
+      "fp": 43
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 37.8,
-      "fp": 63
+      "rsi": 35.2,
+      "fp": 74
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 46.9,
-      "fp": 32
+      "rsi": 45.2,
+      "fp": 30
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 35.7,
+      "rsi": 35.6,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 59.0,
+      "rsi": 55.0,
       "fp": 97
     },
     {
@@ -325,13 +309,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 56.2,
+      "rsi": 51.5,
       "fp": 89
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 31.7,
+      "rsi": 33.1,
       "fp": 61
     }
   ],
@@ -684,7 +668,9 @@
       "tp2": 101.852,
       "tp3": 116.45,
       "time": "2026-06-15T10:56:07.044695+00:00",
-      "result": "open"
+      "result": "expired",
+      "result_price": 71.687,
+      "pnl": 5.75
     },
     {
       "symbol": "AVAX/USDT",
@@ -717,5 +703,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-17T10:52:35Z"
+  "updated": "2026-06-17T11:07:30Z"
 }
