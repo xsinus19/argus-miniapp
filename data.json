@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 2.0,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0.3796
+      "cp": 0.381
     }
   ],
   "events": [
@@ -202,79 +202,79 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 54.6,
+      "rsi": 55.2,
       "fp": 4
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 50.9,
-      "fp": 27
+      "rsi": 53.3,
+      "fp": 28
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 56.1,
-      "fp": 52
+      "rsi": 58.1,
+      "fp": 56
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 50.8,
-      "fp": 67
+      "rsi": 52.9,
+      "fp": 74
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 53.8,
-      "fp": 69
+      "rsi": 55.9,
+      "fp": 77
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 54.1,
-      "fp": 89
+      "rsi": 56.2,
+      "fp": 91
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 53.1,
+      "rsi": 52.7,
       "fp": 2
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 49.9,
-      "fp": 53
+      "rsi": 52.2,
+      "fp": 56
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 47.4,
-      "fp": 27
+      "rsi": 49.8,
+      "fp": 43
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 41.8,
-      "fp": 69
+      "rsi": 44.5,
+      "fp": 62
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 56.2,
-      "fp": 78
+      "rsi": 58.0,
+      "fp": 100
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 47.0,
+      "rsi": 47.3,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 65.9,
+      "rsi": 66.1,
       "fp": 97
     },
     {
@@ -286,13 +286,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 47.1,
+      "rsi": 49.5,
       "fp": 19
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 40.7,
+      "rsi": 45.2,
       "fp": 95
     }
   ],
@@ -682,5 +682,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-17T17:19:47Z"
+  "updated": "2026-06-17T17:34:43Z"
 }
