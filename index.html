@@ -877,7 +877,7 @@ function loadAccount(){
           <div style="font-size:12px;margin-bottom:4px">Код: <span style="color:#00d4ff;font-family:monospace">${d.referral_code}</span></div>
           <div style="font-size:11px;color:#6a9ab8">Друг получит скидку 50% на первый месяц</div>
           <div style="margin-top:8px">
-            <a href="${d.referral_link}" style="color:#00d4ff;font-size:11px">🔗 Скопировать ссылку</a>
+            <button onclick="navigator.clipboard.writeText('${d.referral_link}').then(()=>{this.textContent='✅ Скопировано!';setTimeout(()=>{this.textContent='🔗 Скопировать ссылку'},2000)})" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:#00d4ff;font-size:11px;padding:6px 12px;border-radius:6px;cursor:pointer;letter-spacing:0.5px">🔗 Скопировать ссылку</button>
           </div>
         </div>
       `;
