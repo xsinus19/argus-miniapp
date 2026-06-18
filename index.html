@@ -599,7 +599,7 @@ function renderOverview(){
   }
   if(d.btc_dom)document.getElementById('btcDom').textContent=d.btc_dom;
   if(d.stablecoin)document.getElementById('stable').textContent=d.stablecoin;
-  if(d.signals)const ac=document.getElementById('activeCount');if(ac)ac.textContent=d.signals.length;const ac2=document.getElementById('activeCount2');if(ac2)ac2.textContent=d.signals.length;const si=document.getElementById('sigToday');if(si)si.textContent=d.signals.length;
+  if(d.signals){const ac=document.getElementById('activeCount');if(ac)ac.textContent=d.signals.length;const ac2=document.getElementById('activeCount2');if(ac2)ac2.textContent=d.signals.length;const si=document.getElementById('sigToday');if(si)si.textContent=d.signals.length;}
   if(d.liq_4h!=null){const lq=document.getElementById('liq4h');if(lq)lq.textContent='$'+d.liq_4h+'M';}
   if(d.whale_usd!=null){
     const wu=document.getElementById('whaleUsd');if(wu)wu.textContent='$'+d.whale_usd+'M';
