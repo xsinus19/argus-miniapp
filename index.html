@@ -521,7 +521,7 @@ let appData={};let coinsData={};let histData=[];
 async function loadData(){
   if(window.ARGUS_DATA && window.ARGUS_LOADED){
     appData=window.ARGUS_DATA;
-    try{renderAll();}catch(e){console.error('renderAll error:',e);}
+    try{renderAll();}catch(e){console.error('renderAll error:',e);const lm=document.getElementById('loadMsg');if(lm)lm.textContent='Ошибка: '+e.message;}
     const ls=document.getElementById("loadStatus");
     if(ls)ls.style.display="none";
     return;
