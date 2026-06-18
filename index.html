@@ -599,11 +599,11 @@ function renderOverview(){
   }
   if(d.btc_dom)document.getElementById('btcDom').textContent=d.btc_dom;
   if(d.stablecoin)document.getElementById('stable').textContent=d.stablecoin;
-  if(d.signals)document.getElementById('sigCount').textContent=d.signals.length;
-  if(d.liq_4h!=null)document.querySelector('#s1 .mc:nth-child(3) .mv').textContent='$'+d.liq_4h+'M';
+  if(d.signals)const ac=document.getElementById('activeCount');if(ac)ac.textContent=d.signals.length;const ac2=document.getElementById('activeCount2');if(ac2)ac2.textContent=d.signals.length;const si=document.getElementById('sigToday');if(si)si.textContent=d.signals.length;
+  if(d.liq_4h!=null){const lq=document.getElementById('liq4h');if(lq)lq.textContent='$'+d.liq_4h+'M';}
   if(d.whale_usd!=null){
-    document.getElementById('whaleVol').textContent='$'+d.whale_usd+'M';
-    const wb=document.getElementById('whaleBlock');
+    const wu=document.getElementById('whaleUsd');if(wu)wu.textContent='$'+d.whale_usd+'M';
+    const wb=document.getElementById('whaleSig');
     if(wb){
       if(d.whale_usd===0){
         wb.innerHTML='<div class="wr"><div class="wi">🐋</div><div class="winfo"><div class="wt2">НЕТ ДАННЫХ</div><div class="ws">Крупных переводов не обнаружено</div></div><div class="wv">$0M</div></div>';
@@ -618,8 +618,7 @@ function renderOverview(){
   // Win Rate обновляется в renderHistory
   if(d.updated){
     const dt=new Date(d.updated);
-    document.getElementById('lastUpd').textContent=
-      String(dt.getUTCHours()).padStart(2,'0')+':'+String(dt.getUTCMinutes()).padStart(2,'0')+' UTC';
+    const lu=document.getElementById('updTime');if(lu)lu.textContent=String(dt.getUTCHours()).padStart(2,'0')+':'+String(dt.getUTCMinutes()).padStart(2,'0')+' UTC';
   }
   // Hot coins
   if(d.coins&&d.coins.length){
@@ -646,14 +645,14 @@ function renderOverview(){
 function renderSignals(){
   const sigs=appData.signals||[];
   document.getElementById('activeCount').textContent=sigs.length;
-  const dot=document.getElementById('sigDot');
+  const dot=document.getElementById('activeCount');
   if(dot){dot.style.display=sigs.length>0?'inline-block':'none';}
   // Дедупликация — один символ одна позиция, порядок сохраняем (последний wins)
   const sigMap={};
   [...sigs].reverse().forEach(s=>{const k=s.sym.replace('/USDT','');if(!sigMap[k])sigMap[k]=s;});
   const uniqueSigs=Object.values(sigMap).reverse();
   document.getElementById('activeCount').textContent=uniqueSigs.length;
-  const sec1=document.getElementById('sigSec1');
+  const sec1=document.getElementById('sec1');
   if(!uniqueSigs.length){
     sec1.innerHTML='<div class="empty-state"><div class="empty-icon">◎</div><div class="empty-title">НЕТ АКТИВНЫХ СИГНАЛОВ</div><div class="empty-sub">Молчание = нет сетапа. Это норма.</div></div>';
     return;
@@ -939,7 +938,7 @@ function updateTicker(){
     const bear=c.t&&c.t.includes('bear');
     return `<span class="ti ${bear?'r':'g'}">${bear?'⬇':'⬆'} ${c.s} RSI:${c.rsi} ФАНД:${c.fp}%</span>`;
   });
-  document.getElementById('tkr').innerHTML=[...items,...items].join('');
+  document.getElementById('tickerBar').innerHTML=[...items,...items].join('');
 }
 
 // NAV
