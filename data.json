@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.8,
       "signal_level": "SIGNAL_STRONG",
-      "cp": 578.45
+      "cp": 579.19
     }
   ],
   "events": [
@@ -189,80 +189,80 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 40.6,
-      "fp": 70
+      "rsi": 39.7,
+      "fp": 72
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 40.4,
+      "rsi": 40.0,
       "fp": 23
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 39.6,
+      "rsi": 39.1,
       "fp": 56
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 41.9,
-      "fp": 4
+      "rsi": 41.4,
+      "fp": 3
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 22.5,
+      "rsi": 22.3,
       "fp": 1
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 28.7,
-      "fp": 35
+      "rsi": 28.6,
+      "fp": 32
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 40.7,
-      "fp": 49
+      "rsi": 40.6,
+      "fp": 50
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 37.1,
+      "rsi": 38.0,
       "fp": 28
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
       "rsi": 39.7,
-      "fp": 50
+      "fp": 59
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 28.8,
+      "rsi": 29.0,
       "fp": 100
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 38.9,
-      "fp": 27
+      "rsi": 40.3,
+      "fp": 35
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 21.3,
-      "fp": 15
+      "rsi": 24.9,
+      "fp": 17
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 56.8,
-      "fp": 20
+      "rsi": 58.3,
+      "fp": 21
     },
     {
       "s": "XMR",
@@ -273,13 +273,13 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 38.0,
-      "fp": 34
+      "rsi": 39.8,
+      "fp": 36
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 35.3,
+      "rsi": 36.9,
       "fp": 52
     }
   ],
@@ -671,5 +671,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-19T18:40:26Z"
+  "updated": "2026-06-19T18:55:18Z"
 }
