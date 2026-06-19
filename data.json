@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.8,
       "signal_level": "SIGNAL_STRONG",
-      "cp": 578.57
+      "cp": 0
     }
   ],
   "events": [
@@ -182,107 +182,10 @@
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-17 04:06 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 LINK/USDT: funding 100.0th (экстремальные лонги)\n  🔴 SUI/USDT: funding 95.0th (экстремальные лонги)\n  🔴 HYPE/USDT: funding 97.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • BTC/USDT: trend=ranging RSI=51 funding=6.0th\n  • LINK/USDT: trend=ranging RSI=60 funding=100.0th\n  • SUI/USDT: trend=ranging RSI=64 funding=95.0th\n  • HYPE/USDT: tr"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 41.6,
-      "fp": 41
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 41.5,
-      "fp": 32
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 41.8,
-      "fp": 49
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 43.4,
-      "fp": 44
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 32.0,
-      "fp": 6
-    },
-    {
-      "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 30.1,
-      "fp": 76
-    },
-    {
-      "s": "NEAR",
-      "t": "bullish",
-      "rsi": 43.8,
-      "fp": 19
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 36.7,
-      "fp": 22
-    },
-    {
-      "s": "DOGE",
-      "t": "strong_bearish",
-      "rsi": 41.3,
-      "fp": 11
-    },
-    {
-      "s": "TON",
-      "t": "strong_bearish",
-      "rsi": 33.9,
-      "fp": 100
-    },
-    {
-      "s": "ONDO",
-      "t": "ranging",
-      "rsi": 42.3,
-      "fp": 54
-    },
-    {
-      "s": "TAO",
-      "t": "strong_bearish",
-      "rsi": 18.1,
-      "fp": 10
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 51.4,
-      "fp": 22
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 91
-    },
-    {
-      "s": "ZEC",
-      "t": "strong_bearish",
-      "rsi": 38.0,
-      "fp": 22
-    },
-    {
-      "s": "BNB",
-      "t": "strong_bearish",
-      "rsi": 35.3,
-      "fp": 51
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -671,5 +574,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-19T15:40:23Z"
+  "updated": "2026-06-19T15:54:15Z"
 }
