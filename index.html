@@ -31,7 +31,9 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
 .htime{font-size:9px;color:rgba(255,255,255,0.35);letter-spacing:1px}
 
 /* TICKER */
-.ticker{background:rgba(0,0,0,0.25);border-top:1px solid rgba(0,200,180,0.2);border-bottom:1px solid rgba(0,200,180,0.2);padding:6px 4px;display:flex;gap:16px;margin-bottom:10px;overflow:hidden}
+.ticker{background:rgba(0,0,0,0.25);border-top:1px solid rgba(0,200,180,0.2);border-bottom:1px solid rgba(0,200,180,0.2);padding:6px 0;margin-bottom:10px;overflow:hidden;white-space:nowrap}
+@keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ticker-inner{display:inline-block;animation:ticker-scroll 20s linear infinite;white-space:nowrap}
 .tick{font-size:9px;color:rgba(255,255,255,0.55);white-space:nowrap;display:flex;gap:4px}
 .tu{color:#00e5c8}.tw{color:#ffbe00}.tr2{color:#ff4d6a}
 
@@ -116,6 +118,9 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
 .upd-num{font-size:9px;color:rgba(255,255,255,0.5);letter-spacing:1px}
 .upd-track{width:36px;height:3px;background:rgba(255,255,255,0.07);border-radius:2px;overflow:hidden}
 .upd-fill{height:100%;background:linear-gradient(90deg,rgba(0,200,180,0.5),#00e5c8);border-radius:2px;transition:width 1s}
+.lang-switch{display:flex;gap:3px;background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:2px}
+.lang-btn{font-size:9px;padding:3px 8px;border-radius:6px;border:none;background:transparent;color:rgba(255,255,255,0.35);cursor:pointer;letter-spacing:1px;font-family:'Share Tech Mono',monospace}
+.lang-btn.act{background:rgba(0,200,180,0.15);color:#00e5c8;border:1px solid rgba(0,200,180,0.3)}
 
 /* HOT COINS */
 .coins-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
@@ -265,6 +270,7 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
 .ev-funding_alert{background:rgba(255,190,0,0.05);border:1px solid rgba(255,190,0,0.15)}.ev-funding_alert::before{background:#ffbe00}
 .ev-top{display:flex;justify-content:space-between;margin-bottom:3px}
 .ev-lbl{font-size:9px;letter-spacing:1px;font-weight:700}
+.ev-lbl{font-size:9px;letter-spacing:1px;font-weight:700}
 .ev-lbl-signal{color:#00e5c8}.ev-lbl-rejected{color:#b070ff}.ev-lbl-sl{color:#ff4d6a}.ev-lbl-tp{color:#00e5c8}.ev-lbl-expired{color:#ffbe00}.ev-lbl-digest{color:#ffbe00}.ev-lbl-watch{color:#00b4ff}.ev-lbl-late_entry{color:#b070ff}.ev-lbl-funding_alert{color:#ffbe00}
 .ev-time{font-size:8px;color:rgba(255,255,255,0.3)}
 .ev-det{font-size:9px;color:rgba(255,255,255,0.55);line-height:1.5;white-space:pre-line}
@@ -289,7 +295,7 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
 .ref-btn{font-size:9px;padding:7px 14px;border-radius:8px;background:rgba(0,130,255,0.1);border:1px solid rgba(0,130,255,0.25);color:#00b4ff;display:inline-block;letter-spacing:1px;cursor:pointer}
 
 /* OVERLAY */
-.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:100;overflow-y:auto;padding:20px 14px}
+.overlay{display:none;position:fixed;inset:0;background:#1c2d3e;z-index:100;overflow-y:auto;padding:20px 14px}
 .overlay.show{display:block}
 .ov-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
 .ov-sym{font-family:'Orbitron',monospace;font-size:22px;font-weight:900;color:#fff;letter-spacing:1px}
@@ -324,7 +330,7 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
 .fg-val{font-family:'Orbitron',monospace;font-size:13px;font-weight:700}
 .ef{color:#ff4d6a}.fear{color:#ffbe00}.neutral-c{color:rgba(255,255,255,0.5)}.greed{color:#00b4ff}.eg{color:#00e5c8}
 .fg-bar{height:4px;background:rgba(255,255,255,0.06);border-radius:2px;position:relative;overflow:visible;margin-bottom:6px}
-.fg-fill{height:100%;background:linear-gradient(90deg,#00e5c8,#ffd060,#ff4d6a);border-radius:2px}
+.fg-fill{height:100%;background:linear-gradient(90deg,#ff4d6a,#ffd060,#00e5c8);border-radius:2px}
 .fg-needle{position:absolute;top:-5px;width:2px;height:14px;background:#fff;border-radius:1px;box-shadow:0 0 10px rgba(255,255,255,0.9);transform:translateX(-50%)}
 .fg-labels{display:flex;justify-content:space-between}
 .fg-label{font-size:7px;color:rgba(255,255,255,0.2)}
@@ -355,21 +361,30 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
 <!-- ЭКРАН 1: ОБЗОР -->
 <div class="screen active" id="s1">
   <div class="hdr z">
-    <div><div class="logo">АРГУС</div><div class="sub">разведка сигналов v2.0</div></div>
-    <div class="hdr-right"><div class="online"><div class="odot"></div><span class="otxt">ОНЛАЙН</span></div><div class="htime" id="clk">--:--:-- UTC</div></div>
+    <div><div class="logo">АРГУС</div><div class="sub" id="subTxt">разведка сигналов v2.0</div></div>
+    <div class="hdr-right">
+    <div style="display:flex;align-items:center;gap:6px;justify-content:flex-end;margin-bottom:4px">
+      <div class="lang-switch">
+        <button class="lang-btn act" data-lang="ru" onclick="setLang('ru')">RU</button>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+      <div class="online"><div class="odot"></div><span class="otxt" id="onlineTxt">ОНЛАЙН</span></div>
+    </div>
+    <div class="htime" id="clk">--:--:-- UTC</div>
+  </div>
   </div>
   <div class="ticker z" id="tickerBar"></div>
   <div class="cards-wrap z">
     <div class="cards">
-      <div class="card c1"><div class="cglow"></div><div class="clbl">Активные</div><div class="cval orb" id="activeCount">--</div><div class="csub">сигнала</div></div>
-      <div class="card c2"><div class="cglow"></div><div class="clbl">Win Rate</div><div class="cval orb" id="winRate">--%</div><div class="csub">побед</div></div>
-      <div class="card c3"><div class="cglow"></div><div class="clbl">Ср. PnL</div><div class="cval orb" id="hAvg">--%</div><div class="csub">на сделку</div></div>
-      <div class="card c4"><div class="cglow"></div><div class="clbl">Лучшая</div><div class="cval orb" id="hBest">--%</div><div class="csub" id="hBestSym">--</div></div>
+      <div class="card c1"><div class="cglow"></div><div class="clbl" id="lbl_active">АКТИВНЫЕ</div><div class="cval orb" id="activeCount">--</div><div class="csub" id="lbl_signals">сигнала</div></div>
+      <div class="card c2"><div class="cglow"></div><div class="clbl">WIN RATE</div><div class="cval orb" id="winRate">--%</div><div class="csub" id="lbl_wins">побед</div></div>
+      <div class="card c3"><div class="cglow"></div><div class="clbl" id="lbl_avgpnl">СР. PNL</div><div class="cval orb" id="hAvg">--%</div><div class="csub" id="lbl_pertrade">на сделку</div></div>
+      <div class="card c4"><div class="cglow"></div><div class="clbl" id="lbl_best">ЛУЧШАЯ</div><div class="cval orb" id="hBest">--%</div><div class="csub" id="hBestSym">--</div></div>
     </div>
   </div>
   <div class="floor z"></div>
   <div class="z">
-    <div class="sec-hdr"><div class="sec-dot sd-t"></div><span class="sec-title">Настроение рынка</span></div>
+    <div class="sec-hdr"><div class="sec-dot sd-t"></div><span class="sec-title" id="lbl_market">НАСТРОЕНИЕ РЫНКА</span></div>
     <div class="fg-panel">
       <div class="fg-top">
         <span class="fg-lbl">Fear & Greed Index</span>
@@ -387,22 +402,22 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
     </div>
   </div>
   <div class="z">
-    <div class="sec-hdr"><div class="sec-dot sd-b"></div><span class="sec-title">Макро показатели</span></div>
+    <div class="sec-hdr"><div class="sec-dot sd-b"></div><span class="sec-title" id="lbl_macro">МАКРО ПОКАЗАТЕЛИ</span></div>
     <div class="panel p-dark" style="overflow:hidden">
       <div class="macro-grid">
-        <div class="macro-cell"><div class="mc-lbl">Доминанс BTC</div><div class="mc-val orb" id="btcDom">--%</div><div class="mc-sub ms-n">→ Нейтрально</div></div>
-        <div class="macro-cell"><div class="mc-lbl">Стейблкоины</div><div class="mc-val orb" id="stable">--B</div><div class="mc-sub ms-u">↑ Топливо готово</div></div>
-        <div class="macro-cell" style="border-top:1px solid rgba(255,255,255,0.06)"><div class="mc-lbl">Ликвидации 4ч</div><div class="mc-val orb" id="liq4h">$--M</div><div class="mc-sub ms-n">→ Данные</div></div>
-        <div class="macro-cell" style="border-top:1px solid rgba(255,255,255,0.06)"><div class="mc-lbl">Потоки китов</div><div class="mc-val orb" id="whaleUsd">$--M</div><div class="mc-sub ms-n" id="whaleSig">→ Нейтрально</div></div>
+        <div class="macro-cell"><div class="mc-lbl" id="lbl_btcdom">ДОМИНАНС BTC</div><div class="mc-val orb" id="btcDom">--%</div><div class="mc-sub ms-n">→ Нейтрально</div></div>
+        <div class="macro-cell"><div class="mc-lbl" id="lbl_stable">СТЕЙБЛКОИНЫ</div><div class="mc-val orb" id="stable">--B</div><div class="mc-sub ms-u">↑ Топливо готово</div></div>
+        <div class="macro-cell" style="border-top:1px solid rgba(255,255,255,0.06)"><div class="mc-lbl" id="lbl_liq">ЛИКВИДАЦИИ 4Ч</div><div class="mc-val orb" id="liq4h">$--M</div><div class="mc-sub ms-n">→ Данные</div></div>
+        <div class="macro-cell" style="border-top:1px solid rgba(255,255,255,0.06)"><div class="mc-lbl" id="lbl_whale">ПОТОКИ КИТОВ</div><div class="mc-val orb" id="whaleUsd">$--M</div><div class="mc-sub ms-n" id="whaleSig">→ Нейтрально</div></div>
       </div>
     </div>
   </div>
   <div class="z">
-    <div class="sec-hdr"><div class="sec-dot sd-p"></div><span class="sec-title">Активность системы</span></div>
+    <div class="sec-hdr"><div class="sec-dot sd-p"></div><span class="sec-title" id="lbl_activity">АКТИВНОСТЬ СИСТЕМЫ</span></div>
     <div class="panel p-dark" style="overflow:hidden">
       <div class="act-grid">
-        <div class="act-cell"><div class="av av-r orb" id="sigToday">--</div><div class="al">Сигналов сегодня</div></div>
-        <div class="act-cell"><div class="av av-a orb" id="watchCount">0</div><div class="al">На наблюдении</div></div>
+        <div class="act-cell"><div class="av av-r orb" id="sigToday">--</div><div class="al" id="lbl_sigtoday">Сигналов сегодня</div></div>
+        <div class="act-cell"><div class="av av-a orb" id="watchCount">0</div><div class="al" id="lbl_watching">На наблюдении</div></div>
         <div class="act-cell"><div class="av av-g orb" id="winRateAct">--%</div><div class="al">Win Rate</div></div>
       </div>
     </div>
@@ -412,7 +427,7 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
     <div class="upd-right"><span class="upd-num" id="updTimer">--:--</span><div class="upd-track"><div class="upd-fill" id="updFill" style="width:0%"></div></div></div>
   </div>
   <div class="z">
-    <div class="sec-hdr"><div class="sec-dot sd-a"></div><span class="sec-title">Горячие монеты</span></div>
+    <div class="sec-hdr"><div class="sec-dot sd-a"></div><span class="sec-title" id="lbl_hot">ГОРЯЧИЕ МОНЕТЫ</span></div>
     <div class="coins-grid" id="hotCoins"></div>
   </div>
 </div>
@@ -507,21 +522,95 @@ body{background:linear-gradient(180deg,#1c2d3e 0%,#202f42 50%,#172232 100%);back
 
 <!-- NAV -->
 <div id="nav">
-  <button class="nb act" onclick="showScreen(1)"><div class="ni">⊞</div><div class="nl">ОБЗОР</div></button>
-  <button class="nb" onclick="showScreen(2)"><div class="ni">◉</div><div class="nl">СИГНАЛЫ</div></button>
-  <button class="nb" onclick="showScreen(3)"><div class="ni">∿</div><div class="nl">РЫНОК</div></button>
-  <button class="nb" onclick="showScreen(4)"><div class="ni">≡</div><div class="nl">ИСТОРИЯ</div></button>
-  <button class="nb" onclick="showScreen(5)"><div class="ni">⚡</div><div class="nl">СОБЫТИЯ</div></button>
-  <button class="nb" onclick="showScreen(6);loadAccount()"><div class="ni">◯</div><div class="nl">АККАУНТ</div></button>
+  <button class="nb act" onclick="showScreen(1)"><div class="ni">⊞</div><div class="nl" id="nav_overview">ОБЗОР</div></button>
+  <button class="nb" onclick="showScreen(2)"><div class="ni">◉</div><div class="nl" id="nav_signals">СИГНАЛЫ</div></button>
+  <button class="nb" onclick="showScreen(3)"><div class="ni">∿</div><div class="nl" id="nav_market">РЫНОК</div></button>
+  <button class="nb" onclick="showScreen(4)"><div class="ni">≡</div><div class="nl" id="nav_history">ИСТОРИЯ</div></button>
+  <button class="nb" onclick="showScreen(5)"><div class="ni">⚡</div><div class="nl" id="nav_events">СОБЫТИЯ</div></button>
+  <button class="nb" onclick="showScreen(6);loadAccount()"><div class="ni">◯</div><div class="nl" id="nav_account">АККАУНТ</div></button>
 </div>
 <script>
 const DATA_URL='https://xsinus19.github.io/argus-miniapp/data.json';
 let appData={};let coinsData={};let histData=[];
+let currentLang=localStorage.getItem('argus_lang')||'ru';
+const T={
+  ru:{
+    online:'ОНЛАЙН',sub:'разведка сигналов v2.0',active:'АКТИВНЫЕ',signals:'сигнала',
+    winrate:'WIN RATE',wins:'побед',avgpnl:'СР. PNL',pertrade:'на сделку',
+    best:'ЛУЧШАЯ',market:'НАСТРОЕНИЕ РЫНКА',fgi:'FEAR & GREED INDEX',
+    fear:'Страх',greed:'Жадность',macro:'МАКРО ПОКАЗАТЕЛИ',
+    btcdom:'ДОМИНАНС BTC',stable:'СТЕЙБЛКОИНЫ',liq:'ЛИКВИДАЦИИ 4Ч',whale:'ПОТОКИ КИТОВ',
+    activity:'АКТИВНОСТЬ СИСТЕМЫ',sigtoday:'Сигналов сегодня',watching:'На наблюдении',
+    updated:'Обновлено',hot:'ГОРЯЧИЕ МОНЕТЫ',nohot:'Нет горячих монет',
+    signals_tab:'СИГНАЛЫ',market_tab:'РЫНОК',history_tab:'ИСТОРИЯ',
+    events_tab:'СОБЫТИЯ',account_tab:'АККАУНТ',overview_tab:'ОБЗОР',
+    active_tab:'АКТИВНЫЕ',watch_tab:'НАБЛЮДЕНИЕ',
+    all:'ВСЕ',losses:'ПОТЕРИ',wins_tab:'ПОБЕДЫ',
+    entry:'ВХОД',tp1:'TP1',stop:'СТОП',targets:'ЦЕЛИ',waiting:'ждём',
+    bear:'МЕДВЕЖИЙ',bull:'БЫЧИЙ',neutral:'НЕЙТР.',
+    total:'ВСЕГО СИГНАЛОВ',alltime:'за всё время',avgpnl2:'СРЕДНИЙ PNL',
+    neutral_whale:'→ Нейтрально',accum:'↑ Накопление',distrib:'↓ Распределение',
+    ef:'ЭКСТРЕМ. СТРАХ',f:'СТРАХ',n:'НЕЙТРАЛЬНО',g:'ЖАДНОСТЬ',eg:'ЭКСТРЕМ. ЖАДНОСТЬ',
+    sig_lbl:'СИГНАЛ',watch_lbl:'НАБЛЮДЕНИЕ',tp_lbl:'ТЕЙК-ПРОФИТ',sl_lbl:'СТОП',
+    exp_lbl:'ИСТЁК',dig_lbl:'ДАЙДЖЕСТ',rej_lbl:'ОТКЛОНЁН',late_lbl:'ПОЗДНИЙ ВХОД',fund_lbl:'ФАНДИНГ',
+    noevents:'Нет событий',nosignals:'НЕТ АКТИВНЫХ СИГНАЛОВ',nosig_sub:'Молчание = нет сетапа. Это норма.',
+    sub_status:'ПОДПИСКА',ref_prog:'РЕФЕРАЛЬНАЯ ПРОГРАММА',ref_desc:'Друг получит скидку 50% на первый месяц',
+    copy_link:'🔗 Скопировать ссылку',copied:'✅ Скопировано!',loading:'Загрузка...',
+    neutrally:'→ Нейтрально',fuel:'↑ Топливо готово',data:'→ Данные',
+    expired_txt:'истёк без TP',no_filter:'Нет горячих монет',
+    bearish:'МЕДВЕЖИЙ',bullish:'БЫЧИЙ',ranging:'НЕЙТРАЛЬНЫЙ',
+    never:'Навсегда',active_sub:'Активна',grace:'Grace период',
+    expired_sub:'Истекла',pending:'Ожидает оплаты',banned:'Заблокирован',
+    started:'Начало',expires:'Истекает',
+  },
+  en:{
+    online:'ONLINE',sub:'signal intelligence v2.0',active:'ACTIVE',signals:'signals',
+    winrate:'WIN RATE',wins:'wins',avgpnl:'AVG PNL',pertrade:'per trade',
+    best:'BEST',market:'MARKET SENTIMENT',fgi:'FEAR & GREED INDEX',
+    fear:'Fear',greed:'Greed',macro:'MACRO INDICATORS',
+    btcdom:'BTC DOMINANCE',stable:'STABLECOINS',liq:'LIQUIDATIONS 4H',whale:'WHALE FLOWS',
+    activity:'SYSTEM ACTIVITY',sigtoday:'Signals today',watching:'Watching',
+    updated:'Updated',hot:'HOT COINS',nohot:'No hot coins',
+    signals_tab:'SIGNALS',market_tab:'MARKET',history_tab:'HISTORY',
+    events_tab:'EVENTS',account_tab:'ACCOUNT',overview_tab:'OVERVIEW',
+    active_tab:'ACTIVE',watch_tab:'WATCHING',
+    all:'ALL',losses:'LOSSES',wins_tab:'WINS',
+    entry:'ENTRY',tp1:'TP1',stop:'STOP',targets:'TARGETS',waiting:'waiting',
+    bear:'BEARISH',bull:'BULLISH',neutral:'NEUTRAL',
+    total:'TOTAL SIGNALS',alltime:'all time',avgpnl2:'AVG PNL',
+    neutral_whale:'→ Neutral',accum:'↑ Accumulation',distrib:'↓ Distribution',
+    ef:'EXTREME FEAR',f:'FEAR',n:'NEUTRAL',g:'GREED',eg:'EXTREME GREED',
+    sig_lbl:'SIGNAL',watch_lbl:'WATCHING',tp_lbl:'TAKE PROFIT',sl_lbl:'STOP LOSS',
+    exp_lbl:'EXPIRED',dig_lbl:'DIGEST',rej_lbl:'REJECTED',late_lbl:'LATE ENTRY',fund_lbl:'FUNDING',
+    noevents:'No events',nosignals:'NO ACTIVE SIGNALS',nosig_sub:'Silence = no setup. That is normal.',
+    sub_status:'SUBSCRIPTION',ref_prog:'REFERRAL PROGRAM',ref_desc:'Friend gets 50% off first month',
+    copy_link:'🔗 Copy link',copied:'✅ Copied!',loading:'Loading...',
+    neutrally:'→ Neutral',fuel:'↑ Fuel ready',data:'→ Data',
+    expired_txt:'expired without TP',no_filter:'No hot coins',
+    bearish:'BEARISH',bullish:'BULLISH',ranging:'NEUTRAL',
+    never:'Forever',active_sub:'Active',grace:'Grace period',
+    expired_sub:'Expired',pending:'Awaiting payment',banned:'Banned',
+    started:'Started',expires:'Expires',
+  }
+};
+function t(key){return (T[currentLang]||T.ru)[key]||key;}
+function setLang(lang){
+  currentLang=lang;
+  localStorage.setItem('argus_lang',lang);
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('act',b.dataset.lang===lang));
+  renderAll();
+}
 
 async function loadData(){
+
   if(window.ARGUS_DATA && window.ARGUS_LOADED){
     appData=window.ARGUS_DATA;
-    try{renderAll();}catch(e){console.error('renderAll error:',e);const lm=document.getElementById('loadMsg');if(lm)lm.textContent='Ошибка: '+e.message;}
+    document.getElementById('fgVal').textContent = appData.fear_greed || 'NO_DATA';
+    document.getElementById('activeCount').textContent = appData.signals ? appData.signals.length : 'NO_SIG';
+    try{renderAll();}catch(e){
+      console.error('renderAll error:',e);
+      document.body.innerHTML='<div style="position:fixed;inset:0;background:#1c2d3e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;font-family:monospace;color:#ff4d6a;font-size:12px;letter-spacing:1px"><div style="color:#00e5c8;font-size:18px;margin-bottom:16px">АРГУС</div><div style="margin-bottom:8px">ОШИБКА JS:</div><div style="color:#fff;word-break:break-all;text-align:center">'+e.message+'</div></div>';
+    }
     const ls=document.getElementById("loadStatus");
     if(ls)ls.style.display="none";
     return;
@@ -558,10 +647,9 @@ function renderAll(){
 // CLOCK
 function uc(){
   const n=new Date();
-  document.getElementById('clk').textContent=
-    String(n.getUTCHours()).padStart(2,'0')+':'+
-    String(n.getUTCMinutes()).padStart(2,'0')+':'+
-    String(n.getUTCSeconds()).padStart(2,'0')+' UTC';
+  const t=String(n.getUTCHours()).padStart(2,'0')+':'+String(n.getUTCMinutes()).padStart(2,'0')+':'+String(n.getUTCSeconds()).padStart(2,'0')+' UTC';
+  const c1=document.getElementById('clk');if(c1)c1.textContent=t;
+  const c2=document.getElementById('clk2');if(c2)c2.textContent=t;
 }
 setInterval(uc,1000);uc();
 
@@ -570,9 +658,14 @@ function us(){
   const n=new Date();
   const sp=(n.getUTCMinutes()%15)*60+n.getUTCSeconds();
   const sl=900-sp;
-  document.getElementById('nxtScan').textContent=
-    String(Math.floor(sl/60)).padStart(2,'0')+':'+String(sl%60).padStart(2,'0');
-  document.getElementById('scanPr').style.width=((900-sl)/900*100)+'%';
+  const ns=document.getElementById('nxtScan');
+  if(ns)ns.textContent=String(Math.floor(sl/60)).padStart(2,'0')+':'+String(sl%60).padStart(2,'0');
+  const sp2=document.getElementById('scanPr');
+  if(sp2)sp2.style.width=((900-sl)/900*100)+'%';
+  const uf=document.getElementById('updFill');
+  if(uf)uf.style.width=((900-sl)/900*100)+'%';
+  const ut=document.getElementById('updTimer');
+  if(ut)ut.textContent=String(Math.floor(sl/60)).padStart(2,'0')+':'+String(sl%60).padStart(2,'0');
 }
 setInterval(us,1000);us();
 
@@ -586,16 +679,20 @@ function renderOverview(){
     const el=document.getElementById('fgLabel');
     el.className='sl';
     const fg=d.fear_greed;
-    if(fg<=25){el.classList.add('ef');document.getElementById('fgDesc').textContent='Рынок в зоне паники. Исторически — зона накопления.';}
-    else if(fg<=45){el.classList.add('f');document.getElementById('fgDesc').textContent='Рынок в зоне страха. Осторожно.';}
-    else if(fg<=55){el.classList.add('n');document.getElementById('fgDesc').textContent='Рынок нейтрален. Ждём сигнала.';}
-    else{el.classList.add('g');document.getElementById('fgDesc').textContent='Рынок в зоне жадности. Осторожно с лонгами.';}
+    if(fg<=25){el.classList.add('ef');const fd1=document.getElementById('fgDesc');if(fd1)fd1.textContent='Рынок в зоне паники. Исторически — зона накопления.';}
+    else if(fg<=45){el.classList.add('f');const fd2=document.getElementById('fgDesc');if(fd2)fd2.textContent='Рынок в зоне страха. Осторожно.';}
+    else if(fg<=55){el.classList.add('n');const fd3=document.getElementById('fgDesc');if(fd3)fd3.textContent='Рынок нейтрален. Ждём сигнала.';}
+    else{el.classList.add('g');const fd4=document.getElementById('fgDesc');if(fd4)fd4.textContent='Рынок в зоне жадности. Осторожно с лонгами.';}
     // Needle
     const ang=-180+(fg/100)*180;
     const rad=ang*Math.PI/180;
     const x2=54+38*Math.cos(rad);const y2=63+38*Math.sin(rad);
-    document.getElementById('needle').setAttribute('x2',x2.toFixed(1));
-    document.getElementById('needle').setAttribute('y2',y2.toFixed(1));
+    const ndl=document.getElementById('needle');
+    if(ndl&&ndl.setAttribute)ndl.setAttribute('x2',x2.toFixed(1));
+    if(ndl&&ndl.setAttribute)ndl.setAttribute('y2',y2.toFixed(1));
+    // Новый needle через CSS
+    const fgn=document.getElementById('fgNeedle');
+    if(fgn)fgn.style.left=(fg)+'%';
   }
   if(d.btc_dom)document.getElementById('btcDom').textContent=d.btc_dom;
   if(d.stablecoin)document.getElementById('stable').textContent=d.stablecoin;
@@ -605,14 +702,10 @@ function renderOverview(){
     const wu=document.getElementById('whaleUsd');if(wu)wu.textContent='$'+d.whale_usd+'M';
     const wb=document.getElementById('whaleSig');
     if(wb){
-      if(d.whale_usd===0){
-        wb.innerHTML='<div class="wr"><div class="wi">🐋</div><div class="winfo"><div class="wt2">НЕТ ДАННЫХ</div><div class="ws">Крупных переводов не обнаружено</div></div><div class="wv">$0M</div></div>';
-      } else {
-        const sig=d.whale_signal||'neutral';
-        const sigTxt=sig==='bullish'?'↑ Накопление':sig==='bearish'?'↓ Распределение':'→ Нейтрально';
-        const sigCls=sig==='bullish'?'color:#00ff88':sig==='bearish'?'color:#ff3b5c':'color:#6a9ab8';
-        wb.innerHTML=`<div class="wr"><div class="wi">🐋</div><div class="winfo"><div class="wt2">АКТИВНОСТЬ КИТОВ</div><div class="ws" style="${sigCls}">${sigTxt}</div></div><div class="wv">$${d.whale_usd}M</div></div>`;
-      }
+      const sig=d.whale_signal||'neutral';
+      const sigTxt=sig==='bullish'?'↑ Накопление':sig==='bearish'?'↓ Распределение':'→ Нейтрально';
+      wb.textContent=sigTxt;
+      wb.className='mc-sub '+(sig==='bullish'?'ms-u':sig==='bearish'?'ms-n':'ms-n');
     }
   }
   // Win Rate обновляется в renderHistory
@@ -628,14 +721,18 @@ function renderOverview(){
       container.innerHTML=hot.map(c=>{
         const isBear=c.t&&c.t.includes('bear');
         const isBull=c.t&&c.t.includes('bull');
-        const cls=isBear?'br':isBull?'bu':'wt';
-        const stTxt=isBear?'● МЕДВЕЖИЙ':isBull?'● БЫЧИЙ':'◎ НЕЙТРАЛЬНЫЙ';
-        const stCls=isBear?'br':isBull?'bu':'wt';
-        const rsiCls=c.rsi<=30?'r':c.rsi>=70?'r':'';
-        const fpCls=c.fp<=10?'g':c.fp>=90?'r':'';
-        return `<div class="cc ${cls}"><div class="cs">${c.s}</div><div class="cst ${stCls}">${stTxt}</div>
-          <div class="cr2"><span class="ck">RSI</span><span class="cv ${rsiCls}">${c.rsi!=null?c.rsi:'--'}</span></div>
-          <div class="cr2"><span class="ck">ФАНД</span><span class="cv ${fpCls}">${c.fp!=null?c.fp+'%':'--'}</span></div></div>`;
+        const cardCls=isBear?'cc-r':isBull?'cc-t':'cc-a';
+        const dotCls=isBear?'ctd-r':isBull?'ctd-t':'ctd-a';
+        const txtCls=isBear?'ctx-r':isBull?'ctx-t':'ctx-a';
+        const stTxt=isBear?'МЕДВЕЖИЙ':isBull?'БЫЧИЙ':'НЕЙТР.';
+        const rsiCls=c.rsi!=null&&c.rsi<=30?'style="color:#ff4d6a"':c.rsi!=null&&c.rsi>=70?'style="color:#ff4d6a"':'';
+        const fpCls=c.fp!=null&&c.fp<=10?'style="color:#00e5c8"':c.fp!=null&&c.fp>=90?'style="color:#ff4d6a"':'';
+        return `<div class="coin-card ${cardCls}">
+          <div class="csym2">${c.s}</div>
+          <div class="ctrd"><div class="ctd ${dotCls}"></div><span class="ctxt ${txtCls}">${stTxt}</span></div>
+          <div class="cstat-row"><span class="cstat-l">RSI</span><span class="cstat-v" ${rsiCls}>${c.rsi!=null?c.rsi:'--'}</span></div>
+          <div class="cstat-row"><span class="cstat-l">ФАНД</span><span class="cstat-v" ${fpCls}>${c.fp!=null?c.fp+'%':'--'}</span></div>
+        </div>`;
       }).join('');
     }else{container.innerHTML='<div style="font-size:12px;color:#6a9ab8;padding:10px">Нет горячих монет</div>';}
   }
@@ -662,28 +759,35 @@ function renderSignals(){
     const isLong=s.dir==='long';
     const cardCls=isLong?'long':'short';
     const dirTag=isLong?'<span class="tag long">ЛОНГ</span>':'<span class="tag short">ШОРТ</span>';
-    return `<div class="sig-card ${cardCls}" onclick="openSigDetail(${sigsRev.length-1-i})">
+    const cp=parseFloat(s.cp||0);
+    const ep2=parseFloat(s.ep||0);
+    const sl2=parseFloat(s.sl||0);
+    const fillCls=isLong?'tp-fill-long':'tp-fill-short';
+    return `<div class="sig-card sc-${isLong?'long':'short'}" onclick="openSigDetail(${sigsRev.length-1-i})">
       <div class="sc-top">
-        <div><div class="sc-sym">${s.sym.replace("/USDT","")}</div><div class="sc-time">Вход: $${s.ep}</div></div>
-        <div class="sc-tags">${dirTag}</div>
+        <div><div class="sc-sym">${s.sym.replace("/USDT","")}</div><div class="sc-meta">Вход: $${ep2} | R/R: ${s.rr||'--'}</div></div>
+        ${dirTag}
       </div>
       <div class="sc-prices">
-        <div class="sp-box"><div class="sp-lbl">ВХОД</div><div class="sp-val">$${s.ep}</div></div>
-        <div class="sp-box"><div class="sp-lbl">TP1</div><div class="sp-val up">$${s.tp1||'--'}</div></div>
-        <div class="sp-box"><div class="sp-lbl">СТОП</div><div class="sp-val dn">$${s.sl||'--'}</div></div>
+        <div class="pbox"><div class="pbox-l">ВХОД</div><div class="pbox-v pv-w">$${ep2}</div></div>
+        <div class="pbox"><div class="pbox-l">TP1</div><div class="pbox-v ${isLong?'pv-g':'pv-r'}">$${s.tp1||'--'}</div></div>
+        <div class="pbox"><div class="pbox-l">СТОП</div><div class="pbox-v pv-r">$${sl2||'--'}</div></div>
       </div>
-      <div class="tp-lbl">ЦЕЛИ</div>
-      ${['tp1','tp2','tp3'].map(tp=>{
+      <div class="tp-section-lbl">ЦЕЛИ</div>
+      ${['tp1','tp2','tp3'].map((tp,idx)=>{
+        const hit=s[tp+'_hit'];
         const tpVal=parseFloat(s[tp]||0);
-        const ep=parseFloat(s.ep||0);
-        const isLong=s.dir==='long';
-        const range=isLong?tpVal-ep:ep-tpVal;
-        const pct=range>0?Math.min(100,Math.round(range/Math.abs(ep)*1000))+'%':'0%';
+        let pct=0;
+        if(cp>0&&ep2>0&&tpVal>0){
+          if(isLong&&cp>ep2){pct=Math.min(100,Math.round((cp-ep2)/(tpVal-ep2)*100));}
+          else if(!isLong&&cp<ep2){pct=Math.min(100,Math.round((ep2-cp)/(ep2-tpVal)*100));}
+        }
+        const badge=hit?'<div class="tp-badge hit">✓</div>':'<div class="tp-badge">ждём</div>';
         return `<div class="tp-row">
-          <div class="tp-name miss">${tp.toUpperCase()}</div>
-          <div class="tp-track"><div class="tp-fill-d" style="width:${pct}"></div></div>
-          <div class="tp-price">$${s[tp]||'--'}</div>
-          <div class="tp-badge miss">ждём</div>
+          <span class="tp-n">${tp.toUpperCase()}</span>
+          <div class="tp-track"><div class="${fillCls}" style="width:${pct}%"></div></div>
+          <span class="tp-price">$${s[tp]||'--'}</span>
+          ${badge}
         </div>`;}).join('')}
     </div>`;
   }).join('');
@@ -815,27 +919,30 @@ function openCoinDetail(sym){
   const tfCls=isBear?'bear':isBull?'bull':'range';
   const tf=isBear?'МЕДВЕЖИЙ':isBull?'БЫЧИЙ':'RANGING';
   document.getElementById('dSym').textContent=sym.replace('/USDT','');
+  const rsiColor=c.rsi<=30?'#ff4d6a':c.rsi>=70?'#ff4d6a':'rgba(255,255,255,0.9)';
+  const fpColor=c.fp<=5?'#00e5c8':c.fp>=95?'#ff4d6a':'rgba(255,255,255,0.9)';
+  const trendColor=isBear?'#ff4d6a':isBull?'#00e5c8':'#ffbe00';
   document.getElementById('overlayContent').innerHTML=`
-    <div class="det-badge ${badge}">${badgeTxt}</div>
+    <div style="display:inline-block;padding:4px 12px;border-radius:14px;font-size:9px;font-weight:700;letter-spacing:1.5px;margin-bottom:12px;background:${isBear?'rgba(255,77,106,0.12)':isBull?'rgba(0,229,200,0.12)':'rgba(255,190,0,0.12)'};color:${trendColor};border:1px solid ${trendColor}40">${badgeTxt}</div>
     <div class="det-section">
       <div class="det-stitle"><span class="det-pdot"></span>ТАЙМФРЕЙМЫ</div>
-      <div class="tf-grid">
-        <div class="tf-box"><div class="tf-lbl">4Ч</div><div class="tf-val ${tfCls}">${tf}</div></div>
-        <div class="tf-box"><div class="tf-lbl">1Ч</div><div class="tf-val ${tfCls}">${tf}</div></div>
-        <div class="tf-box"><div class="tf-lbl">15М</div><div class="tf-val ${tfCls}">${c.struct||'--'}</div></div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 10px;background:rgba(0,0,0,0.2);border-radius:8px"><span style="font-size:9px;color:rgba(255,255,255,0.35);letter-spacing:1px">4Ч</span><span style="font-size:11px;font-weight:700;color:${trendColor}">${tf}</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 10px;background:rgba(0,0,0,0.2);border-radius:8px"><span style="font-size:9px;color:rgba(255,255,255,0.35);letter-spacing:1px">1Ч</span><span style="font-size:11px;font-weight:700;color:${trendColor}">${tf}</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 10px;background:rgba(0,0,0,0.2);border-radius:8px"><span style="font-size:9px;color:rgba(255,255,255,0.35);letter-spacing:1px">15М</span><span style="font-size:11px;font-weight:700;color:${trendColor}">${c.struct||'BOS↓'}</span></div>
       </div>
     </div>
     <div class="det-section">
       <div class="det-stitle"><span class="det-pdot"></span>ИНДИКАТОРЫ</div>
       <div class="det-grid">
-        <div class="det-cell"><div class="det-lbl">RSI (14)</div><div class="det-val ${c.rsi<=30?'r':''}">${c.rsi||'--'}</div></div>
-        <div class="det-cell"><div class="det-lbl">ФАНДИНГ</div><div class="det-val ${c.fp<=5?'g':c.fp>=95?'r':''}">${c.fp!=null?c.fp+'%':'--'}</div></div>
+        <div class="det-cell"><div class="det-lbl">RSI (14)</div><div class="det-val" style="color:${rsiColor}">${c.rsi||'--'}</div></div>
+        <div class="det-cell"><div class="det-lbl">ФАНДИНГ</div><div class="det-val" style="color:${fpColor}">${c.fp!=null?c.fp+'%':'--'}</div></div>
       </div>
     </div>
     <div class="det-section">
       <div class="det-stitle"><span class="det-pdot"></span>СТРУКТУРА</div>
-      <div class="struct-row">
-        ${c.struct&&c.struct!=='RANGING'?`<span class="struct-tag ${isBear?'bos':'choch'}">${c.struct}</span>`:'<span class="struct-tag none">Нет активной структуры</span>'}
+      <div style="padding:8px 0">
+        <span style="font-size:14px;font-weight:700;color:${trendColor}">${c.struct||tf}</span>
       </div>
     </div>`;
   document.getElementById('overlay').classList.add('show');
@@ -857,10 +964,12 @@ function renderHistory(){
   const avgPnl=pnlArr.length?pnlArr.reduce((a,b)=>a+b,0)/pnlArr.length:null;
   const bestPnl=pnlArr.length?Math.max(...pnlArr):null;
   document.getElementById('winRate').textContent=closed?wr+'%':'--%';
-  const avgEl=document.getElementById('hAvg');
-  if(avgEl)avgEl.textContent=avgPnl!=null?(avgPnl>0?'+':'')+avgPnl.toFixed(2)+'%':'--%';
-  const bestEl=document.getElementById('hBest');
-  if(bestEl)bestEl.textContent=bestPnl!=null?'+'+bestPnl.toFixed(2)+'%':'--%';
+  const wra=document.getElementById('winRateAct');if(wra)wra.textContent=closed?wr+'%':'--%';
+  const hws=document.getElementById('hWinStat');if(hws)hws.textContent=closed?wr+'%':'--%';
+  const avgPnlStr=avgPnl!=null?(avgPnl>0?'+':'')+avgPnl.toFixed(2)+'%':'--';
+  const bestPnlStr=bestPnl!=null?'+'+bestPnl.toFixed(2)+'%':'--';
+  ['hAvg','hAvg2'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=avgPnlStr;});
+  ['hBest','hBest2'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=bestPnlStr;});
   // Лучшая сделка - символ
   const bestSig=pnlArr.length?hist.filter(h=>h.pnl!=null).reduce((a,b)=>a.pnl>b.pnl?a:b,{pnl:-999}):null;
   const bestSymEl=document.getElementById('hBestSym');
@@ -876,24 +985,28 @@ function renderHistList(list){
   document.getElementById('histList').innerHTML=list.map((h,i)=>{
     const isLong=h.direction==='long';
     const res=h.result||'open';
-    const rowCls=res.startsWith('tp')?'tp':res==='sl'?'sl':res==='open'?'open':'exp';
-    const resTxt=res.startsWith('tp')?'✓ '+res.toUpperCase()+' ДОСТИГНУТ':res==='sl'?'✕ СТОП':res==='open'?'⟳ ОТКРЫТА':'⏱ ИСТЁК';
+    const isWin=res.startsWith('tp');
+    const isLoss=res==='sl';
+    const isOpen=res==='open';
+    const rowCls=isWin?'win':isLoss?'loss':'';
+    const resTxt=isWin?'✓ '+res.toUpperCase():isLoss?'✕ СТОП':isOpen?'⟳ ОТКРЫТА':'⏱ ИСТЁК';
+    const resCls=isWin?'hr-w':isLoss?'hr-l':'hr-e';
     const dt=h.time?new Date(h.time):null;
     const dateStr=dt?String(dt.getDate()).padStart(2,'0')+'.'+String(dt.getMonth()+1).padStart(2,'0')+' '+String(dt.getUTCHours()).padStart(2,'0')+':'+String(dt.getUTCMinutes()).padStart(2,'0'):'--';
-    return `<div class="trade-row ${rowCls}" onclick="openTradeDetail(${i})">
-      <div class="tr-top">
-        <div class="tr-sym">${(h.symbol||'--').replace('/USDT','')}</div>
-        <div class="tr-result ${rowCls}">${resTxt}</div>
+    const dirCls=isLong?'tag-long':'tag-short';
+    const pnlStr=h.pnl!=null?(h.pnl>0?'+':'')+h.pnl.toFixed(2)+'%':'--';
+    const pnlColor=h.pnl!=null?(h.pnl>0?'#00e5c8':h.pnl<0?'#ff4d6a':'rgba(255,255,255,0.5)'):'rgba(255,255,255,0.3)';
+    return `<div class="det-row ${rowCls}" onclick="openTradeDetail(${i})">
+      <div>
+        <div class="det-sym">${(h.symbol||'--').replace('/USDT','')}</div>
+        <div style="display:flex;gap:6px;margin-top:3px;align-items:center">
+          <span class="tag ${dirCls}" style="font-size:7px;padding:2px 7px">${isLong?'ЛОНГ':'ШОРТ'}</span>
+          <span class="det-date">${dateStr}</span>
+        </div>
       </div>
-      <div class="tr-bottom">
-        <div class="tr-tags">
-          <span class="tr-dir ${isLong?'long':'short'}">${isLong?'ЛОНГ':'ШОРТ'}</span>
-          <span class="tr-date">${dateStr}</span>
-        </div>
-        <div class="tr-pnl">
-          ${h.pnl!=null?`<div class="tr-pnl-pct ${h.pnl>0?'pos':h.pnl<0?'neg':'zero'}">${h.pnl>0?'+':''}${h.pnl.toFixed(2)}%</div>`:'<div class="tr-pnl-pct zero">--</div>'}
-          <div class="tr-pnl-r">${h.rr?h.rr.toFixed(1)+'R':'--R'}</div>
-        </div>
+      <div style="text-align:right">
+        <div class="det-result ${resCls}">${pnlStr}</div>
+        <div style="font-size:8px;color:rgba(255,255,255,0.3);margin-top:2px">${resTxt}</div>
       </div>
     </div>`;
   }).join('');
@@ -936,9 +1049,11 @@ function updateTicker(){
   if(!hot.length)return;
   const items=hot.map(c=>{
     const bear=c.t&&c.t.includes('bear');
-    return `<span class="ti ${bear?'r':'g'}">${bear?'⬇':'⬆'} ${c.s} RSI:${c.rsi} ФАНД:${c.fp}%</span>`;
+    const rsi=c.rsi!=null?c.rsi:'--';
+    const fp=c.fp!=null?c.fp:'--';
+    return `<span style="white-space:nowrap;font-size:9px;color:${bear?'#ff4d6a':'#00e5c8'};letter-spacing:0.5px;padding:0 8px">${bear?'↓':'↑'} ${c.s} RSI:${rsi} ФАНД:${fp}%</span>`;
   });
-  document.getElementById('tickerBar').innerHTML=[...items,...items].join('');
+  document.getElementById('tickerBar').innerHTML='<div class="ticker-inner">'+[...items,...items].join('')+'</div>';
 }
 
 // NAV
@@ -968,26 +1083,25 @@ function loadAccount(){
       const founder = d.is_founder ? '<div style="color:#ffcc00;margin-top:5px">👑 Founder Friend</div>' : '';
       const username = d.language === 'ru' ? 'Пользователь' : 'User';
       el.innerHTML = `
-        <div style="background:#0a1520;border:1px solid #1a3a5c;border-top:2px solid #00d4ff;padding:10px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px">
-          <div style="width:44px;height:44px;min-width:44px;background:linear-gradient(135deg,#0d1e2e,#1a3a5c);border:2px solid #00d4ff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 0 10px rgba(0,212,255,0.3)">👁</div>
-          <div>
-            <div style="font-family:'Orbitron',monospace;font-size:14px;color:#fff;letter-spacing:1px;margin-bottom:2px">@${d.username || d.telegram_id}</div>
-            <div style="font-size:10px;color:#6a9ab8;letter-spacing:1px">${d.is_founder ? '👑 FOUNDER FRIEND' : 'SUBSCRIBER'}</div>
+        <div class="hdr">
+          <div><div class="logo">АРГУС</div><div class="sub">личный кабинет</div></div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-top">
+            <div class="acc-ava">👁</div>
+            <div><div class="acc-name">@${d.username||d.telegram_id}</div><div class="acc-role">${d.is_founder?'FOUNDER FRIEND':'SUBSCRIBER'}</div></div>
+          </div>
+          <div class="acc-rows">
+            <div class="arow"><span class="akey">Статус</span><span class="aval aval-hl">${label}</span></div>
+            <div class="arow"><span class="akey">Начало</span><span class="aval">${d.started||'—'}</span></div>
+            <div class="arow" style="border:none"><span class="akey">Истекает</span><span class="aval">${d.expires||'∞'}</span></div>
           </div>
         </div>
-        <div style="background:#0d1e2e;border:1px solid #1a3a5c;border-left:3px solid #00d4ff;padding:12px;margin-bottom:8px">
-          <div style="font-size:11px;color:#6a9ab8;letter-spacing:1px;margin-bottom:8px">ПОДПИСКА</div>
-          <div style="font-size:16px;margin-bottom:4px">${icon} <b>${label}</b></div>
-          <div style="font-size:12px;color:#6a9ab8">Начало: ${d.started}</div>
-          <div style="font-size:12px;color:#6a9ab8">Истекает: ${d.expires}</div>
-        </div>
-        <div style="background:#0d1e2e;border:1px solid #1a3a5c;border-left:3px solid #00d4ff;padding:12px;margin-bottom:8px">
-          <div style="font-size:11px;color:#6a9ab8;letter-spacing:1px;margin-bottom:8px">РЕФЕРАЛЬНАЯ ПРОГРАММА</div>
-          <div style="font-size:12px;margin-bottom:4px">Код: <span style="color:#00d4ff;font-family:monospace">${d.referral_code}</span></div>
-          <div style="font-size:11px;color:#6a9ab8">Друг получит скидку 50% на первый месяц</div>
-          <div style="margin-top:8px">
-            <button onclick="navigator.clipboard.writeText('${d.referral_link}').then(()=>{this.textContent='✅ Скопировано!';setTimeout(()=>{this.textContent='🔗 Скопировать ссылку'},2000)})" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:#00d4ff;font-size:11px;padding:6px 12px;border-radius:6px;cursor:pointer;letter-spacing:0.5px">🔗 Скопировать ссылку</button>
-          </div>
+        <div class="ref-block">
+          <div class="ref-lbl-title"><span class="sec-dot sd-b" style="vertical-align:middle;margin-right:5px"></span>РЕФЕРАЛЬНАЯ ПРОГРАММА</div>
+          <div class="ref-desc">Друг получит скидку 50% на первый месяц</div>
+          <div class="ref-code">${d.referral_code}</div>
+          <div><button onclick="navigator.clipboard.writeText('${d.referral_link}').then(()=>{this.textContent='✅ Скопировано!';setTimeout(()=>{this.textContent='🔗 Скопировать ссылку'},2000)})" class="ref-btn">🔗 Скопировать ссылку</button></div>
         </div>
       `;
     })
@@ -1004,35 +1118,54 @@ function renderEvents(){
     el.innerHTML='<div style="color:#6a9ab8;text-align:center;padding:20px">Нет событий</div>';
     return;
   }
-  const icons = {"signal":"🔥","watch":"👀","tp":"🎯","sl":"🛑","expired":"⏰","digest":"📋","rejected":"🤖"};
-  const labels = {"signal":"СИГНАЛ","watch":"НАБЛЮДЕНИЕ","tp":"ТЕЙК-ПРОФИТ","sl":"СТОП","expired":"ИСТЁК","digest":"ДАЙДЖЕСТ","rejected":"ОТКЛОНЁН"};
+  const labels = {"signal":"СИГНАЛ","watch":"НАБЛЮДЕНИЕ","tp":"ТЕЙК-ПРОФИТ","sl":"СТОП","expired":"ИСТЁК","digest":"ДАЙДЖЕСТ","rejected":"ОТКЛОНЁН","late_entry":"ПОЗДНИЙ ВХОД","funding_alert":"ФАНДИНГ"};
+  const evCls = {"signal":"ev-signal","watch":"ev-watch","tp":"ev-tp","sl":"ev-sl","expired":"ev-expired","digest":"ev-digest","rejected":"ev-rejected","late_entry":"ev-late_entry","funding_alert":"ev-funding_alert"};
+  const lblCls = {"signal":"ev-lbl-signal","watch":"ev-lbl-watch","tp":"ev-lbl-tp","sl":"ev-lbl-sl","expired":"ev-lbl-expired","digest":"ev-lbl-digest","rejected":"ev-lbl-rejected","late_entry":"ev-lbl-late_entry","funding_alert":"ev-lbl-funding_alert"};
   el.innerHTML = events.map(e=>{
-    const icon = icons[e.type]||'📌';
     const label = labels[e.type]||e.type.toUpperCase();
+    const cls = evCls[e.type]||'ev-signal';
+    const lCls = lblCls[e.type]||'ev-lbl-signal';
     const ts = e.ts ? new Date(e.ts).toLocaleTimeString('ru',{hour:'2-digit',minute:'2-digit'}) : '';
     const date = e.ts ? new Date(e.ts).toLocaleDateString('ru',{day:'2-digit',month:'2-digit'}) : '';
     let detail = '';
     if(e.type==='signal'){
-      const dir = e.direction==='long'?'🟢 LONG':'🔴 SHORT';
-      detail = `${dir} ${e.symbol||''}<br>Вход: $${(e.entry||0).toFixed(4)} | SL: $${(e.sl||0).toFixed(4)}<br>TP1: $${(e.tp1||0).toFixed(4)} | R/R: ${(e.rr||0).toFixed(1)}`;
+      const dir=e.direction==='long'?'🟢 LONG':'🔴 SHORT';
+      detail=`${dir} ${(e.symbol||'').replace('/USDT','')}
+Вход: $${(e.entry||0).toFixed(4)} | SL: $${(e.sl||0).toFixed(4)}
+TP1: $${(e.tp1||0).toFixed(4)} | R/R: ${(e.rr||0).toFixed(1)}`;
     } else if(e.type==='tp'){
-      detail = `${e.symbol||''} TP${e.tp_num} @ $${(e.price||0).toFixed(4)}<br>+${(e.pnl||0).toFixed(2)}%`;
+      detail=`${(e.symbol||'').replace('/USDT','')} TP${e.tp_num||''} @ $${(e.price||0).toFixed(4)}
++${(e.pnl||0).toFixed(2)}%`;
     } else if(e.type==='sl'){
-      detail = `${e.symbol||''} @ $${(e.price||0).toFixed(4)}<br>-${(e.loss||0).toFixed(2)}%`;
-    } else if(e.type==='watch'){
-      const dir = e.direction||'';
-      detail = `${e.symbol||''} ${dir}<br>${(e.reason||'').substring(0,60)}`;
+      const sym=(e.symbol||'').replace('/USDT','');
+      const dir=e.direction==='long'?'LONG':'SHORT';
+      detail=`${sym} ${dir} @ $${(e.price||0).toFixed(4)}
+-${Math.abs(e.pnl||e.loss||0).toFixed(2)}%`;
+    } else if(e.type==='watch'||e.type==='late_entry'){
+      const sym=(e.symbol||'').replace('/USDT','');
+      const dir=(e.direction||'').toUpperCase();
+      detail=`${sym} ${dir}
+${(e.reason||'').substring(0,80)}`;
     } else if(e.type==='rejected'){
-      detail = `${e.symbol||''} ${(e.direction||'').toUpperCase()}<br><span style='color:#6a9ab8'>${(e.reason||'').substring(0,80)}</span>`;
+      const sym=(e.symbol||'').replace('/USDT','');
+      const dir=e.direction==='long'?'🟢 LONG':'🔴 SHORT';
+      const reason=(e.reason||'').split('|')[0].trim().substring(0,60);
+      detail=`${sym} ${dir}
+${reason}`;
     } else if(e.type==='expired'){
-      detail = `${e.symbol||''} без результата`;
+      const sym=(e.symbol||'').replace('/USDT','');
+      const dir=e.direction==='long'?'🟢 LONG':'🔴 SHORT';
+      const price=e.price?` | Цена: $${parseFloat(e.price).toFixed(4)}`:'';
+      detail=`${sym} ${dir} — истёк без TP${price}`;
+    } else if(e.type==='digest'){
+      const txt=(e.text||'').replace(/<[^>]+>/g,'').replace(/={3,}/g,'').trim();
+      detail=txt||'Утренний дайджест готов';
+    } else if(e.type==='funding_alert'){
+      detail=e.text||e.reason||'Экстремальный фандинг';
     }
-    return `<div style="background:#0d1e2e;border:1px solid #1a3a5c;border-left:3px solid #00d4ff;padding:10px 12px;margin-bottom:8px">
-      <div style="display:flex;justify-content:space-between;margin-bottom:5px">
-        <span style="color:#00d4ff;font-size:11px;letter-spacing:1px">${icon} ${label}</span>
-        <span style="color:#6a9ab8;font-size:10px">${date} ${ts}</span>
-      </div>
-      <div style="font-size:12px;line-height:1.6">${detail}</div>
+    return `<div class="event-row ${cls}">
+      <div class="ev-top"><span class="ev-lbl ${lCls}">${label}</span><span class="ev-time">${date} ${ts}</span></div>
+      <div class="ev-det">${detail}</div>
     </div>`;
   }).join('');
 }
@@ -1048,6 +1181,7 @@ function switchSigTab(n){
 function closeOverlay(){document.getElementById('overlay').classList.remove('show');}
 
 // INIT
+applyLang();
 loadData();
 
 if(window.Telegram&&window.Telegram.WebApp){
