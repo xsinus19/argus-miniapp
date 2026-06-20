@@ -173,79 +173,79 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 53.9,
-      "fp": 43
+      "rsi": 53.1,
+      "fp": 47
     },
     {
       "s": "ETH",
       "t": "bearish",
-      "rsi": 54.8,
+      "rsi": 55.3,
       "fp": 61
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 65.6,
+      "rsi": 63.9,
       "fp": 72
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 52.7,
-      "fp": 91
+      "rsi": 51.4,
+      "fp": 88
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 36.1,
+      "rsi": 35.6,
       "fp": 0
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 41.0,
-      "fp": 35
+      "rsi": 40.0,
+      "fp": 33
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 49.9,
-      "fp": 5
+      "rsi": 49.1,
+      "fp": 4
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 45.7,
+      "rsi": 45.0,
       "fp": 70
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 50.2,
-      "fp": 78
+      "rsi": 49.5,
+      "fp": 76
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 38.9,
+      "rsi": 37.0,
       "fp": 56
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 43.8,
-      "fp": 48
+      "rsi": 43.3,
+      "fp": 52
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 47.1,
-      "fp": 24
+      "rsi": 45.4,
+      "fp": 16
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 55.3,
+      "rsi": 56.0,
       "fp": 98
     },
     {
@@ -257,13 +257,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 57.3,
+      "rsi": 56.7,
       "fp": 21
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 45.6,
+      "rsi": 45.4,
       "fp": 52
     }
   ],
@@ -657,5 +657,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-20T05:22:24Z"
+  "updated": "2026-06-20T05:37:23Z"
 }
