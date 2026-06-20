@@ -166,107 +166,10 @@
       "reason": "Низкий AI score (0.28) | RG: Низкий винрейт и неопределенный тренд, вход может быть поздним | SV: Си"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 54.0,
-      "fp": 42
-    },
-    {
-      "s": "ETH",
-      "t": "bearish",
-      "rsi": 56.1,
-      "fp": 56
-    },
-    {
-      "s": "SOL",
-      "t": "ranging",
-      "rsi": 64.6,
-      "fp": 56
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 52.6,
-      "fp": 85
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 48.1,
-      "fp": 2
-    },
-    {
-      "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 42.5,
-      "fp": 22
-    },
-    {
-      "s": "NEAR",
-      "t": "ranging",
-      "rsi": 44.5,
-      "fp": 19
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 49.1,
-      "fp": 83
-    },
-    {
-      "s": "DOGE",
-      "t": "strong_bearish",
-      "rsi": 54.0,
-      "fp": 45
-    },
-    {
-      "s": "TON",
-      "t": "strong_bearish",
-      "rsi": 39.8,
-      "fp": 55
-    },
-    {
-      "s": "ONDO",
-      "t": "strong_bearish",
-      "rsi": 41.0,
-      "fp": 35
-    },
-    {
-      "s": "TAO",
-      "t": "strong_bearish",
-      "rsi": 45.4,
-      "fp": 2
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 55.7,
-      "fp": 98
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 99
-    },
-    {
-      "s": "ZEC",
-      "t": "ranging",
-      "rsi": 55.1,
-      "fp": 21
-    },
-    {
-      "s": "BNB",
-      "t": "strong_bearish",
-      "rsi": 57.9,
-      "fp": 54
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -657,5 +560,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-20T07:37:20Z"
+  "updated": "2026-06-20T07:51:17Z"
 }
