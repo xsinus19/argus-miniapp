@@ -166,17 +166,10 @@
       "reason": "Низкий AI score (0.28) | RG: Низкий винрейт и неопределенный тренд, вход может быть поздним | SV: Си"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 54.3,
-      "fp": 51
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -567,5 +560,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-20T11:45:35Z"
+  "updated": "2026-06-20T12:00:30Z"
 }
