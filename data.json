@@ -163,17 +163,10 @@
       "signal_level": "SIGNAL_LITE"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "bearish",
-      "rsi": 60.4,
-      "fp": 67
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -564,5 +557,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-21T11:45:35Z"
+  "updated": "2026-06-21T12:00:31Z"
 }
