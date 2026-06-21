@@ -173,80 +173,80 @@
     {
       "s": "BTC",
       "t": "bearish",
-      "rsi": 62.9,
-      "fp": 34
+      "rsi": 63.1,
+      "fp": 35
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 58.6,
+      "rsi": 58.3,
       "fp": 42
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 71.4,
+      "rsi": 73.6,
       "fp": 92
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 51.2,
-      "fp": 44
+      "rsi": 52.9,
+      "fp": 45
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 55.8,
-      "fp": 17
+      "rsi": 55.9,
+      "fp": 16
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 40.4,
-      "fp": 2
+      "rsi": 40.7,
+      "fp": 1
     },
     {
       "s": "NEAR",
       "t": "strong_bullish",
-      "rsi": 57.2,
-      "fp": 22
+      "rsi": 58.3,
+      "fp": 23
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
       "rsi": 49.7,
-      "fp": 32
+      "fp": 31
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 47.9,
+      "rsi": 49.0,
       "fp": 69
     },
     {
       "s": "TON",
       "t": "strong_bearish",
-      "rsi": 57.6,
+      "rsi": 58.0,
       "fp": 100
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 34.3,
-      "fp": 27
+      "rsi": 34.4,
+      "fp": 28
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 44.8,
-      "fp": 42
+      "rsi": 45.7,
+      "fp": 49
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 52.7,
-      "fp": 22
+      "rsi": 53.6,
+      "fp": 21
     },
     {
       "s": "XMR",
@@ -257,13 +257,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 52.7,
-      "fp": 21
+      "rsi": 53.1,
+      "fp": 22
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 55.4,
+      "rsi": 54.8,
       "fp": 51
     }
   ],
@@ -657,5 +657,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-21T00:46:35Z"
+  "updated": "2026-06-21T01:01:41Z"
 }
