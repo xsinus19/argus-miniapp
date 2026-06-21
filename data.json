@@ -6,6 +6,11 @@
   "signals": [],
   "events": [
     {
+      "ts": "2026-06-21T04:00:30.426852+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-21 04:00 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n\nУдачного дня. Аргус на страже."
+    },
+    {
       "ts": "2026-06-20T04:06:17.989598+00:00",
       "type": "digest",
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-20 04:06 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🟢 AVAX/USDT: funding 0.0th (экстремальные шорты)\n  🔴 HYPE/USDT: funding 98.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • AVAX/USDT: trend=strong_bearish RSI=30 funding=0.0th\n  • SUI/USDT: trend=strong_bearish RSI=33 funding=9.0th\n  • NEAR/USDT: trend=ranging RSI=46 funding=10.0th\n  • HYPE/USDT: trend=strong_bullish RSI=47 funding=98.0th\n  • XMR/USDT: trend=strong_bearish RSI=49 funding=91.0th\n\nУдачного дня. Аргус на страже."
@@ -156,27 +161,12 @@
       "price": 6.956,
       "entry": 7.0587,
       "signal_level": "SIGNAL_LITE"
-    },
-    {
-      "ts": "2026-06-17T13:21:41.856540+00:00",
-      "type": "rejected",
-      "symbol": "BCH/USDT",
-      "direction": "long",
-      "signal_level": "SIGNAL_STRONG",
-      "reason": "Низкий AI score (0.28) | RG: Низкий винрейт и неопределенный тренд, вход может быть поздним | SV: Си"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "bearish",
-      "rsi": 65.9,
-      "fp": 68
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -567,5 +557,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-21T03:45:36Z"
+  "updated": "2026-06-21T04:00:30Z"
 }
