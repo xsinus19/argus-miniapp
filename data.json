@@ -163,11 +163,208 @@
       "signal_level": "SIGNAL_LITE"
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 0.0,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "bearish",
+      "rsi": 57.6,
+      "fp": 63
+    },
+    {
+      "s": "ETH",
+      "t": "ranging",
+      "rsi": 50.2,
+      "fp": 31
+    },
+    {
+      "s": "SOL",
+      "t": "ranging",
+      "rsi": 71.6,
+      "fp": 69
+    },
+    {
+      "s": "LINK",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 100
+    },
+    {
+      "s": "AVAX",
+      "t": "strong_bearish",
+      "rsi": 54.1,
+      "fp": 24
+    },
+    {
+      "s": "SUI",
+      "t": "strong_bearish",
+      "rsi": 43.0,
+      "fp": 47
+    },
+    {
+      "s": "NEAR",
+      "t": "ranging",
+      "rsi": 45.4,
+      "fp": 1
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 47.4,
+      "fp": 44
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 45.6,
+      "fp": 69
+    },
+    {
+      "s": "TON",
+      "t": "bearish",
+      "rsi": 73.2,
+      "fp": 99
+    },
+    {
+      "s": "ONDO",
+      "t": "strong_bearish",
+      "rsi": 41.1,
+      "fp": 43
+    },
+    {
+      "s": "TAO",
+      "t": "strong_bearish",
+      "rsi": 55.4,
+      "fp": 43
+    },
+    {
+      "s": "HYPE",
+      "t": "strong_bullish",
+      "rsi": 43.6,
+      "fp": 28
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 90
+    },
+    {
+      "s": "ZEC",
+      "t": "strong_bearish",
+      "rsi": 33.7,
+      "fp": 31
+    },
+    {
+      "s": "BNB",
+      "t": "strong_bearish",
+      "rsi": 58.8,
+      "fp": 87
+    }
+  ],
   "history": [
+    {
+      "symbol": "LINK/USDT",
+      "direction": "long",
+      "signal_level": "LEGENDARY",
+      "entry_price": 8.9018,
+      "stop_loss": 8.6327,
+      "tp1": 9.2516,
+      "tp2": 9.44,
+      "tp3": 9.7091,
+      "time": "2026-05-28T10:05:53.696740+00:00",
+      "result": "tp1",
+      "pnl": 6.05,
+      "result_price": 9.44
+    },
+    {
+      "symbol": "SOL/USDT",
+      "direction": "long",
+      "signal_level": "MODERATE",
+      "entry_price": 81.103,
+      "stop_loss": 79.044,
+      "tp1": 83.7797,
+      "tp2": 85.221,
+      "tp3": 87.28,
+      "time": "2026-05-28T12:50:19.846946+00:00",
+      "result": "expired"
+    },
+    {
+      "symbol": "BTC/USDT",
+      "direction": "short",
+      "signal_level": "STRONG",
+      "entry_price": 72639.47,
+      "stop_loss": 76066.73,
+      "tp1": 68184.032,
+      "tp2": 65784.95,
+      "tp3": 62357.69,
+      "time": "2026-05-28T14:07:57.280004+00:00",
+      "result": "expired"
+    },
+    {
+      "symbol": "TON/USDT",
+      "direction": "short",
+      "signal_level": "STRONG",
+      "entry_price": 1.7659,
+      "stop_loss": 1.8744,
+      "tp1": 1.6248,
+      "tp2": 1.5489,
+      "tp3": 1.4404,
+      "time": "2026-05-29T04:28:10.812211+00:00",
+      "result": "expired"
+    },
+    {
+      "symbol": "BCH/USDT",
+      "direction": "long",
+      "signal_level": "LEGENDARY",
+      "entry_price": 307.467,
+      "stop_loss": 280.8,
+      "tp1": 342.1341,
+      "tp2": 360.801,
+      "tp3": 387.468,
+      "time": "2026-05-29T06:48:07.426872+00:00",
+      "result": "expired"
+    },
+    {
+      "symbol": "LINK/USDT",
+      "direction": "short",
+      "signal_level": "MODERATE",
+      "entry_price": 9.0067,
+      "stop_loss": 9.2014,
+      "tp1": 8.7536,
+      "tp2": 8.6173,
+      "tp3": 8.4226,
+      "time": "2026-05-29T11:09:36.894514+00:00",
+      "result": "tp2",
+      "pnl": 7.57,
+      "result_price": 8.3253
+    },
+    {
+      "symbol": "TON/USDT",
+      "direction": "long",
+      "signal_level": "MODERATE",
+      "entry_price": 1.7745,
+      "stop_loss": 1.6931,
+      "tp1": 1.8803,
+      "tp2": 1.9373,
+      "tp3": 2.0187,
+      "time": "2026-05-30T14:58:44.707723+00:00",
+      "result": "expired"
+    },
+    {
+      "symbol": "LINK/USDT",
+      "direction": "long",
+      "signal_level": "MODERATE",
+      "entry_price": 9.2431,
+      "stop_loss": 8.8351,
+      "tp1": 9.7735,
+      "tp2": 10.0591,
+      "tp3": 10.4671,
+      "time": "2026-05-30T17:59:05.519368+00:00",
+      "result": "expired"
+    },
     {
       "symbol": "LINK/USDT",
       "direction": "short",
@@ -557,5 +754,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-21T16:15:30Z"
+  "updated": "2026-06-21T16:21:20Z"
 }
