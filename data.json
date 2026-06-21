@@ -154,10 +154,107 @@
       "reason": "Недостаточно уверенности (score=0.62) | RG: Низкий RSI и сильный Weighted Score указывают на благопр"
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 0.0,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "strong_bearish",
+      "rsi": 55.3,
+      "fp": 78
+    },
+    {
+      "s": "ETH",
+      "t": "ranging",
+      "rsi": 53.6,
+      "fp": 35
+    },
+    {
+      "s": "SOL",
+      "t": "ranging",
+      "rsi": 73.3,
+      "fp": 83
+    },
+    {
+      "s": "LINK",
+      "t": "strong_bearish",
+      "rsi": 48.3,
+      "fp": 100
+    },
+    {
+      "s": "AVAX",
+      "t": "strong_bearish",
+      "rsi": 50.3,
+      "fp": 35
+    },
+    {
+      "s": "SUI",
+      "t": "strong_bearish",
+      "rsi": 44.0,
+      "fp": 70
+    },
+    {
+      "s": "NEAR",
+      "t": "ranging",
+      "rsi": 42.7,
+      "fp": 0
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 44.3,
+      "fp": 28
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 47.3,
+      "fp": 69
+    },
+    {
+      "s": "TON",
+      "t": "bearish",
+      "rsi": 58.7,
+      "fp": 99
+    },
+    {
+      "s": "ONDO",
+      "t": "strong_bearish",
+      "rsi": 37.3,
+      "fp": 72
+    },
+    {
+      "s": "TAO",
+      "t": "strong_bearish",
+      "rsi": 54.3,
+      "fp": 25
+    },
+    {
+      "s": "HYPE",
+      "t": "strong_bullish",
+      "rsi": 42.4,
+      "fp": 99
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 90
+    },
+    {
+      "s": "ZEC",
+      "t": "strong_bearish",
+      "rsi": 32.1,
+      "fp": 26
+    },
+    {
+      "s": "BNB",
+      "t": "strong_bearish",
+      "rsi": 57.3,
+      "fp": 85
+    }
+  ],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -648,5 +745,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-21T20:03:13Z"
+  "updated": "2026-06-21T20:19:20Z"
 }
