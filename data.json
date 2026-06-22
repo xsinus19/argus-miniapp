@@ -153,107 +153,10 @@
       "reason": "Risk Guardian HARD REJECT: Низкий RSI и отсутствие четкого тренда, а также плохая статистика по AVAX"
     }
   ],
-  "liq_4h": 0.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 34.3,
-      "fp": 82
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 37.0,
-      "fp": 56
-    },
-    {
-      "s": "SOL",
-      "t": "ranging",
-      "rsi": 51.1,
-      "fp": 90
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 32.3,
-      "fp": 75
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 39.5,
-      "fp": 39
-    },
-    {
-      "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 30.0,
-      "fp": 22
-    },
-    {
-      "s": "NEAR",
-      "t": "ranging",
-      "rsi": 32.4,
-      "fp": 6
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 33.0,
-      "fp": 19
-    },
-    {
-      "s": "DOGE",
-      "t": "strong_bearish",
-      "rsi": 32.8,
-      "fp": 40
-    },
-    {
-      "s": "TON",
-      "t": "strong_bearish",
-      "rsi": 49.2,
-      "fp": 99
-    },
-    {
-      "s": "ONDO",
-      "t": "strong_bearish",
-      "rsi": 27.8,
-      "fp": 27
-    },
-    {
-      "s": "TAO",
-      "t": "strong_bearish",
-      "rsi": 40.0,
-      "fp": 100
-    },
-    {
-      "s": "HYPE",
-      "t": "bullish",
-      "rsi": 35.2,
-      "fp": 99
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 90
-    },
-    {
-      "s": "ZEC",
-      "t": "strong_bearish",
-      "rsi": 24.2,
-      "fp": 17
-    },
-    {
-      "s": "BNB",
-      "t": "strong_bearish",
-      "rsi": 41.9,
-      "fp": 50
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -744,5 +647,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-21T23:49:17Z"
+  "updated": "2026-06-22T00:03:13Z"
 }
