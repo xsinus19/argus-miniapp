@@ -6,6 +6,11 @@
   "signals": [],
   "events": [
     {
+      "ts": "2026-06-22T04:03:13.857856+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-22 04:03 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 11 | 🟢 Бычьих: 1 | ◎ Нейтральных: 4\nBears: 11 | Bulls: 1 | Neutral: 4\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 TON/USDT: funding 99.0th (экстремальные лонги)\n  🔴 TAO/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • TON/USDT: trend=strong_bearish RSI=43 funding=99.0th\n  • TAO/USDT: trend=strong_bearish RSI=44 funding=100.0th\n  • XMR/USDT: trend=strong_bearish RSI=49 funding=90.0th\n\nУдачного дня. Аргус на страже."
+    },
+    {
       "ts": "2026-06-22T00:19:19.109853+00:00",
       "type": "funding_alert",
       "symbol": "HYPE/USDT",
@@ -141,13 +146,6 @@
       "symbol": "ZEC/USDT",
       "direction": "SHORT",
       "rsi": 19.9
-    },
-    {
-      "ts": "2026-06-18T16:40:05.855740+00:00",
-      "type": "late_entry",
-      "symbol": "BNB/USDT",
-      "direction": "SHORT",
-      "rsi": 19.2
     }
   ],
   "liq_4h": 0,
@@ -644,5 +642,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-22T03:48:13Z"
+  "updated": "2026-06-22T04:03:13Z"
 }
