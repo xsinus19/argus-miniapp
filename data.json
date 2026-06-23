@@ -146,101 +146,10 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 11.7,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 25.2,
-      "fp": 8
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 24.0,
-      "fp": 11
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 21.9,
-      "fp": 6
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 26.6,
-      "fp": 7
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 58.2,
-      "fp": 68
-    },
-    {
-      "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 45.5,
-      "fp": 77
-    },
-    {
-      "s": "NEAR",
-      "t": "ranging",
-      "rsi": 20.1,
-      "fp": 73
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 24.7,
-      "fp": 94
-    },
-    {
-      "s": "DOGE",
-      "t": "strong_bearish",
-      "rsi": 17.7,
-      "fp": 13
-    },
-    {
-      "s": "ONDO",
-      "t": "strong_bearish",
-      "rsi": 17.5,
-      "fp": 59
-    },
-    {
-      "s": "TAO",
-      "t": "strong_bearish",
-      "rsi": 24.5,
-      "fp": 100
-    },
-    {
-      "s": "HYPE",
-      "t": "ranging",
-      "rsi": 25.5,
-      "fp": 100
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 90
-    },
-    {
-      "s": "ZEC",
-      "t": "strong_bearish",
-      "rsi": 25.6,
-      "fp": 44
-    },
-    {
-      "s": "BNB",
-      "t": "strong_bearish",
-      "rsi": 28.0,
-      "fp": 55
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -731,5 +640,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-23T15:35:26Z"
+  "updated": "2026-06-23T15:49:10Z"
 }
