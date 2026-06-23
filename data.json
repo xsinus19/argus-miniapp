@@ -146,10 +146,101 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 13.2,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "strong_bearish",
+      "rsi": 32.1,
+      "fp": 12
+    },
+    {
+      "s": "ETH",
+      "t": "strong_bearish",
+      "rsi": 28.0,
+      "fp": 15
+    },
+    {
+      "s": "SOL",
+      "t": "strong_bearish",
+      "rsi": 26.1,
+      "fp": 7
+    },
+    {
+      "s": "LINK",
+      "t": "strong_bearish",
+      "rsi": 29.6,
+      "fp": 13
+    },
+    {
+      "s": "AVAX",
+      "t": "strong_bearish",
+      "rsi": 60.3,
+      "fp": 59
+    },
+    {
+      "s": "SUI",
+      "t": "strong_bearish",
+      "rsi": 46.9,
+      "fp": 88
+    },
+    {
+      "s": "NEAR",
+      "t": "ranging",
+      "rsi": 27.2,
+      "fp": 65
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 29.2,
+      "fp": 93
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 22.0,
+      "fp": 14
+    },
+    {
+      "s": "ONDO",
+      "t": "strong_bearish",
+      "rsi": 18.9,
+      "fp": 56
+    },
+    {
+      "s": "TAO",
+      "t": "strong_bearish",
+      "rsi": 26.7,
+      "fp": 100
+    },
+    {
+      "s": "HYPE",
+      "t": "ranging",
+      "rsi": 30.0,
+      "fp": 100
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 91
+    },
+    {
+      "s": "ZEC",
+      "t": "strong_bearish",
+      "rsi": 27.0,
+      "fp": 56
+    },
+    {
+      "s": "BNB",
+      "t": "strong_bearish",
+      "rsi": 31.0,
+      "fp": 56
+    }
+  ],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -640,5 +731,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-23T16:04:10Z"
+  "updated": "2026-06-23T16:20:31Z"
 }
