@@ -1,5 +1,5 @@
 {
-  "fear_greed": 23,
+  "fear_greed": 0,
   "fear_label": "EXTREME_FEAR",
   "btc_dom": "57.8%",
   "stablecoin": "319.7B",
@@ -146,65 +146,10 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nSUI/USDT: 3.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nSUI/USDT: 3.0th percentile (extreme shorts)"
     }
   ],
-  "liq_4h": 42.0,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 26.7,
-      "fp": 4
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 24.7,
-      "fp": 4
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 23.6,
-      "fp": 4
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 28.1,
-      "fp": 0
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 50.0,
-      "fp": 96
-    },
-    {
-      "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 46.5,
-      "fp": 4
-    },
-    {
-      "s": "NEAR",
-      "t": "ranging",
-      "rsi": 23.2,
-      "fp": 100
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 28.7,
-      "fp": 68
-    },
-    {
-      "s": "DOGE",
-      "t": "strong_bearish",
-      "rsi": 20.4,
-      "fp": 4
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -695,5 +640,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-23T11:46:22Z"
+  "updated": "2026-06-23T11:49:50Z"
 }
