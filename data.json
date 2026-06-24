@@ -6,6 +6,11 @@
   "signals": [],
   "events": [
     {
+      "ts": "2026-06-24T04:01:49.716836+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-24 04:01 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 13 | 🟢 Бычьих: 0 | ◎ Нейтральных: 2\nBears: 13 | Bulls: 0 | Neutral: 2\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 SUI/USDT: funding 100.0th (экстремальные лонги)\n  🔴 NEAR/USDT: funding 100.0th (экстремальные лонги)\n  🟢 DOGE/USDT: funding 0.0th (экстремальные шорты)\n  🔴 HYPE/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • SUI/USDT: trend=strong_bearish RSI=43 funding=100.0th\n  • NEAR/USDT: trend=ranging RSI=19 funding=100.0th\n  • DOGE/USDT: trend=strong_bearish RSI=29 funding=0.0th\n  • HYPE/USDT: trend=ranging RSI=21 funding=100.0th\n  • XMR/USDT: trend=strong_bearish RSI=49 funding=91.0th\n\nУдачного дня. Аргус на страже."
+    },
+    {
       "ts": "2026-06-24T03:18:06.215702+00:00",
       "type": "funding_alert",
       "symbol": "SUI/USDT",
@@ -137,13 +142,6 @@
       "symbol": "SOL/USDT",
       "funding_pct": 2.0,
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nSOL/USDT: 2.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nSOL/USDT: 2.0th percentile (extreme shorts)"
-    },
-    {
-      "ts": "2026-06-23T12:30:34.365860+00:00",
-      "type": "funding_alert",
-      "symbol": "HYPE/USDT",
-      "funding_pct": 100.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nHYPE/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nHYPE/USDT: 100.0th percentile (extreme longs)"
     }
   ],
   "liq_4h": 0,
@@ -640,5 +638,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-24T03:46:49Z"
+  "updated": "2026-06-24T04:01:49Z"
 }
