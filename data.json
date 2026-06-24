@@ -144,101 +144,10 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nLINK/USDT: 0.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nLINK/USDT: 0.0th percentile (extreme shorts)"
     }
   ],
-  "liq_4h": 2.6,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 30.2,
-      "fp": 61
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 29.8,
-      "fp": 66
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bearish",
-      "rsi": 29.0,
-      "fp": 65
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 29.3,
-      "fp": 47
-    },
-    {
-      "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 55.4,
-      "fp": 80
-    },
-    {
-      "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 44.0,
-      "fp": 53
-    },
-    {
-      "s": "NEAR",
-      "t": "ranging",
-      "rsi": 15.6,
-      "fp": 38
-    },
-    {
-      "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 37.8,
-      "fp": 64
-    },
-    {
-      "s": "DOGE",
-      "t": "strong_bearish",
-      "rsi": 22.6,
-      "fp": 25
-    },
-    {
-      "s": "ONDO",
-      "t": "strong_bearish",
-      "rsi": 18.3,
-      "fp": 31
-    },
-    {
-      "s": "TAO",
-      "t": "strong_bearish",
-      "rsi": 37.3,
-      "fp": 25
-    },
-    {
-      "s": "HYPE",
-      "t": "ranging",
-      "rsi": 30.0,
-      "fp": 100
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 92
-    },
-    {
-      "s": "ZEC",
-      "t": "strong_bearish",
-      "rsi": 24.2,
-      "fp": 41
-    },
-    {
-      "s": "BNB",
-      "t": "strong_bearish",
-      "rsi": 33.5,
-      "fp": 57
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -729,5 +638,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-24T11:33:07Z"
+  "updated": "2026-06-24T11:46:50Z"
 }
