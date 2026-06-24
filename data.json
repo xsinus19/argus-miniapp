@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0
+      "cp": 67.68
     },
     {
       "sym": "BNB/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0
+      "cp": 561.88
     }
   ],
   "events": [
@@ -191,10 +191,101 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nTAO/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nTAO/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 81.0,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
-  "coins": [],
+  "coins": [
+    {
+      "s": "BTC",
+      "t": "strong_bearish",
+      "rsi": 21.9,
+      "fp": 28
+    },
+    {
+      "s": "ETH",
+      "t": "strong_bearish",
+      "rsi": 27.8,
+      "fp": 39
+    },
+    {
+      "s": "SOL",
+      "t": "strong_bearish",
+      "rsi": 28.1,
+      "fp": 67
+    },
+    {
+      "s": "LINK",
+      "t": "strong_bearish",
+      "rsi": 30.4,
+      "fp": 30
+    },
+    {
+      "s": "AVAX",
+      "t": "strong_bearish",
+      "rsi": 46.1,
+      "fp": 53
+    },
+    {
+      "s": "SUI",
+      "t": "strong_bearish",
+      "rsi": 34.9,
+      "fp": 14
+    },
+    {
+      "s": "NEAR",
+      "t": "ranging",
+      "rsi": 25.9,
+      "fp": 55
+    },
+    {
+      "s": "BCH",
+      "t": "strong_bearish",
+      "rsi": 33.3,
+      "fp": 44
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 20.1,
+      "fp": 4
+    },
+    {
+      "s": "ONDO",
+      "t": "strong_bearish",
+      "rsi": 25.0,
+      "fp": 10
+    },
+    {
+      "s": "TAO",
+      "t": "strong_bearish",
+      "rsi": 31.8,
+      "fp": 23
+    },
+    {
+      "s": "HYPE",
+      "t": "ranging",
+      "rsi": 27.3,
+      "fp": 100
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 92
+    },
+    {
+      "s": "ZEC",
+      "t": "strong_bearish",
+      "rsi": 27.7,
+      "fp": 59
+    },
+    {
+      "s": "BNB",
+      "t": "strong_bearish",
+      "rsi": 22.6,
+      "fp": 59
+    }
+  ],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -709,5 +800,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-24T16:01:49Z"
+  "updated": "2026-06-24T16:20:06Z"
 }
