@@ -1,7 +1,7 @@
 {
   "fear_greed": 12,
   "fear_label": "EXTREME_FEAR",
-  "btc_dom": "55.7%",
+  "btc_dom": "55.8%",
   "stablecoin": "319.7B",
   "signals": [
     {
@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 66.05
+      "cp": 0
     },
     {
       "sym": "BNB/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 554.01
+      "cp": 0
     },
     {
       "sym": "BTC/USDT",
@@ -47,7 +47,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 59340.01
+      "cp": 0
     }
   ],
   "events": [
@@ -215,8 +215,8 @@
       "ai_unavailable": false
     }
   ],
-  "liq_4h": 11.5,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -836,5 +836,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-25T19:34:16Z"
+  "updated": "2026-06-25T19:48:01Z"
 }
