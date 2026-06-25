@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 67.23
+      "cp": 67.28
     },
     {
       "sym": "BNB/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 560.58
+      "cp": 561.39
     },
     {
       "sym": "BTC/USDT",
@@ -47,7 +47,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 59912.0
+      "cp": 59950.93
     }
   ],
   "events": [
@@ -215,81 +215,81 @@
       "ai_unavailable": false
     }
   ],
-  "liq_4h": 8.0,
+  "liq_4h": 7.1,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 36.5,
-      "fp": 87
+      "rsi": 36.9,
+      "fp": 86
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 33.1,
-      "fp": 34
+      "rsi": 33.8,
+      "fp": 31
     },
     {
       "s": "SOL",
       "t": "strong_bearish",
-      "rsi": 42.7,
+      "rsi": 43.1,
       "fp": 73
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 35.9,
-      "fp": 46
+      "rsi": 36.5,
+      "fp": 43
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 44.4,
-      "fp": 39
+      "rsi": 46.2,
+      "fp": 44
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 43.6,
-      "fp": 46
+      "rsi": 45.1,
+      "fp": 48
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 21.2,
+      "rsi": 22.2,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 50.0,
+      "rsi": 51.2,
       "fp": 75
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 39.1,
-      "fp": 51
+      "rsi": 39.2,
+      "fp": 61
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 48.4,
+      "rsi": 49.9,
       "fp": 56
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 37.7,
+      "rsi": 38.5,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 54.5,
-      "fp": 19
+      "rsi": 56.0,
+      "fp": 20
     },
     {
       "s": "XMR",
@@ -300,13 +300,13 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 53.3,
+      "rsi": 54.4,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 41.4,
+      "rsi": 42.6,
       "fp": 60
     }
   ],
@@ -836,5 +836,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-25T23:04:21Z"
+  "updated": "2026-06-25T23:19:18Z"
 }
