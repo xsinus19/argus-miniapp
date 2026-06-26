@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 59797.63
+      "cp": 59902.71
     },
     {
       "sym": "HYPE/USDT",
@@ -32,10 +32,24 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 63.818
+      "cp": 64.182
     }
   ],
   "events": [
+    {
+      "ts": "2026-06-26T21:41:24.423104+00:00",
+      "type": "funding_alert",
+      "symbol": "ONDO/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nONDO/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nONDO/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-06-26T21:41:24.378936+00:00",
+      "type": "funding_alert",
+      "symbol": "BTC/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nBTC/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nBTC/USDT: 100.0th percentile (extreme longs)"
+    },
     {
       "ts": "2026-06-26T19:04:26.251463+00:00",
       "type": "funding_alert",
@@ -172,28 +186,6 @@
       "symbol": "LINK/USDT",
       "funding_pct": 2.0,
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nLINK/USDT: 2.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nLINK/USDT: 2.0th percentile (extreme shorts)"
-    },
-    {
-      "ts": "2026-06-25T16:17:55.056856+00:00",
-      "type": "funding_alert",
-      "symbol": "ETH/USDT",
-      "funding_pct": 3.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nETH/USDT: 3.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nETH/USDT: 3.0th percentile (extreme shorts)"
-    },
-    {
-      "ts": "2026-06-25T13:47:28.776939+00:00",
-      "type": "signal",
-      "symbol": "BTC/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_LITE",
-      "entry": 59830.08,
-      "sl": 62848.01,
-      "tp1": 55906.77,
-      "tp2": 53794.22,
-      "tp3": 50776.29,
-      "rr": 1.299999999999999,
-      "pa_score": 0.8,
-      "ai_unavailable": false
     }
   ],
   "liq_4h": 7.7,
@@ -203,74 +195,74 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 41.8,
-      "fp": 92
+      "rsi": 43.1,
+      "fp": 100
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 42.5,
-      "fp": 71
+      "rsi": 43.0,
+      "fp": 68
     },
     {
       "s": "SOL",
       "t": "bearish",
-      "rsi": 61.3,
+      "rsi": 61.6,
       "fp": 100
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 47.1,
-      "fp": 66
+      "rsi": 47.9,
+      "fp": 70
     },
     {
       "s": "AVAX",
       "t": "bearish",
-      "rsi": 54.4,
+      "rsi": 54.6,
       "fp": 100
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 55.4,
+      "rsi": 56.4,
       "fp": 94
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 28.5,
-      "fp": 47
+      "rsi": 29.5,
+      "fp": 54
     },
     {
       "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 57.2,
+      "t": "bearish",
+      "rsi": 59.4,
       "fp": 96
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 48.8,
+      "rsi": 50.5,
       "fp": 60
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 53.0,
-      "fp": 91
+      "rsi": 55.6,
+      "fp": 100
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 45.0,
+      "rsi": 47.7,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 50.5,
-      "fp": 27
+      "rsi": 52.6,
+      "fp": 31
     },
     {
       "s": "XMR",
@@ -281,13 +273,13 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 56.1,
+      "rsi": 58.6,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 50.6,
+      "rsi": 52.1,
       "fp": 97
     }
   ],
@@ -831,5 +823,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-26T21:26:25Z"
+  "updated": "2026-06-26T21:41:24Z"
 }
