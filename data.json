@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 60073.99
+      "cp": 60114.62
     },
     {
       "sym": "HYPE/USDT",
@@ -32,10 +32,17 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 64.877
+      "cp": 65.016
     }
   ],
   "events": [
+    {
+      "ts": "2026-06-26T17:19:30.881459+00:00",
+      "type": "funding_alert",
+      "symbol": "BCH/USDT",
+      "funding_pct": 97.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nBCH/USDT: 97.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nBCH/USDT: 97.0th percentile (extreme longs)"
+    },
     {
       "ts": "2026-06-26T15:40:02.257811+00:00",
       "type": "expired",
@@ -185,108 +192,101 @@
       "ts": "2026-06-25T04:02:58.518201+00:00",
       "type": "digest",
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-25 04:02 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 14 | 🟢 Бычьих: 0 | ◎ Нейтральных: 1\nBears: 14 | Bulls: 0 | Neutral: 1\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 NEAR/USDT: funding 100.0th (экстремальные лонги)\n  🟢 ONDO/USDT: funding 5.0th (экстремальные шорты)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • NEAR/USDT: trend=strong_bearish RSI=36 funding=100.0th\n  • ONDO/USDT: trend=strong_bearish RSI=49 funding=5.0th\n  • XMR/USDT: trend=strong_bearish RSI=49 funding=92.0th\n\nУдачного дня. Аргус на страже."
-    },
-    {
-      "ts": "2026-06-25T03:34:11.447909+00:00",
-      "type": "funding_alert",
-      "symbol": "NEAR/USDT",
-      "funding_pct": 100.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 36.5,
+  "liq_4h": 35.9,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 44.0,
-      "fp": 89
+      "rsi": 44.3,
+      "fp": 90
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 43.8,
-      "fp": 47
+      "rsi": 45.5,
+      "fp": 59
     },
     {
       "s": "SOL",
       "t": "bearish",
-      "rsi": 65.7,
-      "fp": 97
+      "rsi": 64.9,
+      "fp": 98
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 49.9,
-      "fp": 87
+      "rsi": 50.1,
+      "fp": 89
     },
     {
       "s": "AVAX",
       "t": "bearish",
-      "rsi": 56.0,
-      "fp": 83
+      "rsi": 57.6,
+      "fp": 92
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 54.8,
-      "fp": 63
+      "rsi": 55.1,
+      "fp": 71
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 30.6,
-      "fp": 75
+      "rsi": 31.0,
+      "fp": 76
     },
     {
       "s": "BCH",
       "t": "bearish",
-      "rsi": 65.1,
-      "fp": 96
+      "rsi": 62.8,
+      "fp": 97
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 48.2,
-      "fp": 50
+      "rsi": 49.1,
+      "fp": 51
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 56.9,
-      "fp": 62
+      "rsi": 57.4,
+      "fp": 60
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 50.6,
-      "fp": 19
+      "rsi": 49.7,
+      "fp": 18
     },
     {
       "s": "HYPE",
-      "t": "ranging",
-      "rsi": 56.8,
-      "fp": 16
+      "t": "strong_bullish",
+      "rsi": 57.4,
+      "fp": 18
     },
     {
       "s": "XMR",
       "t": "strong_bearish",
       "rsi": 49.4,
-      "fp": 92
+      "fp": 5
     },
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 53.3,
+      "rsi": 52.9,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 52.1,
-      "fp": 69
+      "rsi": 51.3,
+      "fp": 80
     }
   ],
   "history": [
@@ -829,5 +829,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-26T17:04:26Z"
+  "updated": "2026-06-26T17:19:30Z"
 }
