@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 60018.37
+      "cp": 0
     },
     {
       "sym": "HYPE/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 64.983
+      "cp": 0
     }
   ],
   "events": [
@@ -196,8 +196,8 @@
       "ai_unavailable": false
     }
   ],
-  "liq_4h": 15.1,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -831,5 +831,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-26T19:34:24Z"
+  "updated": "2026-06-26T19:48:14Z"
 }
