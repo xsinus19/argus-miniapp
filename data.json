@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 59873.26
+      "cp": 59932.0
     },
     {
       "sym": "HYPE/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 63.835
+      "cp": 64.034
     }
   ],
   "events": [
@@ -195,25 +195,25 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 42.8,
+      "rsi": 43.5,
       "fp": 92
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 42.5,
-      "fp": 47
+      "rsi": 42.9,
+      "fp": 53
     },
     {
       "s": "SOL",
       "t": "bearish",
-      "rsi": 58.9,
+      "rsi": 59.7,
       "fp": 100
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 46.8,
+      "rsi": 46.6,
       "fp": 70
     },
     {
@@ -225,14 +225,14 @@
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 54.0,
-      "fp": 89
+      "rsi": 54.8,
+      "fp": 92
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 27.2,
-      "fp": 63
+      "rsi": 27.5,
+      "fp": 67
     },
     {
       "s": "BCH",
@@ -243,25 +243,25 @@
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 48.0,
-      "fp": 56
+      "rsi": 48.9,
+      "fp": 60
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 53.0,
+      "rsi": 53.1,
       "fp": 100
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 47.2,
+      "rsi": 46.6,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 50.6,
+      "rsi": 51.7,
       "fp": 27
     },
     {
@@ -273,13 +273,13 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 57.8,
+      "rsi": 57.2,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 53.7,
+      "rsi": 53.1,
       "fp": 95
     }
   ],
@@ -823,5 +823,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-26T22:11:21Z"
+  "updated": "2026-06-26T22:26:29Z"
 }
