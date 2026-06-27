@@ -37,6 +37,11 @@
   ],
   "events": [
     {
+      "ts": "2026-06-27T04:10:14.629505+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-27 04:10 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 13 | 🟢 Бычьих: 0 | ◎ Нейтральных: 2\nBears: 13 | Bulls: 0 | Neutral: 2\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 SOL/USDT: funding 100.0th (экстремальные лонги)\n  🔴 AVAX/USDT: funding 100.0th (экстремальные лонги)\n  🔴 NEAR/USDT: funding 100.0th (экстремальные лонги)\n  🔴 TAO/USDT: funding 100.0th (экстремальные лонги)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • SOL/USDT: trend=bearish RSI=62 funding=100.0th\n  • AVAX/USDT: trend=ranging RSI=62 funding=100.0th\n  • NEAR/USDT: trend=strong_bearish RSI=35 funding=100.0th\n  • BCH/USDT: trend=strong_bearish RSI=56 funding=90.0th\n  • TAO/USDT: trend=strong_bearish RSI=47 funding=100.0th\n\nУдачного дня. Аргус на страже."
+    },
+    {
       "ts": "2026-06-27T02:26:22.875572+00:00",
       "type": "funding_alert",
       "symbol": "LINK/USDT",
@@ -179,13 +184,6 @@
       "ts": "2026-06-26T04:03:02.538969+00:00",
       "type": "digest",
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-26 04:03 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 14 | 🟢 Бычьих: 0 | ◎ Нейтральных: 1\nBears: 14 | Bulls: 0 | Neutral: 1\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🟢 ETH/USDT: funding 2.0th (экстремальные шорты)\n  🔴 NEAR/USDT: funding 100.0th (экстремальные лонги)\n  🔴 TAO/USDT: funding 100.0th (экстремальные лонги)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • ETH/USDT: trend=strong_bearish RSI=26 funding=2.0th\n  • SOL/USDT: trend=strong_bearish RSI=42 funding=93.0th\n  • NEAR/USDT: trend=strong_bearish RSI=20 funding=100.0th\n  • TAO/USDT: trend=strong_bearish RSI=31 funding=100.0th\n  • XMR/USDT: trend=strong_bearish RSI=49 funding=92.0th\n\nУдачного дня. Аргус на страже."
-    },
-    {
-      "ts": "2026-06-26T03:34:20.011333+00:00",
-      "type": "funding_alert",
-      "symbol": "ETH/USDT",
-      "funding_pct": 2.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nETH/USDT: 2.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nETH/USDT: 2.0th percentile (extreme shorts)"
     }
   ],
   "liq_4h": 0,
@@ -823,5 +821,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-27T03:55:14Z"
+  "updated": "2026-06-27T04:10:14Z"
 }
