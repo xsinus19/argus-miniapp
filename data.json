@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 60073.71
+      "cp": 0
     },
     {
       "sym": "HYPE/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 64.348
+      "cp": 0
     }
   ],
   "events": [
@@ -188,8 +188,8 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nLINK/USDT: 2.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nLINK/USDT: 2.0th percentile (extreme shorts)"
     }
   ],
-  "liq_4h": 3.1,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -823,5 +823,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-26T23:56:26Z"
+  "updated": "2026-06-27T00:10:15Z"
 }
