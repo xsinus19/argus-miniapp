@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 64.307
+      "cp": 64.262
     }
   ],
   "events": [
@@ -182,74 +182,74 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 53.9,
-      "fp": 61
+      "rsi": 54.9,
+      "fp": 66
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 56.9,
-      "fp": 48
+      "rsi": 57.6,
+      "fp": 54
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 63.2,
-      "fp": 66
+      "rsi": 62.4,
+      "fp": 70
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 58.9,
-      "fp": 31
+      "rsi": 58.8,
+      "fp": 28
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 64.6,
-      "fp": 95
+      "rsi": 64.0,
+      "fp": 92
     },
     {
       "s": "SUI",
       "t": "bearish",
-      "rsi": 61.8,
+      "rsi": 61.6,
       "fp": 46
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 67.3,
-      "fp": 18
+      "rsi": 68.8,
+      "fp": 17
     },
     {
       "s": "BCH",
       "t": "bearish",
-      "rsi": 59.7,
+      "rsi": 60.9,
       "fp": 57
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 56.1,
+      "rsi": 56.4,
       "fp": 23
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 54.9,
-      "fp": 76
+      "rsi": 54.4,
+      "fp": 72
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 48.9,
-      "fp": 24
+      "rsi": 49.2,
+      "fp": 33
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 53.9,
-      "fp": 17
+      "rsi": 53.6,
+      "fp": 20
     },
     {
       "s": "XMR",
@@ -260,14 +260,14 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 48.7,
+      "rsi": 48.6,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 51.9,
-      "fp": 95
+      "rsi": 52.1,
+      "fp": 96
     }
   ],
   "history": [
@@ -810,5 +810,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-27T16:41:24Z"
+  "updated": "2026-06-27T16:56:26Z"
 }
