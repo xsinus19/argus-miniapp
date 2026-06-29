@@ -1,5 +1,5 @@
 {
-  "fear_greed": 18,
+  "fear_greed": 12,
   "fear_label": "EXTREME_FEAR",
   "btc_dom": "55.7%",
   "stablecoin": "319.7B",
@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0
+      "cp": 373.15
     },
     {
       "sym": "ONDO/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0
+      "cp": 0.3073
     },
     {
       "sym": "BTC/USDT",
@@ -47,7 +47,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0
+      "cp": 59223.0
     },
     {
       "sym": "BCH/USDT",
@@ -62,10 +62,24 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0
+      "cp": 189.7
     }
   ],
   "events": [
+    {
+      "ts": "2026-06-29T00:23:49.359384+00:00",
+      "type": "funding_alert",
+      "symbol": "HYPE/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nHYPE/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nHYPE/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-06-29T00:23:49.293269+00:00",
+      "type": "funding_alert",
+      "symbol": "NEAR/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 100.0th percentile (extreme longs)"
+    },
     {
       "ts": "2026-06-28T22:52:56.573723+00:00",
       "type": "signal",
@@ -217,94 +231,82 @@
       "symbol": "HYPE/USDT",
       "funding_pct": 3.0,
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nHYPE/USDT: 3.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nHYPE/USDT: 3.0th percentile (extreme shorts)"
-    },
-    {
-      "ts": "2026-06-27T04:10:14.629505+00:00",
-      "type": "digest",
-      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-27 04:10 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 13 | 🟢 Бычьих: 0 | ◎ Нейтральных: 2\nBears: 13 | Bulls: 0 | Neutral: 2\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 SOL/USDT: funding 100.0th (экстремальные лонги)\n  🔴 AVAX/USDT: funding 100.0th (экстремальные лонги)\n  🔴 NEAR/USDT: funding 100.0th (экстремальные лонги)\n  🔴 TAO/USDT: funding 100.0th (экстремальные лонги)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • SOL/USDT: trend=bearish RSI=62 funding=100.0th\n  • AVAX/USDT: trend=ranging RSI=62 funding=100.0th\n  • NEAR/USDT: trend=strong_bearish RSI=35 funding=100.0th\n  • BCH/USDT: trend=strong_bearish RSI=56 funding=90.0th\n  • TAO/USDT: trend=strong_bearish RSI=47 funding=100.0th\n\nУдачного дня. Аргус на страже."
-    },
-    {
-      "ts": "2026-06-27T02:26:22.875572+00:00",
-      "type": "funding_alert",
-      "symbol": "LINK/USDT",
-      "funding_pct": 100.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nLINK/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nLINK/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 30.0,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 40.9,
-      "fp": 56
+      "rsi": 32.3,
+      "fp": 57
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 44.6,
-      "fp": 36
+      "rsi": 37.7,
+      "fp": 28
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 52.2,
-      "fp": 69
+      "rsi": 48.6,
+      "fp": 71
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 43.7,
+      "rsi": 38.8,
       "fp": 48
     },
     {
       "s": "AVAX",
-      "t": "bearish",
-      "rsi": 57.0,
-      "fp": 76
+      "t": "ranging",
+      "rsi": 50.7,
+      "fp": 75
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 40.7,
-      "fp": 17
+      "rsi": 36.4,
+      "fp": 14
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 44.3,
+      "rsi": 36.3,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 35.7,
-      "fp": 39
+      "rsi": 31.0,
+      "fp": 43
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 33.5,
-      "fp": 21
+      "rsi": 28.6,
+      "fp": 13
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 44.3,
-      "fp": 83
+      "rsi": 36.9,
+      "fp": 64
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 31.6,
-      "fp": 57
+      "rsi": 29.5,
+      "fp": 44
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 37.2,
+      "rsi": 32.9,
       "fp": 100
     },
     {
@@ -316,14 +318,14 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 26.4,
-      "fp": 88
+      "rsi": 23.3,
+      "fp": 84
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 35.4,
-      "fp": 63
+      "rsi": 30.8,
+      "fp": 64
     }
   ],
   "history": [
@@ -920,5 +922,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-29T00:07:37Z"
+  "updated": "2026-06-29T00:23:49Z"
 }
