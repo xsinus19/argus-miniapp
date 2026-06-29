@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 381.51
+      "cp": 385.95
     },
     {
       "sym": "ONDO/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0.3104
+      "cp": 0.3115
     },
     {
       "sym": "BTC/USDT",
@@ -47,7 +47,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 59868.67
+      "cp": 59974.01
     },
     {
       "sym": "AVAX/USDT",
@@ -62,7 +62,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 6.533
+      "cp": 6.577
     },
     {
       "sym": "ETH/USDT",
@@ -77,7 +77,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 1573.24
+      "cp": 1576.52
     },
     {
       "sym": "NEAR/USDT",
@@ -92,7 +92,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 1.841
+      "cp": 1.847
     },
     {
       "sym": "TAO/USDT",
@@ -107,10 +107,17 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 205.6
+      "cp": 206.0
     }
   ],
   "events": [
+    {
+      "ts": "2026-06-29T09:23:50.630220+00:00",
+      "type": "funding_alert",
+      "symbol": "ONDO/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nONDO/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nONDO/USDT: 100.0th percentile (extreme longs)"
+    },
     {
       "ts": "2026-06-29T06:38:23.065429+00:00",
       "type": "signal",
@@ -308,11 +315,6 @@
       "ts": "2026-06-28T04:40:43.151765+00:00",
       "type": "digest",
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-28 04:40 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 14 | 🟢 Бычьих: 0 | ◎ Нейтральных: 1\nBears: 14 | Bulls: 0 | Neutral: 1\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🟢 SUI/USDT: funding 2.0th (экстремальные шорты)\n  🔴 HYPE/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • SUI/USDT: trend=strong_bearish RSI=43 funding=2.0th\n  • HYPE/USDT: trend=ranging RSI=40 funding=100.0th\n  • XMR/USDT: trend=strong_bearish RSI=49 funding=93.0th\n\nУдачного дня. Аргус на страже."
-    },
-    {
-      "ts": "2026-06-28T04:37:02.408089+00:00",
-      "type": "digest",
-      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-28 04:37 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 14 | 🟢 Бычьих: 0 | ◎ Нейтральных: 1\nBears: 14 | Bulls: 0 | Neutral: 1\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🟢 SUI/USDT: funding 1.0th (экстремальные шорты)\n  🔴 HYPE/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • SUI/USDT: trend=strong_bearish RSI=42 funding=1.0th\n  • HYPE/USDT: trend=ranging RSI=40 funding=100.0th\n  • XMR/USDT: trend=strong_bearish RSI=49 funding=93.0th\n\nУдачного дня. Аргус на страже."
     }
   ],
   "liq_4h": 4.3,
@@ -322,73 +324,73 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 44.9,
+      "rsi": 47.2,
       "fp": 88
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 44.7,
+      "rsi": 46.9,
       "fp": 49
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 61.6,
+      "rsi": 62.9,
       "fp": 72
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 47.6,
-      "fp": 17
+      "rsi": 49.9,
+      "fp": 16
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 58.1,
+      "rsi": 61.9,
       "fp": 96
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 48.7,
-      "fp": 88
+      "rsi": 51.2,
+      "fp": 90
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 44.4,
+      "rsi": 46.1,
       "fp": 100
     },
     {
       "s": "BCH",
-      "t": "strong_bearish",
-      "rsi": 55.1,
-      "fp": 69
+      "t": "bearish",
+      "rsi": 60.5,
+      "fp": 72
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 28.2,
-      "fp": 72
+      "rsi": 30.8,
+      "fp": 73
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 45.2,
-      "fp": 93
+      "rsi": 48.8,
+      "fp": 100
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 36.5,
-      "fp": 43
+      "rsi": 37.7,
+      "fp": 57
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 47.0,
+      "rsi": 48.2,
       "fp": 100
     },
     {
@@ -400,13 +402,13 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 35.1,
-      "fp": 85
+      "rsi": 42.1,
+      "fp": 88
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 39.7,
+      "rsi": 42.6,
       "fp": 64
     }
   ],
@@ -1058,5 +1060,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-29T09:08:52Z"
+  "updated": "2026-06-29T09:23:50Z"
 }
