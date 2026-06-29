@@ -5,21 +5,6 @@
   "stablecoin": "319.7B",
   "signals": [
     {
-      "sym": "ZEC/USDT",
-      "dir": "short",
-      "ep": 389.104,
-      "sl": 410.318,
-      "tp1": 361.526,
-      "tp2": 346.677,
-      "tp3": 325.463,
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
-      "rr": 1.3,
-      "signal_level": "SIGNAL_LITE",
-      "cp": 406.54
-    },
-    {
       "sym": "BTC/USDT",
       "dir": "short",
       "ep": 59596.53,
@@ -32,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 60343.92
+      "cp": 60442.39
     },
     {
       "sym": "NEAR/USDT",
@@ -47,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 1.874
+      "cp": 1.886
     },
     {
       "sym": "TAO/USDT",
@@ -62,7 +47,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 207.7
+      "cp": 208.8
     },
     {
       "sym": "BNB/USDT",
@@ -77,10 +62,20 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 559.97
+      "cp": 560.98
     }
   ],
   "events": [
+    {
+      "ts": "2026-06-29T21:40:32.629985+00:00",
+      "type": "sl",
+      "symbol": "ZEC/USDT",
+      "direction": "short",
+      "price": 410.82,
+      "entry": 389.104,
+      "loss": 5.581027180393933,
+      "signal_level": "SIGNAL_LITE"
+    },
     {
       "ts": "2026-06-29T20:40:33.389222+00:00",
       "type": "funding_alert",
@@ -257,89 +252,82 @@
       "symbol": "HYPE/USDT",
       "funding_pct": 100.0,
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nHYPE/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nHYPE/USDT: 100.0th percentile (extreme longs)"
-    },
-    {
-      "ts": "2026-06-29T00:23:49.293269+00:00",
-      "type": "funding_alert",
-      "symbol": "NEAR/USDT",
-      "funding_pct": 100.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 5.6,
+  "liq_4h": 4.4,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 56.0,
+      "rsi": 59.0,
       "fp": 100
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 66.0,
+      "rsi": 67.9,
       "fp": 94
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 71.9,
+      "rsi": 73.9,
       "fp": 100
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 64.0,
-      "fp": 89
+      "rsi": 66.8,
+      "fp": 87
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 66.6,
-      "fp": 90
+      "rsi": 69.0,
+      "fp": 85
     },
     {
       "s": "SUI",
       "t": "bearish",
-      "rsi": 63.2,
+      "rsi": 65.4,
       "fp": 100
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 54.0,
+      "rsi": 58.1,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "bearish",
-      "rsi": 73.9,
+      "rsi": 74.8,
       "fp": 82
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 52.4,
+      "rsi": 55.7,
       "fp": 100
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 65.5,
-      "fp": 73
+      "rsi": 70.6,
+      "fp": 71
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 48.8,
-      "fp": 33
+      "rsi": 52.6,
+      "fp": 38
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 72.8,
+      "rsi": 77.2,
       "fp": 100
     },
     {
@@ -351,13 +339,13 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 65.1,
+      "rsi": 69.6,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 57.0,
+      "rsi": 59.4,
       "fp": 81
     }
   ],
@@ -893,7 +881,9 @@
       "tp3": 325.463,
       "time": "2026-06-28T16:53:35.446611+00:00",
       "signal_id": "ZEC/USDT:short:2026-06-28T16:53:35.444886+00:00",
-      "result": "open"
+      "result": "sl",
+      "result_price": 410.82,
+      "pnl": -5.58
     },
     {
       "symbol": "ONDO/USDT",
@@ -1010,5 +1000,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-29T21:25:33Z"
+  "updated": "2026-06-29T21:40:32Z"
 }
