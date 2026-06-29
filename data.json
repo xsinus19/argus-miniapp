@@ -57,9 +57,18 @@
       "tp1": 1.772,
       "tp2": 1.7238,
       "tp3": 1.655
+    },
+    {
+      "sym": "TAO/USDT:short",
+      "dir": "short",
+      "ep": 207.531,
+      "sl": 212.68,
+      "tp1": 200.838,
+      "tp2": 197.234,
+      "tp3": 192.085
     }
   ],
-  "liq_4h": 10.5,
+  "liq_4h": 10.6,
   "whale_usd": 0,
   "coins": [
     {
@@ -102,6 +111,30 @@
       "s": "NEAR",
       "t": "strong_bearish",
       "rsi": 50.2,
+      "fp": 100
+    },
+    {
+      "s": "BCH",
+      "t": "bearish",
+      "rsi": 58.7,
+      "fp": 61
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 32.9,
+      "fp": 31
+    },
+    {
+      "s": "ONDO",
+      "t": "strong_bearish",
+      "rsi": 51.1,
+      "fp": 79
+    },
+    {
+      "s": "TAO",
+      "t": "strong_bearish",
+      "rsi": 41.8,
       "fp": 100
     }
   ],
@@ -732,8 +765,21 @@
       "time": "2026-06-29T06:37:47.956273+00:00",
       "signal_id": "NEAR/USDT:short:2026-06-29T06:37:47.954092+00:00",
       "result": "open"
+    },
+    {
+      "symbol": "TAO/USDT",
+      "direction": "short",
+      "signal_level": "SIGNAL_LITE",
+      "entry_price": 207.531,
+      "stop_loss": 212.68,
+      "tp1": 200.838,
+      "tp2": 197.234,
+      "tp3": 192.085,
+      "time": "2026-06-29T06:38:23.066579+00:00",
+      "signal_id": "TAO/USDT:short:2026-06-29T06:38:23.064709+00:00",
+      "result": "open"
     }
   ],
   "chart": {},
-  "updated": "2026-06-29T06:37:48Z"
+  "updated": "2026-06-29T06:38:23Z"
 }
