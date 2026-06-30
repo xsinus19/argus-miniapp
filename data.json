@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 58317.11
+      "cp": 58491.99
     },
     {
       "sym": "NEAR/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 0,
       "signal_level": "SIGNAL_LITE",
-      "cp": 1.798
+      "cp": 1.8
     },
     {
       "sym": "TAO/USDT",
@@ -47,7 +47,7 @@
       "tp3_hit": false,
       "rr": 0,
       "signal_level": "SIGNAL_LITE",
-      "cp": 203.6
+      "cp": 204.1
     },
     {
       "sym": "BNB/USDT",
@@ -62,7 +62,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 545.96
+      "cp": 546.7
     }
   ],
   "events": [
@@ -219,80 +219,80 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nBTC/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nBTC/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 37.2,
+  "liq_4h": 27.1,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 22.6,
-      "fp": 66
+      "rsi": 26.6,
+      "fp": 73
     },
     {
       "s": "ETH",
       "t": "strong_bearish",
-      "rsi": 39.6,
-      "fp": 71
+      "rsi": 43.3,
+      "fp": 74
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 48.9,
-      "fp": 95
+      "rsi": 53.4,
+      "fp": 96
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 31.9,
-      "fp": 70
+      "rsi": 37.1,
+      "fp": 73
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 46.3,
-      "fp": 61
+      "rsi": 50.0,
+      "fp": 67
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 48.1,
-      "fp": 39
+      "rsi": 50.8,
+      "fp": 51
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 35.0,
+      "rsi": 35.8,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 63.2,
-      "fp": 87
+      "rsi": 63.5,
+      "fp": 88
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 25.7,
-      "fp": 50
+      "rsi": 34.0,
+      "fp": 63
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 39.7,
-      "fp": 45
+      "rsi": 43.2,
+      "fp": 53
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 38.2,
-      "fp": 23
+      "rsi": 40.6,
+      "fp": 28
     },
     {
       "s": "HYPE",
-      "t": "bullish",
-      "rsi": 47.4,
+      "t": "strong_bullish",
+      "rsi": 50.4,
       "fp": 100
     },
     {
@@ -304,13 +304,13 @@
     {
       "s": "ZEC",
       "t": "strong_bearish",
-      "rsi": 51.4,
-      "fp": 79
+      "rsi": 52.7,
+      "fp": 81
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 33.7,
+      "rsi": 35.7,
       "fp": 65
     }
   ],
@@ -979,5 +979,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-30T16:46:38Z"
+  "updated": "2026-06-30T17:01:43Z"
 }
