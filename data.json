@@ -67,6 +67,11 @@
   ],
   "events": [
     {
+      "ts": "2026-06-30T04:09:20.874867+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-06-30 04:09 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 11 | 🟢 Бычьих: 1 | ◎ Нейтральных: 3\nBears: 11 | Bulls: 1 | Neutral: 3\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 SOL/USDT: funding 100.0th (экстремальные лонги)\n  🔴 NEAR/USDT: funding 100.0th (экстремальные лонги)\n  🟢 DOGE/USDT: funding 0.0th (экстремальные шорты)\n  🔴 HYPE/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • SOL/USDT: trend=ranging RSI=62 funding=100.0th\n  • NEAR/USDT: trend=strong_bearish RSI=48 funding=100.0th\n  • DOGE/USDT: trend=strong_bearish RSI=35 funding=0.0th\n  • HYPE/USDT: trend=strong_bullish RSI=65 funding=100.0th\n  • XMR/USDT: trend=strong_bearish RSI=49 funding=93.0th\n\nУдачного дня. Аргус на страже."
+    },
+    {
       "ts": "2026-06-30T02:10:33.775810+00:00",
       "type": "funding_alert",
       "symbol": "TAO/USDT",
@@ -219,21 +224,6 @@
       "tp3": 192.085,
       "rr": 1.2999999999999978,
       "pa_score": 0.9500000000000001,
-      "ai_unavailable": false
-    },
-    {
-      "ts": "2026-06-29T06:37:47.954955+00:00",
-      "type": "signal",
-      "symbol": "NEAR/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_LITE",
-      "entry": 1.8615,
-      "sl": 1.9304,
-      "tp1": 1.772,
-      "tp2": 1.7238,
-      "tp3": 1.655,
-      "rr": 1.2999999999999994,
-      "pa_score": 0.8,
       "ai_unavailable": false
     }
   ],
@@ -983,5 +973,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-06-30T03:54:22Z"
+  "updated": "2026-06-30T04:09:20Z"
 }
