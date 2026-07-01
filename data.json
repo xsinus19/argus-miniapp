@@ -164,81 +164,81 @@
       "signal_level": "SIGNAL_LITE"
     }
   ],
-  "liq_4h": 40.1,
+  "liq_4h": 39.9,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 62.1,
+      "rsi": 60.3,
       "fp": 94
     },
     {
       "s": "ETH",
       "t": "bearish",
-      "rsi": 64.6,
-      "fp": 55
+      "rsi": 63.0,
+      "fp": 46
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 76.4,
-      "fp": 91
+      "rsi": 76.0,
+      "fp": 90
     },
     {
       "s": "LINK",
       "t": "bearish",
-      "rsi": 64.6,
-      "fp": 95
+      "rsi": 62.6,
+      "fp": 94
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 66.0,
-      "fp": 88
+      "rsi": 62.9,
+      "fp": 91
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 68.3,
-      "fp": 91
+      "rsi": 66.5,
+      "fp": 89
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 54.1,
+      "rsi": 52.2,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 78.6,
-      "fp": 56
+      "rsi": 74.4,
+      "fp": 50
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 59.3,
-      "fp": 90
+      "rsi": 56.2,
+      "fp": 93
     },
     {
       "s": "ONDO",
       "t": "bearish",
-      "rsi": 66.2,
-      "fp": 92
+      "rsi": 60.6,
+      "fp": 90
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
       "rsi": 57.0,
-      "fp": 2
+      "fp": 1
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 51.8,
-      "fp": 35
+      "rsi": 50.2,
+      "fp": 34
     },
     {
       "s": "XMR",
@@ -249,14 +249,14 @@
     {
       "s": "ZEC",
       "t": "bearish",
-      "rsi": 67.7,
+      "rsi": 66.0,
       "fp": 53
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 54.7,
-      "fp": 69
+      "rsi": 51.8,
+      "fp": 72
     }
   ],
   "history": [
@@ -932,5 +932,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-01T16:31:39Z"
+  "updated": "2026-07-01T16:46:38Z"
 }
