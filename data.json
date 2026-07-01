@@ -164,8 +164,8 @@
       "signal_level": "SIGNAL_LITE"
     }
   ],
-  "liq_4h": 37.6,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -908,5 +908,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-01T15:46:24Z"
+  "updated": "2026-07-01T16:00:22Z"
 }
