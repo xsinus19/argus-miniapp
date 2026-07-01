@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 0
+      "cp": 545.83
     }
   ],
   "events": [
@@ -178,81 +178,51 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nBTC/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nBTC/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 0.5,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
-      "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 38.1,
-      "fp": 39
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bearish",
-      "rsi": 46.8,
-      "fp": 82
-    },
-    {
-      "s": "SOL",
-      "t": "ranging",
-      "rsi": 59.1,
-      "fp": 100
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bearish",
-      "rsi": 41.4,
-      "fp": 46
-    },
-    {
-      "s": "AVAX",
-      "t": "ranging",
-      "rsi": 56.7,
-      "fp": 96
-    },
-    {
-      "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 50.1,
-      "fp": 87
-    },
-    {
-      "s": "NEAR",
-      "t": "strong_bearish",
-      "rsi": 39.8,
-      "fp": 100
-    },
-    {
-      "s": "BCH",
-      "t": "ranging",
-      "rsi": 57.4,
-      "fp": 94
-    },
-    {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 37.6,
-      "fp": 74
+      "rsi": 35.1,
+      "fp": 66
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 46.6,
-      "fp": 42
+      "rsi": 46.5,
+      "fp": 40
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
       "rsi": 22.5,
-      "fp": 16
+      "fp": 19
     },
     {
       "s": "HYPE",
       "t": "bullish",
-      "rsi": 43.1,
+      "rsi": 39.6,
       "fp": 100
+    },
+    {
+      "s": "XMR",
+      "t": "strong_bearish",
+      "rsi": 49.4,
+      "fp": 93
+    },
+    {
+      "s": "ZEC",
+      "t": "strong_bearish",
+      "rsi": 52.0,
+      "fp": 100
+    },
+    {
+      "s": "BNB",
+      "t": "strong_bearish",
+      "rsi": 38.5,
+      "fp": 68
     }
   ],
   "history": [
@@ -926,5 +896,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-01T08:00:25Z"
+  "updated": "2026-07-01T08:15:58Z"
 }
