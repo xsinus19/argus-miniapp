@@ -171,74 +171,74 @@
     {
       "s": "BTC",
       "t": "strong_bearish",
-      "rsi": 60.3,
-      "fp": 94
+      "rsi": 57.8,
+      "fp": 93
     },
     {
       "s": "ETH",
       "t": "bearish",
-      "rsi": 63.0,
-      "fp": 46
+      "rsi": 60.7,
+      "fp": 41
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 76.0,
-      "fp": 90
+      "rsi": 72.2,
+      "fp": 89
     },
     {
       "s": "LINK",
-      "t": "bearish",
-      "rsi": 62.6,
-      "fp": 94
+      "t": "strong_bearish",
+      "rsi": 59.1,
+      "fp": 91
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 62.9,
+      "rsi": 59.6,
       "fp": 91
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 66.5,
-      "fp": 89
+      "rsi": 61.8,
+      "fp": 86
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 52.2,
+      "rsi": 49.5,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 74.4,
-      "fp": 50
+      "rsi": 71.9,
+      "fp": 49
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 56.2,
-      "fp": 93
+      "rsi": 55.5,
+      "fp": 95
     },
     {
       "s": "ONDO",
       "t": "bearish",
-      "rsi": 60.6,
-      "fp": 90
+      "rsi": 58.9,
+      "fp": 94
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 57.0,
+      "rsi": 50.0,
       "fp": 1
     },
     {
       "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 50.2,
-      "fp": 34
+      "t": "bullish",
+      "rsi": 48.3,
+      "fp": 33
     },
     {
       "s": "XMR",
@@ -249,14 +249,14 @@
     {
       "s": "ZEC",
       "t": "bearish",
-      "rsi": 66.0,
+      "rsi": 64.1,
       "fp": 53
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 51.8,
-      "fp": 72
+      "rsi": 51.2,
+      "fp": 73
     }
   ],
   "history": [
@@ -932,5 +932,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-01T16:46:38Z"
+  "updated": "2026-07-01T17:01:40Z"
 }
