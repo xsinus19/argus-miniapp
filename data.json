@@ -152,8 +152,8 @@
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-01 04:00 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 8 | 🟢 Бычьих: 0 | ◎ Нейтральных: 3\nBears: 8 | Bulls: 0 | Neutral: 3\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 SOL/USDT: funding 100.0th (экстремальные лонги)\n  🔴 NEAR/USDT: funding 100.0th (экстремальные лонги)\n  🔴 BCH/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • ETH/USDT: trend=strong_bearish RSI=53 funding=93.0th\n  • SOL/USDT: trend=ranging RSI=64 funding=100.0th\n  • SUI/USDT: trend=bearish RSI=60 funding=92.0th\n  • NEAR/USDT: trend=strong_bearish RSI=50 funding=100.0th\n  • BCH/USDT: trend=ranging RSI=80 funding=100.0th\n\nУдачного дня. Аргус на страже."
     }
   ],
-  "liq_4h": 21.8,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -920,5 +920,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-02T11:34:55Z"
+  "updated": "2026-07-02T11:48:41Z"
 }
