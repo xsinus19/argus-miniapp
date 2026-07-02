@@ -1,7 +1,7 @@
 {
-  "fear_greed": 19,
+  "fear_greed": 0,
   "fear_label": "EXTREME_FEAR",
-  "btc_dom": "55.8%",
+  "btc_dom": "55.7%",
   "stablecoin": "319.7B",
   "signals": [],
   "events": [
@@ -153,98 +153,7 @@
   "liq_4h": 0,
   "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "bearish",
-      "rsi": 68.6,
-      "fp": 78
-    },
-    {
-      "s": "ETH",
-      "t": "ranging",
-      "rsi": 75.2,
-      "fp": 91
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bullish",
-      "rsi": 70.3,
-      "fp": 41
-    },
-    {
-      "s": "LINK",
-      "t": "ranging",
-      "rsi": 71.0,
-      "fp": 77
-    },
-    {
-      "s": "AVAX",
-      "t": "ranging",
-      "rsi": 58.7,
-      "fp": 14
-    },
-    {
-      "s": "SUI",
-      "t": "ranging",
-      "rsi": 69.8,
-      "fp": 78
-    },
-    {
-      "s": "NEAR",
-      "t": "bearish",
-      "rsi": 65.6,
-      "fp": 28
-    },
-    {
-      "s": "BCH",
-      "t": "ranging",
-      "rsi": 70.9,
-      "fp": 83
-    },
-    {
-      "s": "DOGE",
-      "t": "strong_bearish",
-      "rsi": 60.6,
-      "fp": 82
-    },
-    {
-      "s": "ONDO",
-      "t": "ranging",
-      "rsi": 66.1,
-      "fp": 45
-    },
-    {
-      "s": "TAO",
-      "t": "strong_bearish",
-      "rsi": 60.2,
-      "fp": 24
-    },
-    {
-      "s": "HYPE",
-      "t": "strong_bullish",
-      "rsi": 65.8,
-      "fp": 100
-    },
-    {
-      "s": "XMR",
-      "t": "strong_bearish",
-      "rsi": 49.4,
-      "fp": 93
-    },
-    {
-      "s": "ZEC",
-      "t": "ranging",
-      "rsi": 66.1,
-      "fp": 49
-    },
-    {
-      "s": "BNB",
-      "t": "strong_bearish",
-      "rsi": 56.7,
-      "fp": 96
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -918,5 +827,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-02T20:03:41Z"
+  "updated": "2026-07-02T20:12:13Z"
 }
