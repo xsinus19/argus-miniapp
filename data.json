@@ -144,62 +144,62 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 14.9,
+  "liq_4h": 16.4,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 73.0,
-      "fp": 77
+      "rsi": 74.2,
+      "fp": 76
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 79.8,
+      "rsi": 82.9,
       "fp": 86
     },
     {
       "s": "SOL",
       "t": "strong_bullish",
-      "rsi": 74.1,
-      "fp": 56
+      "rsi": 74.3,
+      "fp": 55
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 75.5,
+      "rsi": 78.7,
       "fp": 100
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 63.6,
-      "fp": 94
+      "rsi": 67.8,
+      "fp": 93
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 76.6,
+      "rsi": 76.9,
       "fp": 100
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 82.5,
-      "fp": 50
+      "rsi": 80.9,
+      "fp": 42
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 82.4,
-      "fp": 71
+      "rsi": 82.2,
+      "fp": 68
     },
     {
       "s": "DOGE",
       "t": "bearish",
-      "rsi": 77.2,
+      "rsi": 77.8,
       "fp": 100
     },
     {
@@ -211,13 +211,13 @@
     {
       "s": "TAO",
       "t": "bearish",
-      "rsi": 71.4,
-      "fp": 47
+      "rsi": 71.5,
+      "fp": 51
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 80.3,
+      "rsi": 80.8,
       "fp": 100
     },
     {
@@ -229,14 +229,14 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 73.4,
+      "rsi": 76.3,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "bearish",
-      "rsi": 65.4,
-      "fp": 99
+      "rsi": 67.9,
+      "fp": 100
     }
   ],
   "history": [
@@ -912,5 +912,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-03T14:59:09Z"
+  "updated": "2026-07-03T15:14:00Z"
 }
