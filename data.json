@@ -144,68 +144,68 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 45.4,
+  "liq_4h": 45.3,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 77.1,
+      "rsi": 76.1,
       "fp": 95
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 81.0,
-      "fp": 96
+      "rsi": 80.2,
+      "fp": 100
     },
     {
       "s": "SOL",
       "t": "strong_bullish",
-      "rsi": 74.9,
+      "rsi": 72.6,
       "fp": 93
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 79.7,
+      "rsi": 79.1,
       "fp": 100
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 71.9,
-      "fp": 92
+      "rsi": 71.0,
+      "fp": 94
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 83.4,
+      "rsi": 81.6,
       "fp": 100
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 73.7,
+      "rsi": 72.9,
       "fp": 0
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 83.5,
+      "rsi": 82.7,
       "fp": 90
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 82.0,
+      "rsi": 81.1,
       "fp": 100
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 64.6,
+      "rsi": 65.3,
       "fp": 100
     },
     {
@@ -217,7 +217,7 @@
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 82.4,
+      "rsi": 82.2,
       "fp": 100
     },
     {
@@ -229,13 +229,13 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 72.0,
+      "rsi": 71.9,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 74.0,
+      "rsi": 73.7,
       "fp": 100
     }
   ],
@@ -912,5 +912,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-03T22:26:59Z"
+  "updated": "2026-07-03T22:42:01Z"
 }
