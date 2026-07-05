@@ -142,80 +142,80 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nSUI/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nSUI/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 4.2,
+  "liq_4h": 4.0,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 62.1,
+      "rsi": 61.2,
       "fp": 88
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 60.9,
-      "fp": 86
+      "rsi": 61.5,
+      "fp": 87
     },
     {
       "s": "SOL",
       "t": "strong_bullish",
-      "rsi": 40.7,
+      "rsi": 41.0,
       "fp": 85
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 48.9,
+      "rsi": 49.8,
       "fp": 32
     },
     {
       "s": "AVAX",
       "t": "ranging",
-      "rsi": 38.6,
+      "rsi": 39.9,
       "fp": 10
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 39.7,
+      "rsi": 41.0,
       "fp": 64
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 42.3,
+      "rsi": 43.1,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 83.5,
+      "rsi": 84.3,
       "fp": 100
     },
     {
       "s": "DOGE",
       "t": "ranging",
-      "rsi": 42.7,
+      "rsi": 42.9,
       "fp": 50
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 42.0,
-      "fp": 42
+      "rsi": 41.1,
+      "fp": 36
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 48.1,
+      "rsi": 47.8,
       "fp": 35
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 43.2,
+      "rsi": 42.8,
       "fp": 100
     },
     {
@@ -227,14 +227,14 @@
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 51.9,
+      "rsi": 52.8,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 56.2,
-      "fp": 64
+      "rsi": 55.5,
+      "fp": 66
     }
   ],
   "history": [
@@ -910,5 +910,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-05T06:27:00Z"
+  "updated": "2026-07-05T06:41:58Z"
 }
