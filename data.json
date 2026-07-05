@@ -144,8 +144,8 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nETH/USDT: 97.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nETH/USDT: 97.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 8.7,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -912,5 +912,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-05T03:41:55Z"
+  "updated": "2026-07-05T03:55:48Z"
 }
