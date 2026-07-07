@@ -1,7 +1,7 @@
 {
   "fear_greed": 27,
   "fear_label": "FEAR",
-  "btc_dom": "55.8%",
+  "btc_dom": "56.0%",
   "stablecoin": "319.7B",
   "signals": [
     {
@@ -948,5 +948,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-07T15:51:54Z"
+  "updated": "2026-07-07T16:06:54Z"
 }
