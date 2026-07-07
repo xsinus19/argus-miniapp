@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.0,
       "signal_level": "SIGNAL_LITE",
-      "cp": 63800.0
+      "cp": 63516.17
     }
   ],
   "events": [
@@ -166,99 +166,99 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nETH/USDT: 97.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nETH/USDT: 97.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 13.2,
+  "liq_4h": 13.7,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 59.4,
-      "fp": 91
+      "rsi": 53.2,
+      "fp": 89
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 54.8,
-      "fp": 71
+      "rsi": 49.4,
+      "fp": 65
     },
     {
       "s": "SOL",
       "t": "strong_bullish",
-      "rsi": 47.8,
-      "fp": 82
+      "rsi": 43.4,
+      "fp": 81
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 44.0,
+      "rsi": 40.7,
       "fp": 100
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 34.4,
-      "fp": 37
+      "rsi": 31.1,
+      "fp": 38
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 36.8,
+      "rsi": 33.1,
       "fp": 84
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 45.7,
+      "rsi": 41.8,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 57.7,
-      "fp": 71
+      "rsi": 51.9,
+      "fp": 66
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 30.8,
-      "fp": 83
+      "rsi": 28.7,
+      "fp": 82
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 46.5,
-      "fp": 22
+      "rsi": 43.7,
+      "fp": 19
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 53.1,
-      "fp": 44
+      "rsi": 47.2,
+      "fp": 42
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 46.9,
-      "fp": 20
+      "rsi": 39.3,
+      "fp": 15
     },
     {
       "s": "XMR",
       "t": "ranging",
-      "rsi": 74.7,
+      "rsi": 69.9,
       "fp": 94
     },
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 70.8,
+      "rsi": 64.4,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 48.7,
-      "fp": 95
+      "rsi": 44.5,
+      "fp": 94
     }
   ],
   "history": [
@@ -948,5 +948,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-07T21:09:46Z"
+  "updated": "2026-07-07T21:24:52Z"
 }
