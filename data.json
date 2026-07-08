@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.0,
       "signal_level": "SIGNAL_LITE",
-      "cp": 63639.15
+      "cp": 63639.95
     }
   ],
   "events": [
@@ -166,7 +166,7 @@
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-06 04:09 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 0 | 🟢 Бычьих: 2 | ◎ Нейтральных: 13\nBears: 0 | Bulls: 2 | Neutral: 13\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 SOL/USDT: funding 100.0th (экстремальные лонги)\n  🔴 LINK/USDT: funding 100.0th (экстремальные лонги)\n  🔴 SUI/USDT: funding 100.0th (экстремальные лонги)\n  🔴 DOGE/USDT: funding 100.0th (экстремальные лонги)\n  🔴 ONDO/USDT: funding 100.0th (экстремальные лонги)\n  🔴 HYPE/USDT: funding 100.0th (экстремальные лонги)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • BTC/USDT: trend=ranging RSI=63 funding=92.0th\n  • SOL/USDT: trend=strong_bullish RSI=45 funding=100.0th\n  • LINK/USDT: trend=ranging RSI=58 funding=100.0th\n  • SUI/USDT: trend=ranging RSI=47 funding=100.0th\n  • DOGE/USDT: trend=ranging RSI=58 funding=100.0th\n\nУдачного дня. Аргус на страже."
     }
   ],
-  "liq_4h": 6.7,
+  "liq_4h": 6.5,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
@@ -179,86 +179,86 @@
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 50.7,
-      "fp": 55
+      "rsi": 51.3,
+      "fp": 53
     },
     {
       "s": "SOL",
       "t": "strong_bullish",
-      "rsi": 39.6,
-      "fp": 44
+      "rsi": 38.9,
+      "fp": 45
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 41.2,
-      "fp": 65
+      "rsi": 42.6,
+      "fp": 63
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 27.1,
-      "fp": 43
+      "rsi": 27.3,
+      "fp": 39
     },
     {
       "s": "SUI",
-      "t": "strong_bearish",
-      "rsi": 36.3,
-      "fp": 27
+      "t": "ranging",
+      "rsi": 39.6,
+      "fp": 26
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 40.3,
+      "rsi": 43.4,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 51.2,
-      "fp": 59
+      "rsi": 53.8,
+      "fp": 61
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 32.0,
-      "fp": 73
+      "rsi": 32.5,
+      "fp": 70
     },
     {
       "s": "ONDO",
       "t": "ranging",
-      "rsi": 50.4,
-      "fp": 21
+      "rsi": 50.7,
+      "fp": 23
     },
     {
       "s": "TAO",
       "t": "ranging",
-      "rsi": 47.9,
-      "fp": 36
+      "rsi": 48.3,
+      "fp": 42
     },
     {
       "s": "HYPE",
       "t": "strong_bullish",
-      "rsi": 41.9,
-      "fp": 30
+      "rsi": 41.4,
+      "fp": 31
     },
     {
       "s": "XMR",
       "t": "ranging",
-      "rsi": 70.0,
+      "rsi": 74.6,
       "fp": 94
     },
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 66.8,
+      "rsi": 68.0,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 45.4,
-      "fp": 74
+      "rsi": 45.3,
+      "fp": 70
     }
   ],
   "history": [
@@ -948,5 +948,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-08T00:39:49Z"
+  "updated": "2026-07-08T00:54:49Z"
 }
