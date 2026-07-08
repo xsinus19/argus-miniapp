@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.0,
       "signal_level": "SIGNAL_LITE",
-      "cp": 62714.0
+      "cp": 62581.14
     }
   ],
   "events": [
@@ -166,50 +166,50 @@
       "ai_unavailable": false
     }
   ],
-  "liq_4h": 19.3,
+  "liq_4h": 14.5,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 39.9,
-      "fp": 21
+      "rsi": 38.2,
+      "fp": 20
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 37.9,
+      "rsi": 36.9,
       "fp": 49
     },
     {
       "s": "SOL",
       "t": "bullish",
-      "rsi": 26.5,
-      "fp": 32
+      "rsi": 25.6,
+      "fp": 30
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 28.7,
-      "fp": 17
+      "rsi": 26.4,
+      "fp": 15
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 21.0,
+      "rsi": 18.1,
       "fp": 1
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 26.0,
-      "fp": 61
+      "rsi": 22.8,
+      "fp": 55
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 29.4,
+      "rsi": 29.0,
       "fp": 17
     },
     {
@@ -221,44 +221,44 @@
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 19.8,
-      "fp": 28
+      "rsi": 18.6,
+      "fp": 30
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 36.6,
-      "fp": 17
+      "rsi": 33.9,
+      "fp": 14
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 35.3,
-      "fp": 38
+      "rsi": 33.4,
+      "fp": 40
     },
     {
       "s": "HYPE",
       "t": "bullish",
-      "rsi": 32.4,
+      "rsi": 34.6,
       "fp": 100
     },
     {
       "s": "XMR",
       "t": "ranging",
-      "rsi": 59.8,
+      "rsi": 60.4,
       "fp": 94
     },
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 63.6,
+      "rsi": 62.8,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 29.9,
-      "fp": 64
+      "rsi": 30.1,
+      "fp": 66
     }
   ],
   "history": [
@@ -948,5 +948,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-08T05:39:51Z"
+  "updated": "2026-07-08T05:54:50Z"
 }
