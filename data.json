@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.0,
       "signal_level": "SIGNAL_LITE",
-      "cp": 62548.45
+      "cp": 62648.91
     }
   ],
   "events": [
@@ -173,85 +173,85 @@
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 37.6,
-      "fp": 20
+      "rsi": 39.0,
+      "fp": 23
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 35.2,
-      "fp": 50
+      "rsi": 36.6,
+      "fp": 57
     },
     {
       "s": "SOL",
       "t": "bullish",
-      "rsi": 24.0,
-      "fp": 33
+      "rsi": 24.7,
+      "fp": 34
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 25.2,
+      "rsi": 26.1,
       "fp": 11
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 14.8,
+      "rsi": 15.8,
       "fp": 1
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 21.9,
-      "fp": 47
+      "rsi": 22.7,
+      "fp": 46
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 27.0,
-      "fp": 17
+      "rsi": 27.3,
+      "fp": 21
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 44.3,
+      "rsi": 46.5,
       "fp": 77
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 16.7,
+      "rsi": 17.3,
       "fp": 35
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 28.9,
+      "rsi": 30.2,
       "fp": 8
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 31.7,
-      "fp": 32
+      "rsi": 33.9,
+      "fp": 28
     },
     {
       "s": "HYPE",
       "t": "bullish",
-      "rsi": 31.0,
-      "fp": 40
+      "rsi": 32.9,
+      "fp": 100
     },
     {
       "s": "XMR",
       "t": "ranging",
-      "rsi": 57.9,
+      "rsi": 61.7,
       "fp": 94
     },
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 55.0,
+      "rsi": 57.2,
       "fp": 100
     },
     {
@@ -948,5 +948,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-08T06:45:37Z"
+  "updated": "2026-07-08T07:00:41Z"
 }
