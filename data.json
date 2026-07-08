@@ -22,6 +22,11 @@
   ],
   "events": [
     {
+      "ts": "2026-07-08T04:08:39.719519+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-08 04:08 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 7 | 🟢 Бычьих: 2 | ◎ Нейтральных: 6\nBears: 7 | Bulls: 2 | Neutral: 6\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🟢 AVAX/USDT: funding 2.0th (экстремальные шорты)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • AVAX/USDT: trend=strong_bearish RSI=15 funding=2.0th\n  • XMR/USDT: trend=ranging RSI=58 funding=94.0th\n  • ZEC/USDT: trend=ranging RSI=64 funding=100.0th\n\nУдачного дня. Аргус на страже."
+    },
+    {
       "ts": "2026-07-08T03:09:51.415630+00:00",
       "type": "funding_alert",
       "symbol": "AVAX/USDT",
@@ -159,13 +164,6 @@
       "symbol": "BTC/USDT",
       "funding_pct": 100.0,
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nBTC/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nBTC/USDT: 100.0th percentile (extreme longs)"
-    },
-    {
-      "ts": "2026-07-06T04:25:45.510407+00:00",
-      "type": "funding_alert",
-      "symbol": "TAO/USDT",
-      "funding_pct": 100.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nTAO/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nTAO/USDT: 100.0th percentile (extreme longs)"
     }
   ],
   "liq_4h": 0,
@@ -950,5 +948,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-08T03:53:38Z"
+  "updated": "2026-07-08T04:08:39Z"
 }
