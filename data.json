@@ -1,10 +1,24 @@
 {
-  "fear_greed": 20,
+  "fear_greed": 22,
   "fear_label": "EXTREME_FEAR",
   "btc_dom": "55.9%",
   "stablecoin": "319.7B",
   "signals": [],
   "events": [
+    {
+      "ts": "2026-07-09T00:20:41.298946+00:00",
+      "type": "funding_alert",
+      "symbol": "HYPE/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nHYPE/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nHYPE/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-07-09T00:20:41.263353+00:00",
+      "type": "funding_alert",
+      "symbol": "NEAR/USDT",
+      "funding_pct": 0.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 0.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 0.0th percentile (extreme shorts)"
+    },
     {
       "ts": "2026-07-08T20:20:40.974250+00:00",
       "type": "funding_alert",
@@ -128,61 +142,47 @@
       "symbol": "ZEC/USDT",
       "funding_pct": 100.0,
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nZEC/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nZEC/USDT: 100.0th percentile (extreme longs)"
-    },
-    {
-      "ts": "2026-07-07T00:24:53.558019+00:00",
-      "type": "funding_alert",
-      "symbol": "TAO/USDT",
-      "funding_pct": 100.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nTAO/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nTAO/USDT: 100.0th percentile (extreme longs)"
-    },
-    {
-      "ts": "2026-07-07T00:24:53.512876+00:00",
-      "type": "funding_alert",
-      "symbol": "ONDO/USDT",
-      "funding_pct": 100.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nONDO/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nONDO/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 0,
-  "whale_usd": 0,
+  "liq_4h": 1.5,
+  "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
-      "t": "ranging",
-      "rsi": 40.4,
-      "fp": 80
+      "t": "strong_bearish",
+      "rsi": 39.4,
+      "fp": 73
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 40.1,
-      "fp": 90
+      "rsi": 39.9,
+      "fp": 91
     },
     {
       "s": "SOL",
       "t": "bullish",
-      "rsi": 31.7,
-      "fp": 77
+      "rsi": 33.3,
+      "fp": 76
     },
     {
       "s": "LINK",
       "t": "strong_bearish",
-      "rsi": 32.5,
-      "fp": 39
+      "rsi": 31.8,
+      "fp": 41
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 32.7,
-      "fp": 69
+      "rsi": 33.5,
+      "fp": 68
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 35.1,
-      "fp": 53
+      "rsi": 35.8,
+      "fp": 60
     },
     {
       "s": "NEAR",
@@ -193,50 +193,50 @@
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 44.7,
-      "fp": 89
+      "rsi": 42.1,
+      "fp": 87
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 28.5,
-      "fp": 81
+      "rsi": 28.0,
+      "fp": 75
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 31.5,
+      "rsi": 31.3,
       "fp": 11
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 32.2,
-      "fp": 28
+      "rsi": 32.5,
+      "fp": 37
     },
     {
       "s": "HYPE",
       "t": "bullish",
-      "rsi": 36.3,
+      "rsi": 35.2,
       "fp": 100
     },
     {
       "s": "XMR",
       "t": "strong_bearish",
-      "rsi": 34.4,
+      "rsi": 33.0,
       "fp": 94
     },
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 47.5,
-      "fp": 65
+      "rsi": 47.4,
+      "fp": 62
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 40.2,
-      "fp": 70
+      "rsi": 39.1,
+      "fp": 69
     }
   ],
   "history": [
@@ -928,5 +928,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-09T00:04:26Z"
+  "updated": "2026-07-09T00:20:41Z"
 }
