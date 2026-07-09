@@ -144,98 +144,98 @@
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-08 04:08 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 7 | 🟢 Бычьих: 2 | ◎ Нейтральных: 6\nBears: 7 | Bulls: 2 | Neutral: 6\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🟢 AVAX/USDT: funding 2.0th (экстремальные шорты)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • AVAX/USDT: trend=strong_bearish RSI=15 funding=2.0th\n  • XMR/USDT: trend=ranging RSI=58 funding=94.0th\n  • ZEC/USDT: trend=ranging RSI=64 funding=100.0th\n\nУдачного дня. Аргус на страже."
     }
   ],
-  "liq_4h": 11.0,
+  "liq_4h": 11.7,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "ranging",
-      "rsi": 60.7,
-      "fp": 85
+      "rsi": 60.5,
+      "fp": 87
     },
     {
       "s": "ETH",
       "t": "ranging",
-      "rsi": 52.1,
-      "fp": 71
+      "rsi": 51.3,
+      "fp": 73
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 46.8,
-      "fp": 61
+      "rsi": 46.0,
+      "fp": 64
     },
     {
       "s": "LINK",
       "t": "bearish",
-      "rsi": 56.9,
+      "rsi": 57.5,
       "fp": 15
     },
     {
       "s": "AVAX",
       "t": "bearish",
-      "rsi": 62.7,
+      "rsi": 62.9,
       "fp": 100
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 49.7,
-      "fp": 64
+      "rsi": 50.8,
+      "fp": 71
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 53.2,
+      "rsi": 53.7,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "strong_bullish",
-      "rsi": 56.3,
-      "fp": 66
+      "rsi": 54.5,
+      "fp": 63
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 52.1,
-      "fp": 39
+      "rsi": 50.8,
+      "fp": 37
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 47.5,
-      "fp": 15
+      "rsi": 48.5,
+      "fp": 18
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 59.2,
-      "fp": 66
+      "rsi": 57.2,
+      "fp": 75
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 44.6,
-      "fp": 8
+      "rsi": 40.7,
+      "fp": 6
     },
     {
       "s": "XMR",
       "t": "strong_bearish",
-      "rsi": 42.3,
+      "rsi": 40.5,
       "fp": 94
     },
     {
       "s": "ZEC",
       "t": "ranging",
-      "rsi": 69.4,
-      "fp": 73
+      "rsi": 69.2,
+      "fp": 75
     },
     {
       "s": "BNB",
       "t": "ranging",
-      "rsi": 53.2,
+      "rsi": 52.8,
       "fp": 98
     }
   ],
@@ -928,5 +928,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-09T18:20:37Z"
+  "updated": "2026-07-09T18:35:38Z"
 }
