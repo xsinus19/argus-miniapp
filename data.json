@@ -6,6 +6,11 @@
   "signals": [],
   "events": [
     {
+      "ts": "2026-07-09T04:04:25.656627+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-09 04:04 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 10 | 🟢 Бычьих: 1 | ◎ Нейтральных: 4\nBears: 10 | Bulls: 1 | Neutral: 4\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • NEAR/USDT: trend=strong_bearish RSI=35 funding=10.0th\n  • XMR/USDT: trend=strong_bearish RSI=33 funding=94.0th\n\nУдачного дня. Аргус на страже."
+    },
+    {
       "ts": "2026-07-09T01:50:36.553486+00:00",
       "type": "funding_alert",
       "symbol": "ONDO/USDT",
@@ -135,13 +140,6 @@
       "ts": "2026-07-07T04:08:40.966211+00:00",
       "type": "digest",
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-07 04:08 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 2 | 🟢 Бычьих: 2 | ◎ Нейтральных: 11\nBears: 2 | Bulls: 2 | Neutral: 11\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 BTC/USDT: funding 100.0th (экстремальные лонги)\n  🔴 LINK/USDT: funding 100.0th (экстремальные лонги)\n  🔴 AVAX/USDT: funding 100.0th (экстремальные лонги)\n  🔴 SUI/USDT: funding 100.0th (экстремальные лонги)\n  🔴 TAO/USDT: funding 100.0th (экстремальные лонги)\n  🔴 HYPE/USDT: funding 100.0th (экстремальные лонги)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • BTC/USDT: trend=ranging RSI=53 funding=100.0th\n  • SOL/USDT: trend=strong_bullish RSI=49 funding=93.0th\n  • LINK/USDT: trend=ranging RSI=42 funding=100.0th\n  • AVAX/USDT: trend=ranging RSI=39 funding=100.0th\n  • SUI/USDT: trend=ranging RSI=37 funding=100.0th\n\nУдачного дня. Аргус на страже."
-    },
-    {
-      "ts": "2026-07-07T01:09:52.016462+00:00",
-      "type": "funding_alert",
-      "symbol": "HYPE/USDT",
-      "funding_pct": 100.0,
-      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nHYPE/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nHYPE/USDT: 100.0th percentile (extreme longs)"
     }
   ],
   "liq_4h": 0,
@@ -928,5 +926,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-09T03:49:25Z"
+  "updated": "2026-07-09T04:04:25Z"
 }
