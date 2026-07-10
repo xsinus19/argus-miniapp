@@ -146,8 +146,8 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nONDO/USDT: 2.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nONDO/USDT: 2.0th percentile (extreme shorts)"
     }
   ],
-  "liq_4h": 1.1,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -930,5 +930,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-09T23:50:38Z"
+  "updated": "2026-07-10T00:04:25Z"
 }
