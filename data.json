@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 6.457
+      "cp": 6.548
     },
     {
       "sym": "NEAR/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 2.012
+      "cp": 2.031
     },
     {
       "sym": "ETH/USDT",
@@ -47,7 +47,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 1805.13
+      "cp": 1847.28
     },
     {
       "sym": "BNB/USDT",
@@ -62,25 +62,20 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 572.4
-    },
-    {
-      "sym": "BTC/USDT",
-      "dir": "short",
-      "ep": 62692.75,
-      "sl": 63415.67,
-      "tp1": 61752.95,
-      "tp2": 61246.91,
-      "tp3": 60523.98,
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
-      "rr": 1.3,
-      "signal_level": "SIGNAL_LITE",
-      "cp": 63054.01
+      "cp": 576.64
     }
   ],
   "events": [
+    {
+      "ts": "2026-07-14T12:54:05.070838+00:00",
+      "type": "sl",
+      "symbol": "BTC/USDT",
+      "direction": "short",
+      "price": 63861.99,
+      "entry": 62692.75,
+      "loss": 1.8650322405700785,
+      "signal_level": "SIGNAL_LITE"
+    },
     {
       "ts": "2026-07-14T09:28:16.235378+00:00",
       "type": "funding_alert",
@@ -255,116 +250,101 @@
       "symbol": "BTC/USDT",
       "funding_pct": 100.0,
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nBTC/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nBTC/USDT: 100.0th percentile (extreme longs)"
-    },
-    {
-      "ts": "2026-07-13T10:12:09.023617+00:00",
-      "type": "signal",
-      "symbol": "NEAR/USDT",
-      "direction": "short",
-      "signal_level": "SIGNAL_LITE",
-      "entry": 1.9183,
-      "sl": 1.9715,
-      "tp1": 1.8492,
-      "tp2": 1.812,
-      "tp3": 1.7588,
-      "rr": 1.2999999999999992,
-      "pa_score": 0.9,
-      "ai_unavailable": false
     }
   ],
-  "liq_4h": 8.5,
+  "liq_4h": 39.0,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
-      "t": "strong_bearish",
-      "rsi": 51.3,
-      "fp": 67
+      "t": "ranging",
+      "rsi": 66.7,
+      "fp": 64
     },
     {
       "s": "ETH",
       "t": "strong_bullish",
-      "rsi": 62.6,
-      "fp": 83
+      "rsi": 77.3,
+      "fp": 88
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 42.4,
-      "fp": 40
+      "rsi": 58.2,
+      "fp": 43
     },
     {
       "s": "LINK",
       "t": "ranging",
-      "rsi": 56.3,
-      "fp": 48
+      "rsi": 72.3,
+      "fp": 61
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 43.2,
+      "rsi": 55.0,
       "fp": 72
     },
     {
       "s": "SUI",
       "t": "bearish",
-      "rsi": 54.1,
-      "fp": 70
+      "rsi": 68.3,
+      "fp": 74
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 74.2,
-      "fp": 34
+      "rsi": 76.9,
+      "fp": 20
     },
     {
       "s": "BCH",
-      "t": "ranging",
-      "rsi": 47.1,
-      "fp": 21
+      "t": "strong_bullish",
+      "rsi": 55.7,
+      "fp": 23
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 45.4,
-      "fp": 46
+      "rsi": 62.5,
+      "fp": 55
     },
     {
       "s": "ONDO",
       "t": "strong_bearish",
-      "rsi": 32.4,
-      "fp": 2
+      "rsi": 46.2,
+      "fp": 3
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 21.9,
-      "fp": 4
+      "rsi": 39.1,
+      "fp": 2
     },
     {
       "s": "HYPE",
       "t": "ranging",
-      "rsi": 35.7,
+      "rsi": 49.2,
       "fp": 100
     },
     {
       "s": "XMR",
       "t": "ranging",
-      "rsi": 45.6,
+      "rsi": 56.0,
       "fp": 94
     },
     {
       "s": "ZEC",
       "t": "strong_bullish",
-      "rsi": 50.7,
+      "rsi": 60.8,
       "fp": 42
     },
     {
       "s": "BNB",
-      "t": "strong_bearish",
-      "rsi": 53.9,
-      "fp": 68
+      "t": "bearish",
+      "rsi": 65.1,
+      "fp": 73
     }
   ],
   "history": [
@@ -1187,7 +1167,9 @@
       "tp3": 60523.98,
       "time": "2026-07-14T07:26:31.897844+00:00",
       "signal_id": "BTC/USDT:short:2026-07-14T07:26:31.895917+00:00",
-      "result": "open"
+      "result": "sl",
+      "result_price": 63861.99,
+      "pnl": -1.87
     }
   ],
   "chart": {
@@ -1196,5 +1178,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-14T12:28:17Z"
+  "updated": "2026-07-14T12:54:05Z"
 }
