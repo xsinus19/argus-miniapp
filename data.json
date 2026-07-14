@@ -5,59 +5,369 @@
   "stablecoin": "319.7B",
   "signals": [
     {
-      "sym": "AVAX/USDT:long",
+      "sym": "AVAX/USDT",
       "dir": "long",
       "ep": 6.6536,
       "sl": 6.2814,
       "tp1": 7.1375,
       "tp2": 7.3981,
-      "tp3": 7.7704
+      "tp3": 7.7704,
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "rr": 1.3,
+      "signal_level": "SIGNAL_LITE",
+      "cp": 6.509
     },
     {
-      "sym": "NEAR/USDT:long",
+      "sym": "NEAR/USDT",
       "dir": "long",
       "ep": 1.957,
       "sl": 1.8199,
       "tp1": 2.1351,
       "tp2": 2.231,
-      "tp3": 2.3681
+      "tp3": 2.3681,
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "rr": 1.3,
+      "signal_level": "SIGNAL_LITE",
+      "cp": 2.005
     },
     {
-      "sym": "ETH/USDT:short",
+      "sym": "ETH/USDT",
       "dir": "short",
       "ep": 1753.92,
       "sl": 1865.23,
       "tp1": 1609.23,
       "tp2": 1531.32,
-      "tp3": 1420.02
+      "tp3": 1420.02,
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "rr": 1.3,
+      "signal_level": "SIGNAL_LITE",
+      "cp": 1785.82
     },
     {
-      "sym": "BNB/USDT:short",
+      "sym": "BNB/USDT",
       "dir": "short",
       "ep": 564.188,
       "sl": 584.267,
       "tp1": 538.085,
       "tp2": 524.03,
-      "tp3": 503.951
+      "tp3": 503.951,
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "rr": 1.3,
+      "signal_level": "SIGNAL_LITE",
+      "cp": 569.74
     },
     {
-      "sym": "BTC/USDT:short",
+      "sym": "BTC/USDT",
       "dir": "short",
       "ep": 62692.75,
       "sl": 63415.67,
       "tp1": 61752.95,
       "tp2": 61246.91,
-      "tp3": 60523.98
+      "tp3": 60523.98,
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "rr": 1.3,
+      "signal_level": "SIGNAL_LITE",
+      "cp": 62636.0
     }
   ],
-  "liq_4h": 4.4,
-  "whale_usd": 0,
+  "events": [
+    {
+      "ts": "2026-07-14T07:26:31.896619+00:00",
+      "type": "signal",
+      "symbol": "BTC/USDT",
+      "direction": "short",
+      "signal_level": "SIGNAL_LITE",
+      "entry": 62692.75,
+      "sl": 63415.67,
+      "tp1": 61752.95,
+      "tp2": 61246.91,
+      "tp3": 60523.98,
+      "rr": 1.3,
+      "pa_score": 0.8,
+      "ai_unavailable": false
+    },
+    {
+      "ts": "2026-07-14T06:28:12.549629+00:00",
+      "type": "funding_alert",
+      "symbol": "HYPE/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nHYPE/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nHYPE/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-07-14T05:43:16.762537+00:00",
+      "type": "funding_alert",
+      "symbol": "DOGE/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nDOGE/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nDOGE/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-07-14T04:28:13.478516+00:00",
+      "type": "funding_alert",
+      "symbol": "NEAR/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nNEAR/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nNEAR/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-07-14T04:28:13.436628+00:00",
+      "type": "funding_alert",
+      "symbol": "LINK/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nLINK/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nLINK/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-07-14T04:12:02.003804+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-14 04:12 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 9 | 🟢 Бычьих: 3 | ◎ Нейтральных: 3\nBears: 9 | Bulls: 3 | Neutral: 3\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🟢 SUI/USDT: funding 3.0th (экстремальные шорты)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • SUI/USDT: trend=strong_bearish RSI=36 funding=3.0th\n  • ONDO/USDT: trend=strong_bearish RSI=18 funding=9.0th\n  • XMR/USDT: trend=strong_bearish RSI=42 funding=94.0th\n\nУдачного дня. Аргус на страже."
+    },
+    {
+      "ts": "2026-07-14T00:43:16.485506+00:00",
+      "type": "funding_alert",
+      "symbol": "SUI/USDT",
+      "funding_pct": 3.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nSUI/USDT: 3.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nSUI/USDT: 3.0th percentile (extreme shorts)"
+    },
+    {
+      "ts": "2026-07-13T21:43:15.955535+00:00",
+      "type": "funding_alert",
+      "symbol": "SUI/USDT",
+      "funding_pct": 3.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nSUI/USDT: 3.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nSUI/USDT: 3.0th percentile (extreme shorts)"
+    },
+    {
+      "ts": "2026-07-13T19:28:08.507348+00:00",
+      "type": "signal",
+      "symbol": "BNB/USDT",
+      "direction": "short",
+      "signal_level": "SIGNAL_LITE",
+      "entry": 564.188,
+      "sl": 584.267,
+      "tp1": 538.085,
+      "tp2": 524.03,
+      "tp3": 503.951,
+      "rr": 1.2999999999999978,
+      "pa_score": 0.8,
+      "ai_unavailable": false
+    },
+    {
+      "ts": "2026-07-13T18:13:14.830951+00:00",
+      "type": "rejected",
+      "symbol": "BNB/USDT",
+      "direction": "short",
+      "signal_level": "SIGNAL_LITE",
+      "reason": "RSI=24.7 перепродан для SHORT (soft_fail)"
+    },
+    {
+      "ts": "2026-07-13T18:11:38.086813+00:00",
+      "type": "signal",
+      "symbol": "ETH/USDT",
+      "direction": "short",
+      "signal_level": "SIGNAL_LITE",
+      "entry": 1753.92,
+      "sl": 1865.23,
+      "tp1": 1609.23,
+      "tp2": 1531.32,
+      "tp3": 1420.02,
+      "rr": 1.3000000000000007,
+      "pa_score": 0.9500000000000001,
+      "ai_unavailable": false
+    },
+    {
+      "ts": "2026-07-13T15:12:13.032331+00:00",
+      "type": "signal",
+      "symbol": "NEAR/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_LITE",
+      "entry": 1.957,
+      "sl": 1.8199,
+      "tp1": 2.1351,
+      "tp2": 2.231,
+      "tp3": 2.3681,
+      "rr": 1.3000000000000003,
+      "pa_score": 0.9500000000000001,
+      "ai_unavailable": false
+    },
+    {
+      "ts": "2026-07-13T14:58:21.866185+00:00",
+      "type": "funding_alert",
+      "symbol": "ONDO/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nONDO/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nONDO/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-07-13T14:58:14.742742+00:00",
+      "type": "sl",
+      "symbol": "NEAR/USDT",
+      "direction": "short",
+      "price": 1.968,
+      "entry": 1.9183,
+      "loss": 2.5908356357191304,
+      "signal_level": "SIGNAL_LITE"
+    },
+    {
+      "ts": "2026-07-13T14:42:00.349529+00:00",
+      "type": "signal",
+      "symbol": "AVAX/USDT",
+      "direction": "long",
+      "signal_level": "SIGNAL_LITE",
+      "entry": 6.6536,
+      "sl": 6.2814,
+      "tp1": 7.1375,
+      "tp2": 7.3981,
+      "tp3": 7.7704,
+      "rr": 1.3000000000000005,
+      "pa_score": 0.75,
+      "ai_unavailable": false
+    },
+    {
+      "ts": "2026-07-13T14:13:13.414742+00:00",
+      "type": "funding_alert",
+      "symbol": "AVAX/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nAVAX/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nAVAX/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-07-13T14:13:13.323073+00:00",
+      "type": "funding_alert",
+      "symbol": "BTC/USDT",
+      "funding_pct": 100.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nBTC/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nBTC/USDT: 100.0th percentile (extreme longs)"
+    },
+    {
+      "ts": "2026-07-13T10:12:09.023617+00:00",
+      "type": "signal",
+      "symbol": "NEAR/USDT",
+      "direction": "short",
+      "signal_level": "SIGNAL_LITE",
+      "entry": 1.9183,
+      "sl": 1.9715,
+      "tp1": 1.8492,
+      "tp2": 1.812,
+      "tp3": 1.7588,
+      "rr": 1.2999999999999992,
+      "pa_score": 0.9,
+      "ai_unavailable": false
+    },
+    {
+      "ts": "2026-07-13T07:28:14.277108+00:00",
+      "type": "sl",
+      "symbol": "NEAR/USDT",
+      "direction": "short",
+      "price": 1.919,
+      "entry": 1.9186,
+      "loss": 0.02084853539038653,
+      "signal_level": "SIGNAL_LITE"
+    },
+    {
+      "ts": "2026-07-13T07:13:13.993063+00:00",
+      "type": "funding_alert",
+      "symbol": "XMR/USDT",
+      "funding_pct": 3.0,
+      "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nXMR/USDT: 3.0th percentile (экстремальные шорты)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nXMR/USDT: 3.0th percentile (extreme shorts)"
+    }
+  ],
+  "liq_4h": 8.5,
+  "whale_usd": 0.0,
+  "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "strong_bearish",
       "rsi": 36.5,
       "fp": 42
+    },
+    {
+      "s": "ETH",
+      "t": "strong_bullish",
+      "rsi": 48.1,
+      "fp": 71
+    },
+    {
+      "s": "SOL",
+      "t": "ranging",
+      "rsi": 31.5,
+      "fp": 77
+    },
+    {
+      "s": "LINK",
+      "t": "ranging",
+      "rsi": 50.7,
+      "fp": 100
+    },
+    {
+      "s": "AVAX",
+      "t": "strong_bearish",
+      "rsi": 48.8,
+      "fp": 52
+    },
+    {
+      "s": "SUI",
+      "t": "bearish",
+      "rsi": 54.9,
+      "fp": 49
+    },
+    {
+      "s": "NEAR",
+      "t": "ranging",
+      "rsi": 73.5,
+      "fp": 43
+    },
+    {
+      "s": "BCH",
+      "t": "bullish",
+      "rsi": 37.4,
+      "fp": 20
+    },
+    {
+      "s": "DOGE",
+      "t": "strong_bearish",
+      "rsi": 44.0,
+      "fp": 82
+    },
+    {
+      "s": "ONDO",
+      "t": "strong_bearish",
+      "rsi": 31.3,
+      "fp": 10
+    },
+    {
+      "s": "TAO",
+      "t": "strong_bearish",
+      "rsi": 21.6,
+      "fp": 27
+    },
+    {
+      "s": "HYPE",
+      "t": "ranging",
+      "rsi": 30.2,
+      "fp": 33
+    },
+    {
+      "s": "XMR",
+      "t": "ranging",
+      "rsi": 53.4,
+      "fp": 94
+    },
+    {
+      "s": "ZEC",
+      "t": "strong_bullish",
+      "rsi": 46.5,
+      "fp": 28
+    },
+    {
+      "s": "BNB",
+      "t": "strong_bearish",
+      "rsi": 43.7,
+      "fp": 64
     }
   ],
   "history": [
@@ -883,6 +1193,11 @@
       "result": "open"
     }
   ],
-  "chart": {},
-  "updated": "2026-07-14T07:26:31Z"
+  "chart": {
+    "labels": [],
+    "ton": [],
+    "render": [],
+    "btc": []
+  },
+  "updated": "2026-07-14T07:28:25Z"
 }
