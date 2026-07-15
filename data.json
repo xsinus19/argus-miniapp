@@ -37,6 +37,11 @@
   ],
   "events": [
     {
+      "ts": "2026-07-15T04:07:37.719256+00:00",
+      "type": "digest",
+      "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-15 04:07 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 4 | 🟢 Бычьих: 4 | ◎ Нейтральных: 7\nBears: 4 | Bulls: 4 | Neutral: 7\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 BTC/USDT: funding 100.0th (экстремальные лонги)\n  🔴 LINK/USDT: funding 100.0th (экстремальные лонги)\n  🔴 AVAX/USDT: funding 100.0th (экстремальные лонги)\n  🔴 SUI/USDT: funding 100.0th (экстремальные лонги)\n  🔴 NEAR/USDT: funding 100.0th (экстремальные лонги)\n  🟢 BCH/USDT: funding 0.0th (экстремальные шорты)\n  🔴 TAO/USDT: funding 100.0th (экстремальные лонги)\n  🔴 HYPE/USDT: funding 100.0th (экстремальные лонги)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n  🔴 BNB/USDT: funding 95.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • BTC/USDT: trend=ranging RSI=68 funding=100.0th\n  • LINK/USDT: trend=strong_bullish RSI=71 funding=100.0th\n  • AVAX/USDT: trend=bearish RSI=58 funding=100.0th\n  • SUI/USDT: trend=ranging RSI=63 funding=100.0th\n  • NEAR/USDT: trend=ranging RSI=64 funding=100.0th\n\nУдачного дня. Аргус на страже."
+    },
+    {
       "ts": "2026-07-15T00:23:49.957237+00:00",
       "type": "funding_alert",
       "symbol": "ZEC/USDT",
@@ -175,16 +180,6 @@
       "price": 1859.7,
       "entry": 1753.92,
       "loss": 6.031061850027365,
-      "signal_level": "SIGNAL_LITE"
-    },
-    {
-      "ts": "2026-07-14T12:54:05.070838+00:00",
-      "type": "sl",
-      "symbol": "BTC/USDT",
-      "direction": "short",
-      "price": 63861.99,
-      "entry": 62692.75,
-      "loss": 1.8650322405700785,
       "signal_level": "SIGNAL_LITE"
     }
   ],
@@ -1118,5 +1113,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-15T03:52:35Z"
+  "updated": "2026-07-15T04:07:37Z"
 }
