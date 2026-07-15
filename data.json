@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 6.661
+      "cp": 0
     },
     {
       "sym": "NEAR/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 2.091
+      "cp": 0
     }
   ],
   "events": [
@@ -176,8 +176,8 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nBNB/USDT: 98.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nBNB/USDT: 98.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 3.4,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -1106,5 +1106,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-15T11:43:21Z"
+  "updated": "2026-07-15T11:57:08Z"
 }
