@@ -17,7 +17,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 6.64
+      "cp": 0
     },
     {
       "sym": "NEAR/USDT",
@@ -32,7 +32,7 @@
       "tp3_hit": false,
       "rr": 1.3,
       "signal_level": "SIGNAL_LITE",
-      "cp": 2.011
+      "cp": 0
     }
   ],
   "events": [
@@ -188,8 +188,8 @@
       "signal_level": "SIGNAL_LITE"
     }
   ],
-  "liq_4h": 3.5,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -1118,5 +1118,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-15T03:38:44Z"
+  "updated": "2026-07-15T03:52:35Z"
 }
