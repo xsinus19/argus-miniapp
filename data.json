@@ -151,91 +151,91 @@
     {
       "s": "BTC",
       "t": "strong_bullish",
-      "rsi": 53.0,
-      "fp": 9
+      "rsi": 51.0,
+      "fp": 11
     },
     {
       "s": "ETH",
       "t": "strong_bullish",
-      "rsi": 40.2,
+      "rsi": 38.9,
       "fp": 41
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 36.5,
-      "fp": 69
+      "rsi": 35.4,
+      "fp": 72
     },
     {
       "s": "LINK",
       "t": "strong_bullish",
-      "rsi": 42.4,
+      "rsi": 43.2,
       "fp": 16
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 51.3,
+      "rsi": 50.6,
       "fp": 85
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 44.6,
-      "fp": 36
+      "rsi": 43.5,
+      "fp": 42
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 33.2,
-      "fp": 100
+      "rsi": 33.0,
+      "fp": 64
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 37.5,
+      "rsi": 36.5,
       "fp": 80
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 44.6,
+      "rsi": 44.0,
       "fp": 66
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 58.8,
-      "fp": 28
+      "rsi": 56.9,
+      "fp": 23
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 42.5,
+      "rsi": 41.7,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bearish",
-      "rsi": 31.3,
+      "rsi": 30.0,
       "fp": 100
     },
     {
       "s": "XMR",
       "t": "strong_bullish",
-      "rsi": 52.6,
+      "rsi": 51.9,
       "fp": 99
     },
     {
       "s": "ZEC",
       "t": "strong_bullish",
-      "rsi": 50.7,
-      "fp": 37
+      "rsi": 48.9,
+      "fp": 34
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 38.9,
+      "rsi": 38.0,
       "fp": 40
     }
   ],
@@ -1078,5 +1078,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-17T22:13:16Z"
+  "updated": "2026-07-17T22:28:18Z"
 }
