@@ -149,92 +149,92 @@
     {
       "s": "BTC",
       "t": "strong_bullish",
-      "rsi": 51.0,
-      "fp": 76
+      "rsi": 51.3,
+      "fp": 78
     },
     {
       "s": "ETH",
       "t": "strong_bullish",
-      "rsi": 42.8,
-      "fp": 62
+      "rsi": 43.0,
+      "fp": 65
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 39.4,
-      "fp": 57
+      "rsi": 39.2,
+      "fp": 59
     },
     {
       "s": "LINK",
       "t": "strong_bullish",
-      "rsi": 44.4,
+      "rsi": 44.9,
       "fp": 32
     },
     {
       "s": "AVAX",
-      "t": "strong_bearish",
-      "rsi": 54.0,
+      "t": "bearish",
+      "rsi": 56.0,
       "fp": 100
     },
     {
       "s": "SUI",
       "t": "strong_bearish",
-      "rsi": 42.5,
+      "rsi": 41.9,
       "fp": 17
     },
     {
       "s": "NEAR",
       "t": "strong_bearish",
-      "rsi": 33.9,
-      "fp": 14
+      "rsi": 33.7,
+      "fp": 17
     },
     {
       "s": "BCH",
       "t": "ranging",
-      "rsi": 33.7,
-      "fp": 34
+      "rsi": 34.6,
+      "fp": 35
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 42.7,
+      "rsi": 42.4,
       "fp": 36
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 56.2,
-      "fp": 19
+      "rsi": 57.4,
+      "fp": 23
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 46.9,
-      "fp": 33
+      "rsi": 48.0,
+      "fp": 39
     },
     {
       "s": "HYPE",
       "t": "strong_bearish",
-      "rsi": 26.8,
+      "rsi": 26.5,
       "fp": 100
     },
     {
       "s": "XMR",
       "t": "strong_bullish",
-      "rsi": 45.1,
+      "rsi": 46.0,
       "fp": 97
     },
     {
       "s": "ZEC",
       "t": "strong_bullish",
-      "rsi": 45.2,
-      "fp": 57
+      "rsi": 44.4,
+      "fp": 52
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 37.9,
-      "fp": 57
+      "rsi": 37.6,
+      "fp": 61
     }
   ],
   "history": [
@@ -1076,5 +1076,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-18T06:43:14Z"
+  "updated": "2026-07-18T06:58:17Z"
 }
