@@ -142,8 +142,8 @@
       "rsi": 93.4
     }
   ],
-  "liq_4h": 8.3,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -1076,5 +1076,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-18T19:43:20Z"
+  "updated": "2026-07-18T19:57:08Z"
 }
