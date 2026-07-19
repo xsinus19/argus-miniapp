@@ -140,8 +140,8 @@
       "text": "<b>АРГУС — УТРЕННИЙ ДАЙДЖЕСТ</b>\n================================\n2026-07-17 04:12 UTC\n\n<b>РЫНОЧНАЯ КАРТИНА:</b>\n🔴 Медвежьих: 4 | 🟢 Бычьих: 4 | ◎ Нейтральных: 7\nBears: 4 | Bulls: 4 | Neutral: 7\n\n<b>ЭКСТРЕМАЛЬНЫЙ FUNDING:</b>\n  🔴 ONDO/USDT: funding 100.0th (экстремальные лонги)\n  🔴 XMR/USDT: funding 96.0th (экстремальные лонги)\n  🔴 ZEC/USDT: funding 100.0th (экстремальные лонги)\n\n<b>МОНЕТЫ ПОД НАБЛЮДЕНИЕМ:</b>\n  • NEAR/USDT: trend=ranging RSI=45 funding=7.000000000000001th\n  • ONDO/USDT: trend=strong_bullish RSI=65 funding=100.0th\n  • HYPE/USDT: trend=ranging RSI=17 funding=10.0th\n  • XMR/USDT: trend=ranging RSI=48 funding=96.0th\n  • ZEC/USDT: trend=strong_bullish RSI=45 funding=100.0th\n\nУдачного дня. Аргус на страже."
     }
   ],
-  "liq_4h": 6.7,
-  "whale_usd": 0.0,
+  "liq_4h": 0,
+  "whale_usd": 0,
   "whale_signal": "neutral",
   "coins": [
     {
@@ -1074,5 +1074,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-19T19:41:42Z"
+  "updated": "2026-07-19T19:55:28Z"
 }
