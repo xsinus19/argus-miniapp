@@ -140,99 +140,99 @@
       "text": "⚡ <b>ЭКСТРЕМАЛЬНЫЙ ФАНДИНГ</b>\nAVAX/USDT: 100.0th percentile (экстремальные лонги)\nПодробнее → Mini App\n\n⚡ <b>EXTREME FUNDING</b>\nAVAX/USDT: 100.0th percentile (extreme longs)"
     }
   ],
-  "liq_4h": 15.0,
+  "liq_4h": 15.7,
   "whale_usd": 0.0,
   "whale_signal": "neutral",
   "coins": [
     {
       "s": "BTC",
       "t": "strong_bullish",
-      "rsi": 48.9,
-      "fp": 81
+      "rsi": 46.8,
+      "fp": 76
     },
     {
       "s": "ETH",
       "t": "strong_bullish",
-      "rsi": 48.1,
-      "fp": 27
+      "rsi": 47.7,
+      "fp": 26
     },
     {
       "s": "SOL",
       "t": "ranging",
-      "rsi": 52.2,
-      "fp": 39
+      "rsi": 50.9,
+      "fp": 37
     },
     {
       "s": "LINK",
       "t": "strong_bullish",
-      "rsi": 49.7,
-      "fp": 69
+      "rsi": 48.5,
+      "fp": 62
     },
     {
       "s": "AVAX",
       "t": "strong_bearish",
-      "rsi": 48.0,
-      "fp": 80
+      "rsi": 46.1,
+      "fp": 77
     },
     {
       "s": "SUI",
       "t": "ranging",
-      "rsi": 59.4,
+      "rsi": 58.9,
       "fp": 69
     },
     {
       "s": "NEAR",
       "t": "bearish",
-      "rsi": 68.3,
-      "fp": 35
+      "rsi": 69.0,
+      "fp": 34
     },
     {
       "s": "BCH",
       "t": "strong_bearish",
-      "rsi": 43.9,
+      "rsi": 38.5,
       "fp": 96
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 44.8,
-      "fp": 78
+      "rsi": 45.2,
+      "fp": 76
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
       "rsi": 44.6,
-      "fp": 54
+      "fp": 55
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
-      "rsi": 38.5,
+      "rsi": 40.8,
       "fp": 100
     },
     {
       "s": "HYPE",
       "t": "strong_bearish",
-      "rsi": 46.2,
-      "fp": 27
+      "rsi": 48.7,
+      "fp": 25
     },
     {
       "s": "XMR",
       "t": "strong_bullish",
-      "rsi": 48.4,
+      "rsi": 46.1,
       "fp": 96
     },
     {
       "s": "ZEC",
       "t": "bullish",
-      "rsi": 30.4,
+      "rsi": 30.8,
       "fp": 18
     },
     {
       "s": "BNB",
       "t": "strong_bearish",
-      "rsi": 42.0,
-      "fp": 78
+      "rsi": 41.2,
+      "fp": 77
     }
   ],
   "history": [
@@ -1074,5 +1074,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-20T14:11:40Z"
+  "updated": "2026-07-20T14:26:40Z"
 }
