@@ -149,92 +149,92 @@
     {
       "s": "BTC",
       "t": "strong_bullish",
-      "rsi": 64.4,
-      "fp": 74
+      "rsi": 66.2,
+      "fp": 76
     },
     {
       "s": "ETH",
       "t": "strong_bullish",
-      "rsi": 75.2,
+      "rsi": 77.5,
       "fp": 81
     },
     {
       "s": "SOL",
       "t": "strong_bullish",
-      "rsi": 77.4,
+      "rsi": 79.2,
       "fp": 93
     },
     {
       "s": "LINK",
       "t": "strong_bullish",
-      "rsi": 83.4,
+      "rsi": 82.9,
       "fp": 100
     },
     {
       "s": "AVAX",
-      "t": "bearish",
-      "rsi": 58.9,
-      "fp": 83
+      "t": "ranging",
+      "rsi": 61.7,
+      "fp": 81
     },
     {
       "s": "SUI",
       "t": "strong_bullish",
-      "rsi": 77.0,
-      "fp": 33
+      "rsi": 79.1,
+      "fp": 37
     },
     {
       "s": "NEAR",
       "t": "ranging",
-      "rsi": 80.3,
+      "rsi": 81.6,
       "fp": 100
     },
     {
       "s": "BCH",
       "t": "bearish",
-      "rsi": 74.2,
+      "rsi": 73.2,
       "fp": 84
     },
     {
       "s": "DOGE",
       "t": "strong_bearish",
-      "rsi": 53.9,
+      "rsi": 55.0,
       "fp": 100
     },
     {
       "s": "ONDO",
       "t": "strong_bullish",
-      "rsi": 67.7,
+      "rsi": 67.2,
       "fp": 46
     },
     {
       "s": "TAO",
       "t": "strong_bearish",
       "rsi": 47.5,
-      "fp": 54
+      "fp": 56
     },
     {
       "s": "HYPE",
       "t": "bearish",
-      "rsi": 72.9,
-      "fp": 35
+      "rsi": 74.7,
+      "fp": 38
     },
     {
       "s": "XMR",
       "t": "strong_bullish",
-      "rsi": 61.0,
+      "rsi": 62.1,
       "fp": 91
     },
     {
       "s": "ZEC",
       "t": "strong_bullish",
-      "rsi": 49.1,
+      "rsi": 52.3,
       "fp": 100
     },
     {
       "s": "BNB",
       "t": "bearish",
-      "rsi": 59.3,
-      "fp": 71
+      "rsi": 60.1,
+      "fp": 72
     }
   ],
   "history": [
@@ -1076,5 +1076,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-21T05:17:15Z"
+  "updated": "2026-07-21T05:32:14Z"
 }
