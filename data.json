@@ -1,7 +1,7 @@
 {
-  "fear_greed": 25,
+  "fear_greed": 0,
   "fear_label": "EXTREME_FEAR",
-  "btc_dom": "56.7%",
+  "btc_dom": "56.8%",
   "stablecoin": "319.7B",
   "signals": [],
   "events": [
@@ -147,38 +147,7 @@
   "liq_4h": 0,
   "whale_usd": 0,
   "whale_signal": "neutral",
-  "coins": [
-    {
-      "s": "BTC",
-      "t": "strong_bullish",
-      "rsi": 74.9,
-      "fp": 78
-    },
-    {
-      "s": "ETH",
-      "t": "strong_bullish",
-      "rsi": 81.0,
-      "fp": 11
-    },
-    {
-      "s": "SOL",
-      "t": "strong_bullish",
-      "rsi": 73.7,
-      "fp": 40
-    },
-    {
-      "s": "LINK",
-      "t": "strong_bullish",
-      "rsi": 78.5,
-      "fp": 100
-    },
-    {
-      "s": "AVAX",
-      "t": "ranging",
-      "rsi": 57.8,
-      "fp": 67
-    }
-  ],
+  "coins": [],
   "history": [
     {
       "symbol": "LINK/USDT",
@@ -1018,5 +987,5 @@
     "render": [],
     "btc": []
   },
-  "updated": "2026-07-21T12:01:04Z"
+  "updated": "2026-07-21T12:13:42Z"
 }
